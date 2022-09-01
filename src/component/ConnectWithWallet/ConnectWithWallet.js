@@ -40,7 +40,7 @@ export default function ConnectWithWallet({ navigation }) {
         <Image source={require("../../Assets/ethereum.png")} />
         <Text style={Styles.BoxOneText}>Enter ethereum address</Text>
       </View>
-       <TouchableOpacity onPress={() => navigation.navigate("setupprofile")}>
+       <TouchableOpacity onPress={() => navigation.navigate("SetupProfile")}>
       <View style={Styles.ButtonContinue}>
         <Text style={Styles.ButtonContinueText}>Continue</Text>
       </View>

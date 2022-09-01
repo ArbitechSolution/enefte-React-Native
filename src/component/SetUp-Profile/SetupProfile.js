@@ -51,7 +51,7 @@ export default function SetupProfile({ navigation }) {
                 </Text>
                 <TextInput label="Username" placeholder='Bio' style={[Styles.profileTextInput]} numberOfLines={3} />
             </View>
-            <TouchableOpacity onPress={() => navigation.navigate("homepage")}>
+            <TouchableOpacity onPress={()=>navigation.navigate("UpdateItem")}>
                 <View style={Styles.ButtonContinue}>
                     <Text style={Styles.ButtonContinueText}>Submit</Text>
                 </View>
@@ -114,7 +114,8 @@ const Styles = StyleSheet.create({
         marginLeft: 25,
         borderWidth: 1,
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        color: "#F5F8FA"
     },
     inputView: {
         // backgroundColor: 'rgba(0,0,0,0)',
