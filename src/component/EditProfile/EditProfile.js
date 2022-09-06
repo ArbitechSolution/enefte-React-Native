@@ -6,8 +6,9 @@ import {
     Image,
     TouchableOpacity,
     TextInput,
+    ScrollView,
   } from 'react-native';
-export default function EditProfile({ navigation }) {
+export default function EditProfile({navigation}) {
   return (
 <View style={Styles.mainBg}>
 <View style={Styles.headerCont}>
@@ -19,7 +20,7 @@ export default function EditProfile({ navigation }) {
         <TouchableOpacity
         style={Styles.belowButton}
           activeOpacity={0.5}
-          onPress={()=> navigation.navigate("AppBars")}
+          onPress={()=> navigation.navigate('SellNft')}
         >
      <Text style={Styles.buttonTextStyle}>Save Changes  </Text>
         </TouchableOpacity>
@@ -30,15 +31,45 @@ export default function EditProfile({ navigation }) {
 <Image source={require("../../Assets/banner-photo.jpeg")}/>
 </View>
 <View style={Styles.editphotoPrfile}>
-    <Image source={require("../../Assets/VectorCircle.jpeg")}/>
+    <Image source={require("../../Assets/VectorCircle.png")}/>
 </View>
-
+<ScrollView>
 <View style={Styles.belowInput}>
     <Text style={Styles.inputLabel}>
         UserName
     </Text>
-    <TextInput label="Username" placeholder='@gmail.com' style={[Styles.profileTextInput]} />
+    <TextInput label="Username" numberOfLines={1}  placeholder='Kevin' style={[Styles.profileTextInput]} />
 </View>
+<View style={Styles.belowInput}>
+    <Text style={Styles.inputLabel}>
+        Email
+    </Text>
+    <TextInput label="Username" numberOfLines={1}  placeholder='Luke36erockedmai.com' style={[Styles.profileTextInput]} />
+</View>
+<View style={Styles.belowInput}>
+    <Text style={Styles.inputLabel}>
+        Bio
+    </Text>
+    <TextInput label="Username" numberOfLines={4}  placeholder='Sell AnyThing' style={[Styles.profileTextInput]} />
+</View>
+<View style={Styles.headLinktxtContanor}>
+  <Text style={Styles.headLinktxt}>
+    Links
+  </Text>
+</View>
+<View style={Styles.belowInput}>
+    <Text style={Styles.inputLabel}>
+        Twitter
+    </Text>
+    <TextInput label="Username" numberOfLines={1}  placeholder='hhtps://twitter.com/kevin' style={[Styles.profileTextInput]} />
+</View>
+<View style={Styles.belowInput}>
+    <Text style={Styles.inputLabel}>
+        Instagram
+    </Text>
+    <TextInput label="Username" numberOfLines={1}    placeholder='hhtps://www.instagram.com/kevin/?hl-en' style={[Styles.profileTextInput]} />
+</View>
+</ScrollView>
 </View>
   )
 }
@@ -50,7 +81,7 @@ const Styles = StyleSheet.create({
     headerCont:{
         height:"11%",
         width:"100%",
-        backgroundColor:"red",
+        // backgroundColor:"red",
     },
     backIconImg:{
         margin:30,
@@ -86,11 +117,26 @@ const Styles = StyleSheet.create({
         borderRadius:10
       },
       inputLabel:{
-        color:"#F5F8FA",
+        color:"#AAB8C2",
         // margin:6
         marginLeft:20,
         marginTop:10
       },
+      headLinktxt:{
+        color:"#FFFFFF",
+        fontWeight:"400",
+        fontSize:16,
+        // marginLeft:25,
+        marginTop:10
+      },
+      headLinktxtContanor:{
+        // color:"#FFFFFF",
+        // fontWeight:"400",
+        // fontSize:16,
+        marginLeft:25,
+        marginTop:10
+      },
+
       profileTextInput: {
         fontSize: 16,
         borderWidth: 1,

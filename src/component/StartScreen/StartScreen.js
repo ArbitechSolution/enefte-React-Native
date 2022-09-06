@@ -86,6 +86,7 @@ const Styles = StyleSheet.create({
     backgroundColor:"#1D9BF0",
     borderRadius:10,
     width:200,
+    height: 50,
     marginLeft:25,
     justifyContent:"center", 
     alignItems:"center"
@@ -94,7 +95,7 @@ const Styles = StyleSheet.create({
     // backgroundColor:"#1D9BF0",
     borderRadius:10,
     width:80,
-    height: 60,
+    height: 50,
     borderColor:"white",
     marginLeft:25,
     borderWidth:1,
@@ -119,7 +120,7 @@ const Styles = StyleSheet.create({
   },
   buttonTextStyle: {
     color: 'white',
-    paddingVertical: 10,
+    paddingVertical: 7,
     fontSize: 16,
     fontWeight: '400',
   },

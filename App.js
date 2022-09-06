@@ -22,11 +22,14 @@ import NFTPreview from './src/component/NFTPreview/NFTPreview'
 import ItemReadyForSell from './src/component/ItemReadyForSell/ItemReadyForSell'
 import BidFinished from './src/component/BidFinished/BidFinished'
 import EditProfile from './src/component/EditProfile/EditProfile'
+import SellNft from './src/component/SellNft/SellNft'
+import ArtPage from "./src/component/HomePage/ArtPage"
+import TabsBar from './src/component/HomePage/TabsBar'
 export default function App() {
   const [isSubmit, setIsSubmit] = useState(false)
   const Stack = createNativeStackNavigator()
   const Tab = createBottomTabNavigator();
-  const onSubmit = ()=>{
+  const onSubmit = () => {
     setIsSubmit(true)
   }
   // if(isSubmit == true){
@@ -49,11 +52,11 @@ export default function App() {
   //             iconName = focused ? 'ios-user' : 'ios-user-outline';
   //           }
 
-           
+
   //           return <Ionicons name={iconName} size={size} color={color} />;
   //         }
   //       })}
-        
+
   //       >
   //         <Tab.Screen name="HomePage"  options={{headerShown: false}} component={HomePage} />
   //         <Tab.Screen name="SearchPage"  options={{headerShown: false}}  component={SearchPage} />
@@ -77,21 +80,25 @@ export default function App() {
   //   )
   // }
   return (
-    
-         <NavigationContainer>
-           <Stack.Navigator>
-          <Stack.Screen name="Onboarding"  options={{headerShown: false}} component={Onboarding} />
-         <Stack.Screen name="Startscreen"   options={{headerShown: false}} component={Startscreen} />
-          <Stack.Screen  name="welcome"   options={{headerShown: false}} component={Welcome} />
-           <Stack.Screen name="ConnectWithWallet"  options={{headerShown: false}} component={ConnectWithWallet} />
-          <Stack.Screen name="SetupProfile" options={{headerShown: false}} component={SetupProfile } />
-         <Stack.Screen name='AppBars' options={{headerShown: false}} component={AppBars}/>
-         <Stack.Screen name='UpdateItem' options={{headerShown: false}} component={UpdateItem}/>
-         <Stack.Screen name='NFTPreview' options={{headerShown: false}} component={NFTPreview}/>
-         <Stack.Screen name='ItemReadyForSell' options={{headerShown: false}} component={ItemReadyForSell}/>
-         <Stack.Screen name='BidFinished' options={{headerShown: false}} component={BidFinished}/>
-         <Stack.Screen name='EditProfile' options={{headerShown: false}} component={EditProfile}/>
-         </Stack.Navigator>
-        </NavigationContainer>
-      )
+
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Onboarding" options={{ headerShown: false }} component={Onboarding} />
+        <Stack.Screen name="Startscreen" options={{ headerShown: false }} component={Startscreen} />
+        <Stack.Screen name="welcome" options={{ headerShown: false }} component={Welcome} />
+        <Stack.Screen name="ConnectWithWallet" options={{ headerShown: false }} component={ConnectWithWallet} />
+        <Stack.Screen name="SetupProfile" options={{ headerShown: false }} component={SetupProfile} />
+        <Stack.Screen name='AppBars' options={{ headerShown: false }} component={AppBars} />
+        <Stack.Screen name='UpdateItem' options={{ headerShown: false }} component={UpdateItem} />
+        <Stack.Screen name='NFTPreview' options={{ headerShown: false }} component={NFTPreview} />
+        <Stack.Screen name='ItemReadyForSell' options={{ headerShown: false }} component={ItemReadyForSell} />
+        <Stack.Screen name='BidFinished' options={{ headerShown: false }} component={BidFinished} />
+        <Stack.Screen name='EditProfile' options={{ headerShown: false }} component={EditProfile} />
+        <Stack.Screen name="SellNft" options={{ headerShown: false }} component={SellNft} />
+        <Stack.Screen name='ArtPage' options={{ headerShown: false }} component={ArtPage} />
+        <Stack.Screen name='SearchPage' options={{ headerShown: false }} component={SearchPage} /> 
+        {/* <Stack.Screen name='tabbars' options={{headerShown: false}} component={TabsBar}/> */}
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
 }

@@ -1,48 +1,151 @@
-// import { StyleSheet, Text, View } from 'react-native'
-// import React from 'react'
 
-// export default function HomePage() {
-//   return (
-//     <View>
-//       <Text>HomePage</Text>
-//     </View>
-//   )
-// }
-
-// const styles = StyleSheet.create({})
-
-
-
-
-
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native'
 import React from 'react'
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
 export default function HomePage() {
   return (
     <View style={Styles.mainBg}>
-      <View style={Styles.HomePageView}>
-        <View style={Styles.HomePageCircle}>
-          <View style={{ flexDirection: "row" }}>
-            <Image source={require('../../Assets/logos_ethereum.png')} />
-            <Text style={[Styles.HomePageText, { paddingLeft: 10 }]}>26,031</Text>
+      <ScrollView vertical={true} showsVerticalScrollIndicator={false}>
+        <View style={Styles.HomePageView}>
+          <View style={Styles.HomePageCircle}>
+            <View style={{ flexDirection: "row" }}>
+              <Image source={require('../../Assets/logos_ethereum.png')} />
+              <Text style={[Styles.HomePageText, { paddingLeft: 10 }]}>26,031</Text>
+            </View>
+            <View
+              style={Styles.HomePageBlance}
+            >
+              <Text style={Styles.HomePageText}
+              >Balance</Text>
+            </View>
           </View>
-          <View
-            style={Styles.HomePageBlance}
-          >
-            <Text style={Styles.HomePageText}
-            >Balance</Text>
+          <View>
+            <Image source={require('../../Assets/Ellipse17.png')} style={{ width: 70, height: 70 }} />
           </View>
         </View>
-        <View>
-          <Image source={require('../../Assets/Ellipse17.png')} style={{ width: 70, height: 70 }} />
+        <View style={Styles.HomePageButton}>
+          <ScrollView horizontal={true} style={Styles.ScrollViewButton}>
+            <View style={Styles.HomePageButtonPending}>
+              <Text style={Styles.HomePageButtonPendingText}>Trending</Text>
+            </View>
+            <View style={Styles.HomePageButtonPendingOne}>
+              <Text style={Styles.HomePageButtonPendingText}>Art</Text>
+            </View>
+            <View style={Styles.HomePageButtonPendingOne}>
+              <Text style={Styles.HomePageButtonPendingText}>Gaming</Text>
+            </View>
+            <View style={Styles.HomePageButtonPendingOne}>
+              <Text style={Styles.HomePageButtonPendingText}>Quality</Text>
+            </View>
+            <View style={{ marginRight: 50 }}>
+            </View>
+          </ScrollView>
         </View>
-      </View>
-      <View style={Styles.HomePageButton}>
-        <View style={Styles.HomePageButtonPending}>
-          <Text style={Styles.HomePageButtonPendingText}>Pending</Text>
+
+        <View >
+          <ScrollView horizontal={true}>
+            <View style={Styles.CardPage}>
+              <View>
+                <Image source={require('../../Assets/Rectangle8.png')} style={Styles.CardPageImage} />
+                <View style={Styles.CardPageArt}>
+                  <View style={Styles.CardPageBox}>
+                    <Text style={Styles.CardPageBoxText}>Art</Text>
+                  </View>
+                  <AntDesign name='hearto' size={30} color={'black'} />
+                </View>
+              </View>
+              <View style={Styles.CardText}>
+                <Text style={Styles.CardTextOne}>Mosu #1930</Text>
+                <View style={Styles.CardPageOne}>
+                  <AntDesign name={'clockcircleo'} size={18} />
+                  {/* <Image source={require('../../Assets/IconTime.png')} style={Styles.CardPageImageOne}/> */}
+                  <Text >102d Left</Text>
+                </View>
+              </View>
+
+              <View style={Styles.CardText}>
+                <View style={Styles.CardPageProfileVerified}>
+                  <Image source={require("../../Assets/Profile-Verified.png")} style={{ width: 40, height: 40 }} />
+                  <Text style={Styles.CardTextProfileVerifiedOne}>Karafuru</Text>
+                </View>
+                <View style={Styles.CardPageOneETH}>
+                  {/* <AntDesign name={'clockcircleo'} size={18} /> */}
+                  <Image source={require('../../Assets/logos_ethereum.png')} />
+                  <Text style={Styles.CardTextOne}>2,75 ETH</Text>
+                </View>
+              </View>
+            </View>
+
+
+
+            <View style={Styles.CardPage}>
+              <View>
+                <Image source={require('../../Assets/Rectangle8.png')} style={Styles.CardPageImage} />
+                <View style={Styles.CardPageArt}>
+                  <View style={Styles.CardPageBox}>
+                    <Text style={Styles.CardPageBoxText}>Art</Text>
+                  </View>
+                  <AntDesign name='hearto' size={30} color={'black'} />
+                </View>
+              </View>
+              <View style={Styles.CardText}>
+                <Text style={Styles.CardTextOne}>Mosu #1930</Text>
+                <View style={Styles.CardPageOne}>
+                  <AntDesign name={'clockcircleo'} size={18} />
+                  {/* <Image source={require('../../Assets/IconTime.png')} style={Styles.CardPageImageOne}/> */}
+                  <Text style={Styles.CardTextOne}>102d Left</Text>
+                </View>
+              </View>
+
+              <View style={Styles.CardText}>
+                <View style={Styles.CardPageProfileVerified}>
+                  <Image source={require("../../Assets/Profile-Verified.png")} style={{ width: 40, height: 40 }} />
+                  <Text style={Styles.CardTextProfileVerifiedOne}>Karafuru</Text>
+                </View>
+                <View style={Styles.CardPageOneETH}>
+                  {/* <AntDesign name={'clockcircleo'} size={18} /> */}
+                  <Image source={require('../../Assets/logos_ethereum.png')} />
+                  <Text style={Styles.CardTextOne}>2,75 ETH</Text>
+                </View>
+              </View>
+            </View>
+            <View style={{ marginRight: 20 }}>
+
+            </View>
+          </ScrollView>
         </View>
-      </View>
+
+        <View style={Styles.TrendingCollections}>
+          <Text style={Styles.TrendingCollectionsText}>Trending Collections</Text>
+        </View>
+        <View style={Styles.HomePageGhozali}>
+          <View style={Styles.HomePageGhozaliDown}>
+            <Image source={require('../../Assets/CollectionRank.png')} />
+            <View style={{
+              justifyContent: 'center',
+              alignContent: 'center',
+              paddingLeft: 20
+            }}>
+              <Text style={Styles.HomePageGhozaliDownText} >Ghozali Everyday</Text>
+              <Text style={Styles.HomePageGhozaliDownTextOne}>Ghozali_Ghozalu</Text>
+            </View>
+          </View >
+          <View style={{
+              justifyContent: 'center',
+              // alignItems: 'flex-start',
+              // paddingLeft: 20
+            }}>
+            <View style={Styles.HomePageGhozaliBottomDown}>
+              <Image source={require('../../Assets/logos_ethereum.png')} style={{marginRight: 10}}/>
+              <Text style={Styles.HomePageGhozaliBottomDownText}>4,218</Text>
+            </View>
+            <View style={{alignItems: 'flex-end'}}>
+              <Text style={Styles.HomePageGhozaliBottomDownTextOne}>+23,00%</Text>
+            </View>
+          </View>
+        </View>
+      </ScrollView>
     </View>
   )
 }
@@ -73,7 +176,7 @@ const Styles = StyleSheet.create({
   HomePageBlance: {
     position: "absolute",
     top: 40,
-    left: 27, 
+    left: 27,
 
     backgroundColor: "#1C212B",
     borderRadius: 10,
@@ -89,17 +192,176 @@ const Styles = StyleSheet.create({
     color: "#F5F8FA",
     fontWeight: "bold",
   },
+  HomePageButton: {
+    marginTop: 40,
+    width: 400,
+    //  borderColor: "white",
+    //  borderWidth: 1
+  },
   HomePageButtonPending: {
     color: "#F9FBFC",
     backgroundColor: "#1D9BF0",
     width: 105,
-    height: 41,
+    height: 51,
     borderRadius: 10,
     justifyContent: "center",
     alignItems: "center",
+    marginLeft: 15,
+
   },
-  HomePageButtonPendingText:{
+  HomePageButtonPendingOne: {
     color: "#F9FBFC",
-    fontSize: 15
+    backgroundColor: "#253341",
+    width: 105,
+    height: 51,
+    borderRadius: 10,
+    justifyContent: "center",
+    alignItems: "center",
+    marginLeft: 15
+  },
+  HomePageButtonPendingText: {
+    color: "#F9FBFC",
+    fontSize: 14,
+    fontWeight: 'bold',
+  },
+  CardPage: {
+    width: 287,
+    height: 423,
+    backgroundColor: "#253341",
+    marginLeft: 30,
+    marginTop: 30,
+    borderRadius: 15,
+    // justifyContent: "center",
+    alignItems: "center"
+  },
+  CardPageOne: {
+    flexDirection: "row",
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    // borderWidth: 1,
+    width: 110
+
+  },
+  CardPageImage: {
+    position: "relative",
+    width: 250,
+    height: 280,
+    borderRadius: 15,
+    marginTop: 20
+  },
+  CardPageImageCategory: {
+    // position: "absolute"
+  },
+  CardText: {
+    flexDirection: "row",
+    width: 260,
+    marginTop: 20,
+    // justifyContent: "space-between"
+    justifyContent: "space-between",
+    // borderWidth: 2
+
+  },
+  CardTextOne: {
+    color: "#FFFFFF",
+    fontSize: 16,
+    fontWeight: 'bold'
+  },
+  CardPageImageOne: {
+    width: 30,
+    height: 30
+  },
+  CardPageArt: {
+    position: "absolute",
+    // borderWidth : 1,
+    left: 15,
+    width: 210,
+    marginTop: 30,
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: "space-between"
+  },
+  CardPageBox: {
+    width: 58,
+    height: 32,
+    borderRadius: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: "rgba(49, 59, 69, 0.5)"
+  },
+  CardPageBoxText: {
+    color: '#fff',
+    fontSize: 13
+  },
+  CardPageProfileVerified: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  CardTextProfileVerifiedOne: {
+    marginLeft: 10,
+    color: "#FFFFFF",
+    fontSize: 14,
+    fontWeight: 'bold'
+  },
+  CardPageOneETH: {
+    borderColor: '#1D9BF0',
+    borderWidth: 2,
+    flexDirection: "row",
+    paddingTop: 10,
+    paddingBottom: 10,
+    paddingLeft: 5,
+    paddingRight: 5,
+    borderRadius: 10,
+    width: 120,
+    justifyContent: "space-evenly",
+    alignItems: 'center'
+  },
+  TrendingCollections: {
+    marginTop: 30
+  },
+  TrendingCollectionsText: {
+    fontSize: 24,
+    color: '#fff',
+    fontWeight: 'bold',
+    marginLeft: 20
+  },
+  HomePageGhozali: {
+    flexDirection: 'row',
+    // borderWidth: 2,
+    marginTop: 20,
+    marginLeft: 10,
+    marginRight: 10,
+    marginBottom: 20,
+    justifyContent: 'space-between'
+  },
+  HomePageGhozaliDown: {
+    // borderWidth: 2,
+    flexDirection: 'row',
+  },
+  HomePageGhozaliDownText:{
+    fontSize: 16,
+    color: '#fff',
+    fontWeight: 'bold'
+  },
+  HomePageGhozaliDownTextOne:{
+    fontSize: 13,
+    color: '#AAB8C2',
+    paddingTop: 5
+    // fontWeight: 'bold'
+  },
+  HomePageGhozaliBottomDown:{
+    flexDirection: 'row'
+  },
+  HomePageGhozaliBottomDownText:{
+    fontSize: 15,
+    color: '#fff',
+    fontWeight: 'bold'
+  },
+  HomePageGhozaliBottomDownTextOne:{
+    color: "#00CB6A",
+    alignItems: 'flex-end',
+    paddingTop: 10
+
   }
+
 })
