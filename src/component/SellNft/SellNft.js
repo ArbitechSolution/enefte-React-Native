@@ -73,7 +73,7 @@ export default function SellNft({navigation}) {
                             Edit
                         </Text>
                     </View>
-                    <TouchableOpacity onPress={()=> navigation.navigate('AppBars')}>
+                    <TouchableOpacity onPress={()=> navigation.navigate('NftItems')}>
                     <View style={Styles.buttonTwo}>
                         <Text style={Styles.sellitemTxt}>
                             Sell Items

@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native'
 import React, { useState } from 'react'
 import { Picker } from '@react-native-picker/picker';
 export default function TabsActivity() {
-    console.log("Tab activity")
+    
 
     const [selectedValue, setSelectedValue] = useState("All Event Type");
     const [selectedOneValue, setSelectedOneValue] = useState('All Chains')
@@ -25,6 +25,7 @@ export default function TabsActivity() {
                     <Picker.Item label="All Chains" value="All Chains" />
                 </Picker>
             </View>
+            <ScrollView vertical={true} showsVerticalScrollIndicator={false}>
             <View style={[Styles.TabsRankingcard, { marginTop: 40 }]}>
                 <View style={Styles.mainView}>
                     <View style={Styles.TabsActivityImage}>
@@ -100,6 +101,45 @@ export default function TabsActivity() {
                     </View>
                 </View>
             </View>
+
+            <View style={[Styles.TabsRankingcard, { marginTop: 40, marginBottom: 100 }]}>
+                <View style={Styles.mainView}>
+                    <View style={Styles.TabsActivityImage}>
+                        <Image source={require('../../Assets/image17.png')} />
+                        <View style={{ paddingLeft: 8 }}>
+                            <Text style={Styles.TabsActivityImageText}>ZEED Run</Text>
+                            <Text style={Styles.TabsActivityImageTextOne}>Frosty Glare</Text>
+                        </View>
+                    </View>
+                    <View style={{ alignItems: 'flex-end' }}>
+                        <Text style={Styles.TabsActivityminitext}>Sale</Text>
+                        <View style={Styles.innerView}>
+                            <Image source={require('../../Assets/logos_ethereum.png')} />
+                            <Text style={Styles.TabsActivityminitextOne}>0,0002</Text>
+                        </View>
+                        <Text style={Styles.TabsActivityminitextTwo}>15 Minutes ago</Text>
+                    </View>
+                </View>
+                <View style={Styles.CardsOne}>
+                    <View style={{ alignItems: 'center' }}>
+                        <Text style={Styles.CardsOneText}>USD Price</Text>
+                        <Text style={Styles.CardsOneTextgreen}>$10,82</Text>
+                    </View>
+                    <View style={{ alignItems: 'center' }}>
+                        <Text style={Styles.CardsOneText}>Quantity</Text>
+                        <Text style={Styles.CardsOneTextsecond}>1</Text>
+                    </View>
+                    <View style={{ alignItems: 'center' }}>
+                        <Text style={Styles.CardsOneText}>From</Text>
+                        <Text style={[Styles.CardsOneTextsecond, {color: '#1D9BF0'}]}>mystuff</Text>
+                    </View>
+                    <View style={{ alignItems: 'center' }}>
+                        <Text style={Styles.CardsOneText}>To</Text>
+                        <Text style={[Styles.CardsOneTextsecond, {color: '#1D9BF0'}]}>patherm</Text>
+                    </View>
+                </View>
+            </View>
+            </ScrollView>
         </View>
     )
 }

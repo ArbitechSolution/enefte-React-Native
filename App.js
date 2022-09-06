@@ -25,6 +25,11 @@ import EditProfile from './src/component/EditProfile/EditProfile'
 import SellNft from './src/component/SellNft/SellNft'
 import ArtPage from "./src/component/HomePage/ArtPage"
 import TabsBar from './src/component/HomePage/TabsBar'
+import ProfileAppBar from './src/component/HomePage/ProfileAppBar'
+import NftItems from './src/component/NftItems/NftItems'
+import UploadItemOne from './src/component/UpdateItem/UploadItemOne'
+import UploadItemThree from './src/component/UpdateItem/UploadItemThree'
+import UploadItemTwo from './src/component/UpdateItem/UploadItemTwo'
 export default function App() {
   const [isSubmit, setIsSubmit] = useState(false)
   const Stack = createNativeStackNavigator()
@@ -96,8 +101,14 @@ export default function App() {
         <Stack.Screen name='EditProfile' options={{ headerShown: false }} component={EditProfile} />
         <Stack.Screen name="SellNft" options={{ headerShown: false }} component={SellNft} />
         <Stack.Screen name='ArtPage' options={{ headerShown: false }} component={ArtPage} />
-        <Stack.Screen name='SearchPage' options={{ headerShown: false }} component={SearchPage} /> 
-        {/* <Stack.Screen name='tabbars' options={{headerShown: false}} component={TabsBar}/> */}
+        <Stack.Screen name='SearchPage' options={{ headerShown: false }} component={SearchPage} />
+        <Stack.Screen name='TabsBar' options={{ headerShown: false }} component={TabsBar} />
+        <Stack.Screen name="ProfileAppBar" options={{ headerShown: false }} component={ProfileAppBar} />
+        <Stack.Screen name='NftItems' options={{ headerShown: false }} component={NftItems} />
+        <Stack.Screen name='UploadItemOne' options={{ headerShown: false }} component={UploadItemOne} />
+        <Stack.Screen name='UploadItemThree' options={{ headerShown: false }} component={UploadItemThree} />
+        <Stack.Screen name='UploadItemTwo' options={{ headerShown: false }} component={UploadItemTwo} />
+      
       </Stack.Navigator>
     </NavigationContainer>
   )

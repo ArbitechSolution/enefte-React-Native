@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { StyleSheet, View, Text, Image,ScrollView } from 'react-native'
 import { Picker } from '@react-native-picker/picker';
 export default function TabsRankings() {
-    console.log("Tab Ranks")
+    
     const [selectedValue, setSelectedValue] = useState("Categories");
     const [selectedOneValue, setSelectedOneValue] = useState('All Chains')
     return (
@@ -63,7 +63,6 @@ export default function TabsRankings() {
                 </View>
             </View>
 
-
             <View style={Styles.TabsRankingcard}>
                 <View style={Styles.cards}>
                     <Text style={Styles.cardsText}>02</Text>
@@ -101,7 +100,7 @@ export default function TabsRankings() {
                 </View>
             </View>
 
-            <View style={Styles.TabsRankingcard}>
+            <View style={[Styles.TabsRankingcard, {marginBottom: 100}]}>
                 <View style={Styles.cards}>
                     <Text style={Styles.cardsText}>03</Text>
                     <View style={Styles.cardsimagetext}>

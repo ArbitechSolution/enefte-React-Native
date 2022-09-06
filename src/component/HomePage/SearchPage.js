@@ -69,8 +69,6 @@ export default function SearchPage({navigation}) {
           4.93K
         </Text>
         </View>
-
-      
       </View>
     </View>
     <View style={Styles.myCard}>

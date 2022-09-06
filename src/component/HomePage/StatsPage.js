@@ -5,18 +5,19 @@ import TabsBar from './TabsBar';
 // import { Colors } from 'react-native/Libraries/NewAppScreen'
 
 export default function StatsPage() {
-  console.log("Here its stats page")
+  
 
   return (
     <View style={Styles.mainBg}>
-      <ScrollView vertical={true} showsVerticalScrollIndicator={false}>
+      {/* <ScrollView vertical={true} showsVerticalScrollIndicator={false}> */}
         <View style={Styles.StatsPages}>
           <Text style={Styles.StatsPagesText}>Stats</Text>
         </View>
-        <View>
+        
+      {/* </ScrollView> */}
+      <View>
           <TabsBar/>
         </View>
-      </ScrollView>
     </View>
   )
 }

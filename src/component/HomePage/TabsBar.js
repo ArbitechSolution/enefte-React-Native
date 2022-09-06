@@ -6,7 +6,7 @@ import TabsActivity from './TabsActivity';
 
 const Tab = createMaterialTopTabNavigator();
 export default function TabsBar() {
-    console.log("Tabs Bar")
+   
   return (
     <View style={Styles.mainBg}>
     

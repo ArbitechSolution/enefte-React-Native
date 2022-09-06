@@ -8,7 +8,7 @@ import {
     TextInput,
     ScrollView,
   } from 'react-native';
-export default function SearchPageCollections({navigation}) {
+export default function ArtPage({navigation}) {
     return (
         <View style={Styles.mainBg}>
      
