@@ -8,7 +8,7 @@ export default function Activity() {
   return (
     <View style={Styles.mainBg}>
         <ScrollView vertical={true} showsVerticalScrollIndicator={false}>
-            <View>
+            <View style={{marginBottom: 420}}>
             <View style={Styles.TabsRankingsView}>
                 <Picker
                     selectedValue={selectedValue}
@@ -26,7 +26,45 @@ export default function Activity() {
                     <Picker.Item label="All Chains" value="All Chains" />
                 </Picker>
             </View>
-            <View style={[Styles.TabsRankingcard, { marginTop: 40 }]}>
+            <View style={[Styles.TabsRankingcard]}>
+                <View style={Styles.mainView}>
+                    <View style={Styles.TabsActivityImage}>
+                        <Image source={require('../../../Assets/image17.png')} />
+                        <View style={{ paddingLeft: 8 }}>
+                            <Text style={Styles.TabsActivityImageText}>Genesis kakira</Text>
+                            <Text style={Styles.TabsActivityImageTextOne}>Kakira #5233</Text>
+                        </View>
+                    </View>
+                    <View style={{ alignItems: 'flex-end' }}>
+                        <Text style={Styles.TabsActivityminitext}>Sale</Text>
+                        <View style={Styles.innerView}>
+                            <Image source={require('../../../Assets/image90.png')} />
+                            <Text style={Styles.TabsActivityminitextOne}>140</Text>
+                        </View>
+                        <Text style={Styles.TabsActivityminitextTwo}>6 Minutes ago</Text>
+                    </View>
+                </View>
+                <View style={Styles.CardsOne}>
+                    <View style={{ alignItems: 'center' }}>
+                        <Text style={Styles.CardsOneText}>USD Price</Text>
+                        <Text style={Styles.CardsOneTextgreen}>$153,16</Text>
+                    </View>
+                    <View style={{ alignItems: 'center' }}>
+                        <Text style={Styles.CardsOneText}>Quantity</Text>
+                        <Text style={Styles.CardsOneTextsecond}>1</Text>
+                    </View>
+                    <View style={{ alignItems: 'center' }}>
+                        <Text style={Styles.CardsOneText}>From</Text>
+                        <Text style={[Styles.CardsOneTextsecond, {color: '#1D9BF0'}]}>aleben92</Text>
+                    </View>
+                    <View style={{ alignItems: 'center' }}>
+                        <Text style={Styles.CardsOneText}>To</Text>
+                        <Text style={[Styles.CardsOneTextsecond, {color: '#1D9BF0'}]}>Wavez47</Text>
+                    </View>
+                </View>
+            </View>
+
+            <View style={[Styles.TabsRankingcard]}>
                 <View style={Styles.mainView}>
                     <View style={Styles.TabsActivityImage}>
                         <Image source={require('../../../Assets/image17.png')} />

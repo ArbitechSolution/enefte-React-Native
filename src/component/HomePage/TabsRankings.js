@@ -15,7 +15,8 @@ export default function TabsRankings() {
                 >
                     <Picker.Item label="Categories" value="Categories" />
                     <Picker.Item label="All Categories" value="All Categories" />
-                </Picker><Picker
+                </Picker>
+                <Picker
                     selectedOneValue={selectedOneValue}
                     style={Styles.DropDownpickerone}
                     onValueChange={(itemValues, itemIndex) => setSelectedOneValue(itemValues)}

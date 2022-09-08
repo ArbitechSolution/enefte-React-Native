@@ -30,6 +30,11 @@ import NftItems from './src/component/NftItems/NftItems'
 import UploadItemOne from './src/component/UpdateItem/UploadItemOne'
 import UploadItemThree from './src/component/UpdateItem/UploadItemThree'
 import UploadItemTwo from './src/component/UpdateItem/UploadItemTwo'
+import CollectionItems from './src/component/Collection/CollectionItems'
+import BidDetails from './src/component/BidDetails/BidDetails'
+import SellNftDetails from './src/component/SellNftDetails/SellNftDetails'
+import UpdateItemsFour from './src/component/UpdateItem/UpdateItemsFour'
+import NftItesmsDetails from './src/component/NftItesmsDetails/NftItesmsDetails'
 export default function App() {
   const [isSubmit, setIsSubmit] = useState(false)
   const Stack = createNativeStackNavigator()
@@ -37,53 +42,7 @@ export default function App() {
   const onSubmit = () => {
     setIsSubmit(true)
   }
-  // if(isSubmit == true){
-  //   return (
-  //     <NavigationContainer>
-  //       <Tab.Navigator
-  //       screenOptions={({ route }) => ({
-  //         tabBarIcon: ({ focused, color, size }) => {
-  //           let iconName;
-
-  //           if (route.name === 'HomePage') {
-  //             iconName = focused
-  //               ? 'ios-home'
-  //               : 'ios-home-outline';
-  //           } else if (route.name === 'SearchPage') {
-  //             iconName = focused ? 'ios-search' : 'ios-search-outline';
-  //           } else if(route.name === 'StatsPage') {
-  //             iconName = focused ? 'ios-stats-chart' : 'ios-stats-chart-outline';
-  //           } else {
-  //             iconName = focused ? 'ios-user' : 'ios-user-outline';
-  //           }
-
-
-  //           return <Ionicons name={iconName} size={size} color={color} />;
-  //         }
-  //       })}
-
-  //       >
-  //         <Tab.Screen name="HomePage"  options={{headerShown: false}} component={HomePage} />
-  //         <Tab.Screen name="SearchPage"  options={{headerShown: false}}  component={SearchPage} />
-  //         <Tab.Screen name="StatsPage"  options={{headerShown: false}} component={StatsPage} />
-  //         <Tab.Screen name="ProfilePage"  options={{headerShown: false}} component={ProfilePage} />
-  //       </Tab.Navigator>
-  //     </NavigationContainer>
-  //   );
-  // } else{
-  //   return (
-  //     <NavigationContainer>
-  //       <Stack.Navigator>
-  //       <Stack.Screen name="Onboarding"  options={{headerShown: false}} component={Onboarding} />
-  //       <Stack.Screen name="Startscreen"   options={{headerShown: false}} component={Startscreen} />
-  //       <Stack.Screen  name="welcome"   options={{headerShown: false}} component={Welcome} />
-  //       <Stack.Screen name="ConnectWithWallet"  options={{headerShown: false}} component={ConnectWithWallet} />
-  //       <Stack.Screen name="SetupProfile" options={{headerShown: false}} component={SetupProfile } />
-  //       <Stack.Screen name='HomePage' options={{headerShown: false}} component={AppBars}/>
-  //       </Stack.Navigator>
-  //     </NavigationContainer>
-  //   )
-  // }
+  
   return (
 
     <NavigationContainer>
@@ -93,22 +52,31 @@ export default function App() {
         <Stack.Screen name="welcome" options={{ headerShown: false }} component={Welcome} />
         <Stack.Screen name="ConnectWithWallet" options={{ headerShown: false }} component={ConnectWithWallet} />
         <Stack.Screen name="SetupProfile" options={{ headerShown: false }} component={SetupProfile} />
-        <Stack.Screen name='AppBars' options={{ headerShown: false }} component={AppBars} />
-        <Stack.Screen name='UpdateItem' options={{ headerShown: false }} component={UpdateItem} />
-        <Stack.Screen name='NFTPreview' options={{ headerShown: false }} component={NFTPreview} />
-        <Stack.Screen name='ItemReadyForSell' options={{ headerShown: false }} component={ItemReadyForSell} />
-        <Stack.Screen name='BidFinished' options={{ headerShown: false }} component={BidFinished} />
         <Stack.Screen name='EditProfile' options={{ headerShown: false }} component={EditProfile} />
+        <Stack.Screen name='NftItems' options={{ headerShown: false }} component={NftItems} />
+       <Stack.Screen name='NftItesmsDetails' options={{ headerShown: false }} component={NftItesmsDetails} /> 
+       <Stack.Screen name='NFTPreview' options={{ headerShown: false }} component={NFTPreview} />
+        <Stack.Screen name='CollectionItems' options={{ headerShown: false }} component={CollectionItems} />
+        <Stack.Screen name='BidDetails' options={{ headerShown: false }} component={BidDetails} />
+        <Stack.Screen name='BidFinished' options={{ headerShown: false }} component={BidFinished} />
+        <Stack.Screen name='UploadItemOne' options={{ headerShown: false }} component={UploadItemOne} />
+        <Stack.Screen name='UploadItemThree' options={{ headerShown: false }} component={UploadItemThree} />
+        <Stack.Screen name='UpdateItemsFour' options={{ headerShown: false }} component={UpdateItemsFour} />
+        <Stack.Screen name='UploadItemTwo' options={{ headerShown: false }} component={UploadItemTwo} />
+        <Stack.Screen name='UpdateItem' options={{ headerShown: false }} component={UpdateItem} />
         <Stack.Screen name="SellNft" options={{ headerShown: false }} component={SellNft} />
+        <Stack.Screen name='SellNftDetails' options={{ headerShown: false }} component={SellNftDetails} />
+        <Stack.Screen name='ItemReadyForSell' options={{ headerShown: false }} component={ItemReadyForSell} />
+        <Stack.Screen name='AppBars' options={{ headerShown: false }} component={AppBars} />
         <Stack.Screen name='ArtPage' options={{ headerShown: false }} component={ArtPage} />
+        {/*  */}
+        {/* 
         <Stack.Screen name='SearchPage' options={{ headerShown: false }} component={SearchPage} />
         <Stack.Screen name='TabsBar' options={{ headerShown: false }} component={TabsBar} />
         <Stack.Screen name="ProfileAppBar" options={{ headerShown: false }} component={ProfileAppBar} />
-        <Stack.Screen name='NftItems' options={{ headerShown: false }} component={NftItems} />
-        <Stack.Screen name='UploadItemOne' options={{ headerShown: false }} component={UploadItemOne} />
-        <Stack.Screen name='UploadItemThree' options={{ headerShown: false }} component={UploadItemThree} />
-        <Stack.Screen name='UploadItemTwo' options={{ headerShown: false }} component={UploadItemTwo} />
-      
+
+      */}
+
       </Stack.Navigator>
     </NavigationContainer>
   )

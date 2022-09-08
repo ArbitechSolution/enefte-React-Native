@@ -26,7 +26,7 @@ export default function BidFinished({ navigation }) {
         <TouchableOpacity
         style={Styles.belowButton}
           activeOpacity={0.5}
-          onPress={()=> navigation.navigate("EditProfile")}
+          onPress={()=> navigation.navigate("UploadItemOne")}
         >
      <Text style={Styles.buttonTextStyle}>Check my Bid  </Text>
         </TouchableOpacity>

@@ -71,7 +71,7 @@ export default function NftItems({ navigation }) {
 
             <Text style={Styles.sellitemTxt}>2,75 ETH</Text>
           </View>
-          <TouchableOpacity onPress={() => navigation.navigate("UploadItemOne")}>
+          <TouchableOpacity onPress={() => navigation.navigate("NftItesmsDetails")}>
           <View style={Styles.buttonTwo}>
             <Image source={require("../../Assets/folder.png")}/>
             <Text style={Styles.sellitemTxt}>Place a bid</Text>

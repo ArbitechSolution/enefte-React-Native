@@ -82,7 +82,7 @@ export default function UploadItemTwo({ navigation }) {
         style={Styles.belowButton}
           activeOpacity={0.5}
           onPress={()=>{
-            navigation.navigate('AppBars')
+            navigation.navigate('UpdateItem')
           }}
         >
      <Text style={Styles.buttonTextStyle}>Complete Listing </Text>

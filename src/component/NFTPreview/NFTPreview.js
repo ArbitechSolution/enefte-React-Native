@@ -7,12 +7,14 @@ import {
     TouchableOpacity,
     Button,
   } from 'react-native';
-export default function NFTPreview() {
+export default function NFTPreview({navigation}) {
   return (
     <View style={Styles.mainBg}>
         <View style={Styles.topImage}>
             {/* <Image style={require("../../Assets/line.png")}/> */}
+            <TouchableOpacity onPress={()=>navigation.navigate('NftItesmsDetails')}>
             <Image source ={require("../../Assets/crossVector.png")}/>
+            </TouchableOpacity>
 
         </View>
         <View style={Styles.mainImage}>

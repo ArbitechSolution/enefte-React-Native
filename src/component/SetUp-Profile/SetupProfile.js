@@ -8,7 +8,7 @@ export default function SetupProfile({ navigation }) {
             <View style={Styles.headerContainor}>
                 <View style={Styles.imgContainor}>
                     <TouchableOpacity
-                        onPress={() => navigation.navigate("Startscreen")}
+                        onPress={() => navigation.navigate("SetupProfile")}
                     >
                         <Image source={require('../../Assets/forward.png')} />
                     </TouchableOpacity>
@@ -51,7 +51,7 @@ export default function SetupProfile({ navigation }) {
                 </Text>
                 <TextInput label="Username" placeholder='Bio' style={[Styles.profileTextInput]} numberOfLines={3} />
             </View>
-            <TouchableOpacity onPress={()=>navigation.navigate("UpdateItem")}>
+            <TouchableOpacity onPress={()=>navigation.navigate("EditProfile")}>
                 <View style={Styles.ButtonContinue}>
                     <Text style={Styles.ButtonContinueText}>Submit</Text>
                 </View>

@@ -17,7 +17,9 @@ export default function UploadItemOne({ navigation }) {
       <View style={Styles.innerMainBg}>
         <View style={Styles.headerCont}>
           <View>
+            <TouchableOpacity onPress={()=>navigation.navigate('BidFinished')}>
             <Image source={require('../../Assets/forward.png')} />
+            </TouchableOpacity>
           </View>
           <View style={Styles.headerTxtCont}>
             <Text style={Styles.headerTxt}>Upload Items</Text>

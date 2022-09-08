@@ -1,14 +1,16 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ProfileAppBar from './ProfileAppBar';
+// import { ScrollView } from 'react-native-gesture-handler';
 export default function ProfilePage({ navigation }) {
   const Stack = createNativeStackNavigator()
   return (
     <View style={Styles.mainBg}>
+      {/* <ScrollView vertical={true} showsVerticalScrollIndicator={true}> */}
       <View style={Styles.ProfilePageImage}>
         <Image source={require('../../Assets/banner-photo1.png')} />
         <View style={Styles.iconsCont}>
@@ -55,11 +57,11 @@ export default function ProfilePage({ navigation }) {
           <Text style={Styles.ProfilePageTextMiniTextOne}>Liked</Text>
         </View>
       </View>
-      <View>
+      {/* </ScrollView> */}
+      <View style>
         <ProfileAppBar/>
       
       </View>
-
       
     </View>
   )
@@ -127,7 +129,7 @@ const Styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingLeft: 20,
     paddingRight: 20,
-    marginTop: 15
+    marginTop: 5
   },
   ProfilePageAddressText: {
     fontFamily: 'Rationale',
@@ -139,7 +141,7 @@ const Styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: '600',
     paddingLeft: 20,
-    marginTop: 20
+    marginTop: 7
   },
   ProfilePageTextMini: {
     flexDirection: 'row',
@@ -152,7 +154,7 @@ const Styles = StyleSheet.create({
     flexDirection: 'row',
     paddingLeft: 20,
     alignItems: 'center',
-    paddingTop: 30
+    paddingTop: 10
   },
   ProfilePageTextMiniText: {
     fontFamily: 'Rationale',

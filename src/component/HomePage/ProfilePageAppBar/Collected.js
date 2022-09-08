@@ -6,6 +6,8 @@ export default function Collected() {
   const [selectedValue, setSelectedValue] = useState("All Categories");
   return (
     <View style={Styles.mainBg}>
+        <ScrollView vertical={true} showsVerticalScrollIndicator={false}>
+          <View style={{marginBottom: 330}}>
       <View style={Styles.TabsRankingsView}>
         <Picker
           selectedValue={selectedValue}
@@ -19,7 +21,6 @@ export default function Collected() {
           <Text style={Styles.ActivityButtonText}>Upload</Text>
         </View>
       </View>
-      <ScrollView vertical={true} showsVerticalScrollIndicator={false}>
 
       <View style={[Styles.card, ]}>
         <View style={Styles.ActivitCard}>
@@ -42,7 +43,7 @@ export default function Collected() {
             </View>
           </View>
         </View>
-        <View style={Styles.ActivitCard}>
+        <View style={[Styles.ActivitCard,]}>
           <Image source={require('../../../Assets/imageactivityOne.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
           <View style={Styles.ActivitCardDown}>
             <Text>The Invitation</Text>
@@ -52,6 +53,17 @@ export default function Collected() {
             </View>
           </View>
         </View>
+        <View style={[Styles.ActivitCard, ]}>
+          <Image source={require('../../../Assets/imageactivityOne.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
+          <View style={Styles.ActivitCardDown}>
+            <Text>The Invitation</Text>
+            <View style={Styles.ActivitCardDownOne}>
+              <Ionicons name='heart-outline' size={20}/>
+              <Text>192</Text>
+            </View>
+          </View>
+        </View>
+      </View>
       </View>
       </ScrollView>
     </View>

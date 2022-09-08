@@ -25,7 +25,7 @@ export default function ItemReadyForSell({ navigation }) {
         <TouchableOpacity
         style={Styles.belowButton}
           activeOpacity={0.5}
-          onPress={()=> navigation.navigate("BidFinished")}
+          onPress={()=> navigation.navigate("AppBars")}
         >
      <Text style={Styles.buttonTextStyle}>Back to Home </Text>
         </TouchableOpacity>

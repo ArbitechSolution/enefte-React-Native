@@ -20,7 +20,7 @@ export default function EditProfile({navigation}) {
         <TouchableOpacity
         style={Styles.belowButton}
           activeOpacity={0.5}
-          onPress={()=> navigation.navigate('SellNft')}
+          onPress={()=> navigation.navigate('NftItems')}
         >
      <Text style={Styles.buttonTextStyle}>Save Changes  </Text>
         </TouchableOpacity>

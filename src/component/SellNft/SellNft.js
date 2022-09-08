@@ -12,7 +12,7 @@ export default function SellNft({navigation}) {
             <View style={Styles.headerCont}>
                 <View style={Styles.backIconImg}>
                     <TouchableOpacity 
-                    onPress={()=>navigation.navigate('EditProfile')}>
+                    onPress={()=>navigation.navigate('UpdateItem')}>
                     <View>
                         <Image source={require("../../Assets/forward.png")} />
                     </View>
@@ -73,7 +73,7 @@ export default function SellNft({navigation}) {
                             Edit
                         </Text>
                     </View>
-                    <TouchableOpacity onPress={()=> navigation.navigate('NftItems')}>
+                    <TouchableOpacity onPress={()=> navigation.navigate('SellNftDetails')}>
                     <View style={Styles.buttonTwo}>
                         <Text style={Styles.sellitemTxt}>
                             Sell Items

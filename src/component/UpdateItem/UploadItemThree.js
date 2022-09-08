@@ -9,7 +9,10 @@ export default function UploadItemThree({navigation}) {
         <View style={Styles.innerMainBg}>
             <View style={Styles.headerCont}>
             <View>
+                <TouchableOpacity onPress={()=>navigation.navigate('UploadItemOne')}>
+
                 <Image source ={require("../../Assets/forward.png")}/>
+                </TouchableOpacity>
             </View>
             <View style={Styles.headerTxtCont}>
                 <Text style={Styles.headerTxt}>
@@ -69,7 +72,7 @@ export default function UploadItemThree({navigation}) {
         <TouchableOpacity
         style={Styles.belowButton}
           activeOpacity={0.5}
-          onPress={() => navigation.navigate("UploadItemTwo")}
+          onPress={() => navigation.navigate("UpdateItemsFour")}
         >
      <Text style={Styles.buttonTextStyle}>NEXT</Text>
         </TouchableOpacity>

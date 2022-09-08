@@ -49,7 +49,7 @@ export default function UpdateItem({ navigation }) {
       <TouchableOpacity
       style={Styles.belowButton}
         activeOpacity={0.5}
-        onPress={()=> navigation.navigate("ItemReadyForSell")}
+        onPress={()=> navigation.navigate("SellNft")}
       >
    <Text style={Styles.buttonTextStyle}>Back to Home </Text>
       </TouchableOpacity>
