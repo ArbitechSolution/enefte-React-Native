@@ -91,15 +91,17 @@ const Styles = StyleSheet.create({
     backgroundColor: '#1C212B',
   },
   headerCont: {
-    height: '11%',
-    width: '100%',
+    // height: '11%',
+    // width: '100%',
     // backgroundColor:"red",
   },
   backIconImg: {
-    margin: 30,
+    margin: 20,
     flexDirection: 'row',
     // alignSelf:"flex-end",
     justifyContent: 'space-between',
+    alignItems: 'center',
+    // borderWidth: 1
   },
   // belowButton: {
   //   flexDirection: 'row',

@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
+// import Foundation from 'react-native-vector-icons/Foundation';
 import Foundation from 'react-native-vector-icons/Foundation';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import SearchPage from './SearchPage';
 import StatsPage from './StatsPage';
 import ProfilePage from './ProfilePage';
@@ -30,6 +30,8 @@ export default function AppBars() {
         }}
         
         >
+          
+
           <Tab.Screen name="HomePage"  component={HomePage} 
           options={{
             headerShown: false,

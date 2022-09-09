@@ -13,8 +13,8 @@ export default function BidDetails({ navigation }) {
                     <TouchableOpacity
                         onPress={() => navigation.navigate("CollectionItems")}
                     >
-                         <AntDesign name='left'
-              size={30} color={"white"} />
+                        <AntDesign name='left'
+                            size={30} color={"white"} />
                     </TouchableOpacity>
                 </View>
                 <View style={Styles.imgContainorLogo}>
@@ -81,7 +81,7 @@ export default function BidDetails({ navigation }) {
                         <TouchableOpacity
                             style={Styles.belowButton}
                             activeOpacity={0.5}
-                          onPress={()=> navigation.navigate("BidFinished")}
+                            onPress={() => navigation.navigate("BidFinished")}
                         >
                             <Text style={Styles.buttonTextStyle}>Submit </Text>
                         </TouchableOpacity>
@@ -92,10 +92,10 @@ export default function BidDetails({ navigation }) {
                         </Text>
                     </View>
                     <View>
-                    <View style={[Styles.TabsRankingcard]}>
+                        <View style={[Styles.TabsRankingcard]}>
                             <View style={Styles.mainView}>
                                 <View style={Styles.TabsActivityImage}>
-                                    <Image source={require('../../Assets/biddetailsImage.png')} style={{width: 60, height: 60}}/>
+                                    <Image source={require('../../Assets/biddetailsImage.png')} style={{ width: 60, height: 60 }} />
                                     <View style={{ paddingLeft: 8 }}>
                                         <Text style={Styles.TabsActivityImageText}>Karafuru</Text>
                                         <Text style={Styles.TabsActivityImageTextOne}>Uzachi #3330</Text>
@@ -149,12 +149,12 @@ const Styles = StyleSheet.create({
         backgroundColor: 'Red',
     },
     imgContainor: {
-        marginTop: 30,
-        marginLeft: 40,
+        marginTop: 35,
+    marginLeft: 20,
     },
     imgContainorLogo: {
-        marginTop: 25,
-        marginLeft: 55,
+        marginTop: 35,
+    marginLeft: 75,
     },
     SetupProfileText: {
         fontSize: 24,

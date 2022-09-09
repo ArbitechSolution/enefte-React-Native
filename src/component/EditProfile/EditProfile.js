@@ -85,12 +85,14 @@ const Styles = StyleSheet.create({
         height:"11%",
         width:"100%",
         // backgroundColor:"red",
+        // borderWidth: 1
     },
     backIconImg:{
         margin:30,
         flexDirection:'row',
         // alignSelf:"flex-end",
-        justifyContent:"space-between"
+        justifyContent:"space-between",
+        // borderWidth: 1
     },
     belowButton: {
         backgroundColor: '#1D9BF0',

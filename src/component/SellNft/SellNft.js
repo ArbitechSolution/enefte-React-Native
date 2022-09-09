@@ -7,6 +7,9 @@ import {
     TouchableOpacity,
 } from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import FontAwesome from "react-native-vector-icons/FontAwesome"
+import Entypo from "react-native-vector-icons/Entypo"
 export default function SellNft({navigation}) {
     return (
         <View style={Styles.mainBg}>
@@ -20,13 +23,13 @@ export default function SellNft({navigation}) {
                     </View>
                     </TouchableOpacity>
                     <View style={Styles.IconsContainor}>
-                        {/* <TouchableOpacity
-                            style={Styles.belowButton}
-                            activeOpacity={0.5}
-                        >
-                            <Image style={Styles.filterImg} source={require("../../Assets/filter.png")} />
-                            <Image style={Styles.filterImg} source={require("../../Assets/share.png")} />
-                        </TouchableOpacity> */}
+                    <View style={Styles.iconbox}>
+                        <FontAwesome name='filter' size={25} color={'#F5F8FA'} />
+                    </View>
+
+                    <View style={Styles.iconbox}>
+                        <Entypo name='share' size={25} color={'#F5F8FA'} />
+                    </View>
                     </View>
                 </View>
             </View>
@@ -93,15 +96,22 @@ const Styles = StyleSheet.create({
         backgroundColor: '#1C212B',
     },
     headerCont: {
-        height: "11%",
-        width: "100%",
+        // height: "11%",
+        // width: "100%",
+        // borderWidth: 1
         // backgroundColor:"red",
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     backIconImg: {
-        margin: 30,
+        marginTop: 20,
         flexDirection: 'row',
         // alignSelf:"flex-end",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        alignItems: 'center',
+        width: '95%',
+        // borderWidth: 1
+        
     },
     belowButton: {
         flexDirection: "row",
@@ -122,7 +132,9 @@ const Styles = StyleSheet.create({
         fontWeight: '600',
     },
     IconsContainor: {
-        flexDirection: "row"
+        flexDirection: "row",
+        justifyContent: 'space-around',
+        width: 100
     },
     filterImg: {
         marginLeft: 20,
@@ -213,6 +225,14 @@ const Styles = StyleSheet.create({
     },
     sellitemTxt: {
         color: "#F5F8FA"
-    }
+    },
+    iconbox: {
+        backgroundColor: "#253341",
+        width: 40,
+        height: 40,
+        borderRadius: 50,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
 
 })

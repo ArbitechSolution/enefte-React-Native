@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 // import DropDownPicker from 'react-native-dropdown-picker';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
@@ -26,8 +27,9 @@ export default function SellNftDetails({navigation}) {
     <View style={Styles.mainBg}>
       <View style={Styles.innerMainBg}>
         <View style={Styles.headerCont}>
-          <View>
-            <Image source={require('../../Assets/forward.png')} />
+          <View >
+          <AntDesign name='left'
+              size={30} color={"white"} />
           </View>
           <View style={Styles.headerTxtCont}>
             <Text style={Styles.headerTxt}>Sell Items</Text>
@@ -138,11 +140,12 @@ export default function SellNftDetails({navigation}) {
             <Text style={Styles.numberTxts}>[$1,759.20]</Text>
           </View>
         </View> */}
-        <View style={Styles.botFooter}>
-          <TouchableOpacity style={Styles.belowButton} activeOpacity={0.5} onPress={()=>navigation.navigate('ItemReadyForSell')}>
-            <Text style={Styles.buttonTextStyle}>NEXT</Text>
-          </TouchableOpacity>
-        </View>
+
+<TouchableOpacity onPress={() => navigation.navigate("ItemReadyForSell")}>
+      <View style={Styles.ButtonContinue}>
+        <Text style={Styles.ButtonContinueText}>NEXT</Text>
+      </View>
+      </TouchableOpacity>
       </View>
     </View>
   );
@@ -155,11 +158,13 @@ const Styles = StyleSheet.create({
     // alignContent: 'center',
   },
   innerMainBg: {
-    padding: 30,
+    padding: 20,
   },
   headerCont: {
     flexDirection: 'row',
     marginTop: 20,
+    // borderWidth: 1,
+    width: '100%'
   },
   headerTxtCont: {
     // backgroundColor:"red",
@@ -174,14 +179,16 @@ const Styles = StyleSheet.create({
   },
   botFooter: {
     // alignSelf:"flex-end",
-    // justifyContent:"flex-end"
-    marginTop: 40
+    justifyContent:"center",
+    alignItems :"center",
+    marginTop: 40,
+    borderWidth: 1,
   },
 
   belowButton: {
     backgroundColor: '#1D9BF0',
-    width: wp('84%'),
-    height: hp('7%'),
+    // width: wp('84%'),
+    // height: hp('7%'),
     alignItems: 'center',
     borderRadius: 10,
     justifyContent: 'center',
@@ -237,7 +244,7 @@ const Styles = StyleSheet.create({
     borderColor: '#253341',
   },
   feeTxts: {
-    // marginTop: 20,
+    marginTop: 10,
     fontSize: 16,
     color: '#fff',
     fontFamily: 'Rationale',
@@ -294,4 +301,19 @@ const Styles = StyleSheet.create({
     borderRadius: 10,
     // justifyContent: ''
   },
+  ButtonContinue: {
+    marginLeft: 10,
+    marginRight: 10,
+    backgroundColor: '#1D9BF0',
+    borderRadius: 10,
+    padding: 15,
+    marginTop: 50
+    
+  },
+  ButtonContinueText:{
+    textAlign: 'center',
+    fontSize: 18,
+    color: '#F5F8FA',
+    fontWeight: '600',
+  }
 });

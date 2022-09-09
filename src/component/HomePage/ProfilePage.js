@@ -2,6 +2,9 @@ import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView } from 'rea
 import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Fontisto from 'react-native-vector-icons/Fontisto';
+import AntDesign from "react-native-vector-icons/AntDesign"
+import FontAwesome from "react-native-vector-icons/FontAwesome"
+import Entypo from "react-native-vector-icons/Entypo"
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ProfileAppBar from './ProfileAppBar';
@@ -14,8 +17,18 @@ export default function ProfilePage({ navigation }) {
       <View style={Styles.ProfilePageImage}>
         <Image source={require('../../Assets/banner-photo1.png')} />
         <View style={Styles.iconsCont}>
-          <TouchableOpacity onPress={() => navigation.navigate('AppBars')}><Image source={require("../../Assets/IconArrow.png")} /></TouchableOpacity>
-          <Image source={require("../../Assets/share.png")} />
+          <View style={Styles.iconbox}>
+          <TouchableOpacity onPress={() => navigation.navigate('AppBars')}>
+            <AntDesign name='left'
+              size={30} color={"white"} />
+              </TouchableOpacity>
+          </View>
+
+          <View style={Styles.iconbox}>
+            <Entypo name='share' size={25} color={'#F5F8FA'} />
+          </View>
+          {/* <TouchableOpacity onPress={() => navigation.navigate('AppBars')}><Image source={require("../../Assets/IconArrow.png")} /></TouchableOpacity>
+          <Image source={require("../../Assets/share.png")} /> */}
         </View>
         <View style={Styles.ProfilePageDownImage}>
           <Image source={require('../../Assets/Profile-Verified21.png')} />
@@ -59,10 +72,10 @@ export default function ProfilePage({ navigation }) {
       </View>
       {/* </ScrollView> */}
       <View style>
-        <ProfileAppBar/>
-      
+        <ProfileAppBar />
+
       </View>
-      
+
     </View>
   )
 }
@@ -168,6 +181,14 @@ const Styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
     paddingLeft: 5
+  },
+  iconbox: {
+    backgroundColor: "#253341",
+    width: 40,
+    height: 40,
+    borderRadius: 50,
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 
 })

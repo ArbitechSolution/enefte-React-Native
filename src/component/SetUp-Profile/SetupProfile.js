@@ -92,15 +92,15 @@ const Styles = StyleSheet.create({
     },
     headerContainor: {
         flexDirection: 'row',
-        backgroundColor: 'Red',
+        // backgroundColor: 'Red',
     },
     imgContainor: {
         marginTop: 30,
-        marginLeft: 40,
+        marginLeft: 20,
     },
     imgContainorLogo: {
-        marginTop: 25,
-        marginLeft: 55,
+        marginTop: 28,
+        marginLeft: 65,
     },
     SetupProfileText: {
         fontSize: 24,

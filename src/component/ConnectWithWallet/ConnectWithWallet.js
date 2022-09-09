@@ -17,7 +17,8 @@ export default function ConnectWithWallet({ navigation }) {
         </View>
         <View style={Styles.imgContainorLogo}>
           <Image source={require('../../Assets/Logo.png')} />
-        </View>
+
+          </View>
       </View>
       <View style={Styles.walletImgCont}>
         <Image source={require('../../Assets/WalletLogo.png')} />
@@ -61,17 +62,20 @@ const Styles = StyleSheet.create({
   },
   headerContainor: {
     flexDirection: 'row',
-    backgroundColor: 'Red',
+    // backgroundColor: 'Red',
+    // borderWidth: 1,
   },
   imgContainor: {
-    marginTop: 40,
-    marginLeft: 40,
+    marginTop: 35,
+    marginLeft: 20,
+    // borderWidth: 1
   },
   imgContainorLogo: {
     marginTop: 35,
-    marginLeft: 55,
+    marginLeft: 75,
     // justifyContent:"center",
     // alignItems:"center"
+    // borderWidth: 1
   },
   walletImgCont: {
     justifyContent: 'center',

@@ -15,19 +15,20 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 export default function UploadItemOne({ navigation }) {
   return (
     <View style={Styles.mainBg}>
-      <View style={Styles.innerMainBg}>
-        <View style={Styles.headerCont}>
-          <View>
-            <TouchableOpacity onPress={()=>navigation.navigate('BidFinished')}>
+      <View style={Styles.headerContainor}>
+        <View style={Styles.imgContainor}>
+        <TouchableOpacity onPress={()=>navigation.navigate('BidFinished')}>
             <AntDesign name='left'
               size={30} color={"white"} />
             </TouchableOpacity>
-          </View>
-          <View style={Styles.headerTxtCont}>
-            <Text style={Styles.headerTxt}>Upload Items</Text>
-          </View>
-          
+
         </View>
+        <View style={Styles.imgContainorLogo}>
+        <Text style={Styles.headerTxt}>Upload Items</Text>
+
+          </View>
+      </View>
+      <View style={Styles.innerMainBg}>
         <View style={Styles.topTxtContainer}>
           <Text style={Styles.headerTxt}>Upload New Items*</Text>
           <Text style={Styles.commonTxt}>
@@ -68,12 +69,16 @@ export default function UploadItemOne({ navigation }) {
             placeholder="Bio"
           />
         </View>
-
-        <View>
+        <TouchableOpacity onPress={() => navigation.navigate("UploadItemThree")}>
+      <View style={Styles.ButtonContinue}>
+        <Text style={Styles.ButtonContinueText}>Continue</Text>
+      </View>
+      </TouchableOpacity>
+        {/* <View>
           <TouchableOpacity style={Styles.belowButton} activeOpacity={0.5} onPress={() => navigation.navigate("UploadItemThree")}>
             <Text style={Styles.buttonTextStyle}>NEXT</Text>
           </TouchableOpacity>
-        </View>
+        </View> */}
       </View>
     </View>
   );
@@ -86,8 +91,25 @@ const Styles = StyleSheet.create({
     backgroundColor: '#1C212B',
     // alignContent: 'center',
   },
+  headerContainor: {
+    flexDirection: 'row',
+    // backgroundColor: 'Red',
+    // borderWidth: 1,
+  },
+  imgContainor: {
+    marginTop: 35,
+    marginLeft: 20,
+    // borderWidth: 1
+  },
+  imgContainorLogo: {
+    marginTop: 35,
+    marginLeft: 75,
+    // justifyContent:"center",
+    // alignItems:"center"
+    // borderWidth: 1
+  },
   innerMainBg: {
-    padding: 30,
+    padding: 20,
   },
   headerCont: {
     flexDirection: 'row',
@@ -105,7 +127,7 @@ const Styles = StyleSheet.create({
     fontFamily: 'Roboto-Regular',
   },
   topTxtContainer: {
-    marginTop: 20,
+    marginTop: 10,
   },
   commonTxt: {
     color: '#AAB8C2',
@@ -166,8 +188,8 @@ const Styles = StyleSheet.create({
   },
   belowButton: {
     backgroundColor: '#1D9BF0',
-    width: wp('84%'),
-    height: hp('7%'),
+    // width: wp('84%'),
+    // height: hp('7%'),
     alignItems: 'center',
     borderRadius: 10,
     // marginLeft: 35,
@@ -181,4 +203,19 @@ const Styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
   },
+  ButtonContinue: {
+    marginLeft: 4,
+    marginRight: 4,
+    backgroundColor: '#1D9BF0',
+    borderRadius: 10,
+    padding: 15,
+    marginTop: 10
+    
+  },
+  ButtonContinueText:{
+    textAlign: 'center',
+    fontSize: 18,
+    color: '#F5F8FA',
+    fontWeight: '600',
+  }
 });
