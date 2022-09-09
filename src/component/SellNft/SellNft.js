@@ -144,8 +144,10 @@ const Styles = StyleSheet.create({
 
     },
     commonTxt: {
-        fontSize: 16,
-        color: '#F5F8FA'
+        fontSize: 18,
+        color: '#F5F8FA',
+        fontFamily: 'Rationale-Regular',
+
 
     },
     HeadTxtCont: {
@@ -154,8 +156,10 @@ const Styles = StyleSheet.create({
     },
     headTxt: {
         color: "#F5F8FA",
-        fontSize: 34,
-        fontWeight: "400"
+        fontSize: 36,
+        fontWeight: "400",
+        fontFamily: 'Rationale-Regular',
+
     },
     belowImageContainor: {
         flexDirection: "row",
@@ -171,10 +175,14 @@ const Styles = StyleSheet.create({
 
     },
     textone: {
-        color: "#AAB8C2"
+        color: "#AAB8C2",
+        fontFamily: 'Rationale-Regular',
+        fontSize:16
     },
     texttwo: {
-        color: "#F5F8FA"
+        color: "#F5F8FA",
+        fontFamily: 'Rationale-Regular',
+        fontSize:16
     },
     bottomCont: {
         // height:"10%",
@@ -209,10 +217,14 @@ const Styles = StyleSheet.create({
         alignItems: "center"
     },
     editTxt: {
-        color: "#1D9BF0"
+        color: "#1D9BF0",
+        fontFamily: 'Rationale-Regular',
+        fontSize:20
     },
     sellitemTxt: {
-        color: "#F5F8FA"
+        color: "#F5F8FA",
+        fontFamily: 'Rationale-Regular',
+        fontSize:20
     }
 
 })

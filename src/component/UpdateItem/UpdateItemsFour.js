@@ -262,9 +262,11 @@ const Styles = StyleSheet.create({
     },
     headerTxt: {
         color: '#FFFFFF',
-        fontSize: 24,
+        fontSize: 28,
         fontWeight: '400',
-        fontFamily: 'Roboto-Regular',
+        // fontFamily: 'Roboto-Regular',
+        fontFamily: 'Rationale-Regular',
+
     },
     belowInput: {
         backgroundColor: "#253341",
@@ -275,14 +277,18 @@ const Styles = StyleSheet.create({
         // alignItems: 'center',
         marginTop: 20,
         // borderWidth: 1,
-        borderRadius: 10
+        borderRadius: 10,
+        fontFamily: 'Rationale-Regular',
+
     },
     inputLabel: {
         color: "#AAB8C2",
         // margin:6
         // marginLeft:20,
         paddingLeft: 10,
-        paddingTop: 10
+        paddingTop: 10,
+        fontFamily: 'Rationale-Regular',
+
     },
 
     // belowButton: {
@@ -332,6 +338,8 @@ const Styles = StyleSheet.create({
     searchInput: {
         fontSize: 18,
         marginLeft: 20,
+        fontFamily: 'Rationale-Regular',
+
     },
     AmountCont: {
         flexDirection: 'row',
@@ -352,12 +360,16 @@ const Styles = StyleSheet.create({
         marginTop: 10,
         fontSize: 14,
         color: '#AAB8C2',
-        fontFamily: 'Rationale',
+        // fontFamily: 'Rationale',
+        fontFamily: 'Rationale-Regular',
+
     },
     leftTxt: {
         marginTop: 10,
         color: '#AAB8C2',
         fontSize: 15,
+        fontFamily: 'Rationale-Regular',
+
     },
     bottomContainor: {
         flexDirection: 'row',
@@ -368,15 +380,21 @@ const Styles = StyleSheet.create({
         color: '#AAB8C2',
         fontSize: 12,
         textAlign: 'right',
+        fontFamily: 'Rationale-Regular',
+
     },
     feeAmount: {
         fontSize: 24,
         color: '#F5F8FA',
         paddingLeft: 10,
+        fontFamily: 'Rationale-Regular',
+
     },
     profileTextInput: {
         // borderWidth: 1,
-        paddingLeft: 13
+        paddingLeft: 13,
+        fontFamily: 'Rationale-Regular',
+
     },
     DropDownpickerOne:{
         backgroundColor: '#253341',
@@ -393,18 +411,24 @@ const Styles = StyleSheet.create({
         marginTop: 10,
         fontSize: 16,
         color: '#fff',
-        fontFamily: 'Rationale',
+        // fontFamily: 'Rationale',
+        fontFamily: 'Rationale-Regular',
+
       },
       numberTxts: {
         marginTop: 10,
         fontSize: 14,
         color: '#AAB8C2',
-        fontFamily: 'Rationale',
+        // fontFamily: 'Rationale',
+        fontFamily: 'Rationale-Regular',
+
       },
       feeAmount: {
         fontSize: 24,
         color: '#F5F8FA',
-        paddingLeft: 10
+        paddingLeft: 10,
+        fontFamily: 'Rationale-Regular',
+
       },
       belowButton: {
         backgroundColor: '#1D9BF0',
@@ -422,8 +446,10 @@ const Styles = StyleSheet.create({
       buttonTextStyle: {
         color: 'white',
         // paddingVertical: 10,
-        fontSize: 16,
+        fontSize: 24,
         fontWeight: '600',
+        fontFamily: 'Rationale-Regular',
+
       },
     
 })

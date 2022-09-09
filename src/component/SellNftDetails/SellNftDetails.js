@@ -168,9 +168,11 @@ const Styles = StyleSheet.create({
   },
   headerTxt: {
     color: '#FFFFFF',
-    fontSize: 24,
+    fontSize: 30,
     fontWeight: '400',
-    fontFamily: 'Roboto-Regular',
+    // fontFamily: 'Roboto-Regular',
+    fontFamily: 'Rationale-Regular',
+        // fontSize:24
   },
   botFooter: {
     // alignSelf:"flex-end",
@@ -191,8 +193,10 @@ const Styles = StyleSheet.create({
   },
   buttonTextStyle: {
     color: 'white',
-    fontSize: 16,
+    fontSize: 24,
     fontWeight: '600',
+    fontFamily: 'Rationale-Regular',
+
   },
   cardsContainerHere: {
     flexDirection: 'row',
@@ -223,6 +227,8 @@ const Styles = StyleSheet.create({
   searchInput: {
     fontSize: 18,
     marginLeft: 20,
+    fontFamily: 'Rationale-Regular',
+
   },
   AmountCont: {
     flexDirection: 'row',
@@ -240,18 +246,24 @@ const Styles = StyleSheet.create({
     // marginTop: 20,
     fontSize: 16,
     color: '#fff',
-    fontFamily: 'Rationale',
+    // fontFamily: 'Rationale',
+    fontFamily: 'Rationale-Regular',
+
   },
   numberTxts: {
     marginTop: 10,
-    fontSize: 14,
+    fontSize: 16,
     color: '#AAB8C2',
-    fontFamily: 'Rationale',
+    // fontFamily: 'Rationale',
+    fontFamily: 'Rationale-Regular',
+
   },
   leftTxt: {
     marginTop: 20,
     color: '#AAB8C2',
     fontSize: 15,
+    fontFamily: 'Rationale-Regular',
+
   },
   bottomContainor: {
     flexDirection: 'row',
@@ -261,12 +273,16 @@ const Styles = StyleSheet.create({
     marginTop: 20,
     color: '#AAB8C2',
     fontSize: 12,
+    fontFamily: 'Rationale-Regular',
+
     textAlign: 'right',
   },
   feeAmount: {
     fontSize: 24,
     color: '#F5F8FA',
-    paddingLeft: 10
+    paddingLeft: 10,
+    fontFamily: 'Rationale-Regular',
+
   },
   DropDownpicker: {
     backgroundColor: '#253341',
@@ -282,12 +298,16 @@ const Styles = StyleSheet.create({
     color: '#fff',
     paddingTop: 14,
     paddingBottom: 14,
+    fontFamily: 'Rationale-Regular',
+
   },
   belowInput: {
     backgroundColor: '#253341',
     // width: wp('82%'),
     // height: hp('6%'),
     width: '55%',
+    fontFamily: 'Rationale-Regular',
+
 
     // marginTop: 30,
     flexDirection: 'row',

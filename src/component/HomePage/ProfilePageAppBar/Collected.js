@@ -26,40 +26,40 @@ export default function Collected() {
         <View style={Styles.ActivitCard}>
           <Image source={require('../../../Assets/sellNftMain.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
           <View style={Styles.ActivitCardDown}>
-            <Text>The Invitation</Text>
+            <Text style={Styles.ActivityButtonTextOne}>The Invitation</Text>
             <View style={Styles.ActivitCardDownOne}>
-              <Ionicons name='heart-outline' size={20}/>
-              <Text>192</Text>
+              <Ionicons style={Styles.ActivityButtonTextOne} name='heart-outline' size={20}/>
+              <Text style={Styles.ActivityButtonTextOne}>192</Text>
             </View>
           </View>
         </View>
         <View style={Styles.ActivitCard}>
           <Image source={require('../../../Assets/imageactivityOne.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
           <View style={Styles.ActivitCardDown}>
-            <Text>The Invitation</Text>
+            <Text style={Styles.ActivityButtonTextOne}>The Invitation</Text>
             <View style={Styles.ActivitCardDownOne}>
-              <Ionicons name='heart-outline' size={20}/>
-              <Text>192</Text>
+              <Ionicons style={Styles.ActivityButtonTextOne} name='heart-outline' size={20}/>
+              <Text style={Styles.ActivityButtonTextOne}>192</Text>
             </View>
           </View>
         </View>
         <View style={[Styles.ActivitCard,]}>
           <Image source={require('../../../Assets/imageactivityOne.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
           <View style={Styles.ActivitCardDown}>
-            <Text>The Invitation</Text>
+            <Text style={Styles.ActivityButtonTextOne}>The Invitation</Text>
             <View style={Styles.ActivitCardDownOne}>
-              <Ionicons name='heart-outline' size={20}/>
-              <Text>192</Text>
+              <Ionicons style={Styles.ActivityButtonTextOne} name='heart-outline' size={20}/>
+              <Text style={Styles.ActivityButtonTextOne}>192</Text>
             </View>
           </View>
         </View>
         <View style={[Styles.ActivitCard, ]}>
           <Image source={require('../../../Assets/imageactivityOne.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
           <View style={Styles.ActivitCardDown}>
-            <Text>The Invitation</Text>
+            <Text style={Styles.ActivityButtonTextOne}>The Invitation</Text>
             <View style={Styles.ActivitCardDownOne}>
-              <Ionicons name='heart-outline' size={20}/>
-              <Text>192</Text>
+              <Ionicons style={Styles.ActivityButtonTextOne} name='heart-outline' size={20}/>
+              <Text style={Styles.ActivityButtonTextOne}>192</Text>
             </View>
           </View>
         </View>
@@ -96,7 +96,19 @@ const Styles = StyleSheet.create({
   },
   ActivityButtonText: {
     color: '#F5F8FA',
-    fontSize: 15
+    fontSize: 19,
+    // fontFamily: 'Rationale',
+    fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
+
+  },
+  ActivityButtonTextOne: {
+    color: '#F5F8FA',
+    fontSize: 17,
+    // fontFamily: 'Rationale',
+    fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
+
   },
   card: {
     flexDirection: 'row',

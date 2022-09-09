@@ -105,7 +105,8 @@ const Styles = StyleSheet.create({
     SetupProfileText: {
         fontSize: 24,
         color: '#fff',
-        fontFamily: "Rationale"
+    fontFamily: 'Rationale-Regular',
+    // fontFamily: "Rationale",
     },
     SetupProfileView: {
         marginTop: 35
@@ -114,7 +115,9 @@ const Styles = StyleSheet.create({
         marginLeft: 30,
         marginRight: 20,
         fontSize: 22,
-        color: '#F5F8FA'
+        color: '#F5F8FA',
+    fontFamily: 'Rationale-Regular',
+
     },
     profileSetup: {
         marginLeft: 20,
@@ -160,6 +163,8 @@ const Styles = StyleSheet.create({
         marginTop: 15,
         marginBottom: 5,
         fontSize: 18,
+    fontFamily: 'Rationale-Regular',
+
     },
     ButtonContinue: {
         marginLeft: 20,
@@ -175,6 +180,8 @@ const Styles = StyleSheet.create({
         fontSize: 18,
         color: '#F5F8FA',
         fontWeight: '600',
+    fontFamily: 'Rationale-Regular',
+
     },
     belowInput:{
         backgroundColor:"#253341",
@@ -200,7 +207,9 @@ const Styles = StyleSheet.create({
         paddingLeft: 10,
         backgroundColor: '#253341',
         color:"#F5F8FA",
-        paddingLeft:20
+        paddingLeft:20,
+    fontFamily: 'Rationale-Regular',
+
         // marginLeft:20,
       }
 })

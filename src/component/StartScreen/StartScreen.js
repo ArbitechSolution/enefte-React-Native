@@ -109,7 +109,7 @@ const Styles = StyleSheet.create({
     fontSize: 28,
     margin: 40,
     textAlign: 'left',
-    fontFamily: 'Rationale',
+    fontFamily: 'Rationale-Regular',
   },
   belowText: {
     color: '#AAB8C2',
@@ -117,7 +117,7 @@ const Styles = StyleSheet.create({
     margin: 40,
     //   fontWeight:400,
     fontWeight: '450',
-    fontFamily: 'Rationale',
+    fontFamily: 'Rationale-Regular',
     lineHeight: 19.2,
   },
   buttonTextStyle: {
@@ -125,6 +125,8 @@ const Styles = StyleSheet.create({
     paddingVertical: 7,
     fontSize: 16,
     fontWeight: '400',
+    fontFamily: 'Rationale-Regular',
+
   },
   imgContainerImage: {
     marginLeft: -150,

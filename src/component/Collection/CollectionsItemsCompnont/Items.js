@@ -153,7 +153,9 @@ const Styles = StyleSheet.create({
         width: 155,
         // borderWidth: 1,
         paddingTop: 15,
-        paddingBottom: 5
+        paddingBottom: 5,
+    fontFamily: 'Rationale-Regular',
+
     },
     ActivitCardDownOne: {
         width: 55,
@@ -168,7 +170,9 @@ const Styles = StyleSheet.create({
         fontSize: 15,
         fontWeight: '500',
         color: '#F5F8FA',
-        paddingBottom: 10
+        paddingBottom: 10,
+    fontFamily: 'Rationale-Regular',
+
     },
     FavoritedBox: {
         // borderWidth: 1,
@@ -192,5 +196,7 @@ const Styles = StyleSheet.create({
     },
     ItemsBoxText:{
         color: "#F5F8FA",
+    fontFamily: 'Rationale-Regular',
+
     }
 })

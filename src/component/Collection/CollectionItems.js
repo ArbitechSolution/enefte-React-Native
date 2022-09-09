@@ -111,9 +111,11 @@ const Styles = StyleSheet.create({
     },
     CollectionItemsText: {
         fontSize: 24,
-        fontFamily: 'Rationale',
+        // fontFamily: 'Rationale',
+    fontFamily: 'Rationale-Regular',
+
         color: "#FFFFFF",
-        fontWeight: '800',
+        fontWeight: '500',
         paddingLeft: 20,
     },
     CollectionItemsTextOne: {
@@ -121,7 +123,9 @@ const Styles = StyleSheet.create({
         paddingLeft: 20,
         paddingRight: 8.5,
         paddingTop: 10,
-        color: "#AAB8C2"
+        color: "#AAB8C2",
+    fontFamily: 'Rationale-Regular',
+
     },
     CollectionItemsBox: {
         backgroundColor: '#253341',
@@ -136,16 +140,22 @@ const Styles = StyleSheet.create({
     },
     CardsOneText: {
         color: '#AAB8C2',
-        fontSize: 15
+        fontSize: 15,
+    fontFamily: 'Rationale-Regular',
+
     },
     CardsOneTextgreen: {
         color: '#F5F8FA',
         fontSize: 13,
-        paddingTop: 8
+        paddingTop: 8,
+    fontFamily: 'Rationale-Regular',
+
     },
     CardsOneTextsecond: {
 
         color: "#F5F8FA",
+    fontFamily: 'Rationale-Regular',
+
         fontSize: 13,
     },
     cardsimagetext: {

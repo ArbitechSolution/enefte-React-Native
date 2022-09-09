@@ -35,6 +35,8 @@ const Styles = StyleSheet.create({
   StatsPagesText: {
     fontSize: 34,
     color: '#FFFFFF',
+    fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
     // fontWeight: 'bold'
   }
 })

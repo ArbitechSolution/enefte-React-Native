@@ -110,11 +110,15 @@ const Styles = StyleSheet.create({
     TabsActivityImageText: {
         color: "#AAB8C2",
         fontSize: 15,
+    fontFamily: 'Rationale-Regular',
+
     },
     TabsActivityImageTextOne: {
         color: '#F5F8FA',
         fontSize: 17,
-        fontWeight: '500'
+        fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
+
     },
     innerView: {
         flexDirection: 'row',
@@ -141,11 +145,15 @@ const Styles = StyleSheet.create({
     TabsActivityminitextOne: {
         color: '#F5F8FA',
         fontSize: 15,
+    fontFamily: 'Rationale-Regular',
+
     },
     TabsActivityminitextTwo: {
         color: '#AAB8C2',
         fontSize: 15,
-        paddingTop: 8
+        paddingTop: 8,
+    fontFamily: 'Rationale-Regular',
+
     },
     CardsOne: {
         flexDirection: 'row',
@@ -157,20 +165,27 @@ const Styles = StyleSheet.create({
     },
     CardsOneText: {
         color: '#AAB8C2',
-        fontSize: 15
+        fontSize: 15,
+    fontFamily: 'Rationale-Regular',
+
     },
     CardsOneTextgreen: {
         color: '#F5F8FA',
         fontSize: 13,
-        paddingTop: 8
+        paddingTop: 8,
+    fontFamily: 'Rationale-Regular',
+
     },
     CardsOneTextsecond: {
         paddingTop: 8,
         color: "#F5F8FA",
         fontSize: 13,
+    fontFamily: 'Rationale-Regular',
+
     },
     cardsimagetext: {
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
+    fontFamily: 'Rationale-Regular',
     }
 })

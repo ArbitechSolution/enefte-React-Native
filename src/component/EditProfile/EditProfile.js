@@ -107,6 +107,8 @@ const Styles = StyleSheet.create({
         paddingVertical: 10,
         fontSize: 16,
         fontWeight: '600',
+    fontFamily: 'Rationale-Regular',
+
       },
       editphotoPrfile:{
         marginLeft:20,
@@ -149,7 +151,9 @@ const Styles = StyleSheet.create({
         paddingLeft: 10,
         backgroundColor: '#253341',
         color:"#F5F8FA",
-        paddingLeft:20
+        paddingLeft:20,
+    fontFamily: 'Rationale-Regular',
+
         // marginLeft:20,
 
     }

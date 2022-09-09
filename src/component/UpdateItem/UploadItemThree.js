@@ -106,9 +106,11 @@ const Styles = StyleSheet.create({
     },
     headerTxt:{
         color:"#FFFFFF",
-        fontSize:24,
+        fontSize:28,
         fontWeight:"400",
-        fontFamily:"Roboto-Regular"
+        fontFamily: 'Rationale-Regular',
+
+        // fontFamily:"Roboto-Regular"
     },
     belowCont:{
         flexDirection:"row",
@@ -124,13 +126,17 @@ const Styles = StyleSheet.create({
         color:"#FFFFFF",
         fontSize:16,
         fontWeight:"400",
-        fontFamily:"Roboto-Regular"
+        // fontFamily:"Roboto-Regular"
+        fontFamily: 'Rationale-Regular',
+
     },
     commonTxt:{
         color:"#AAB8C2",
-        fontFamily:"Rationale",
+        // fontFamily:"Rationale",
         fontSize:11,
-        fontWeight:"400"
+        fontWeight:"400",
+        fontFamily: 'Rationale-Regular',
+
     },
     belowButton:{
         backgroundColor: "#1D9BF0",
@@ -146,8 +152,10 @@ const Styles = StyleSheet.create({
       },
       buttonTextStyle: {
         color: "white",
-        fontSize: 16,
+        fontSize: 24,
         fontWeight: "600",
+        fontFamily: 'Rationale-Regular',
+
     },
     iconbox: {
         backgroundColor: "#1D9BF0",

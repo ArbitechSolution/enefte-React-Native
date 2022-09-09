@@ -100,9 +100,11 @@ const Styles = StyleSheet.create({
   },
   headerTxt: {
     color: '#FFFFFF',
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: '400',
-    fontFamily: 'Roboto-Regular',
+    // fontFamily: 'Roboto-Regular',
+    fontFamily: 'Rationale-Regular',
+
   },
   topTxtContainer: {
     marginTop: 20,
@@ -112,12 +114,16 @@ const Styles = StyleSheet.create({
     fontWeight: '400',
     fontSize: 12,
     paddingTop: 10,
+    fontFamily: 'Rationale-Regular',
+
   },
   commonTxtTwo: {
     color: '#AAB8C2',
     fontWeight: '400',
     fontSize: 16,
     paddingTop: 10,
+    fontFamily: 'Rationale-Regular',
+
   },
   belowImgInputCont: {
     borderWidth: 1,
@@ -137,6 +143,8 @@ const Styles = StyleSheet.create({
     fontSize: 34,
     fontWeight: '400',
     color: '#ffffff',
+    fontFamily: 'Rationale-Regular',
+
   },
   belowInput: {
     backgroundColor: '#253341',
@@ -145,6 +153,8 @@ const Styles = StyleSheet.create({
     marginTop: 20,
     flexDirection: 'row',
     borderRadius: 10,
+    fontFamily: 'Rationale-Regular',
+
   },
   searchIconImage: {
     marginTop: 15,
@@ -155,6 +165,8 @@ const Styles = StyleSheet.create({
     alignSelf: 'center',
     marginLeft: 20,
     color: '#fff',
+    fontFamily: 'Rationale-Regular',
+
   },
   belowInputBio: {
     backgroundColor: '#253341',
@@ -178,7 +190,9 @@ const Styles = StyleSheet.create({
   },
   buttonTextStyle: {
     color: 'white',
-    fontSize: 16,
+    fontSize: 24,
     fontWeight: '600',
+    fontFamily: 'Rationale-Regular',
+
   },
 });

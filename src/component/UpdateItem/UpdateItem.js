@@ -77,10 +77,12 @@ margin:15
 },
 headText: {
   color: 'white',
-  fontSize: 30,
+  fontSize: 34,
   margin: 35,
   textAlign: 'center',
-  fontFamily: 'Rationale',
+  // fontFamily: 'Rationale',
+  fontFamily: 'Rationale-Regular',
+
 },
 shareCont:{
 marginTop:40
@@ -99,10 +101,12 @@ marginTop: 20,
 },
 belowText: {
   color: 'white',
-  fontSize: 18,
+  fontSize: 20,
   // margin:,
   textAlign: 'center',
-  fontFamily: 'Rationale',
+  // fontFamily: 'Rationale',
+  fontFamily: 'Rationale-Regular',
+
   lineHeight: 19.2,
 },
 belowButton: {
@@ -121,7 +125,9 @@ belowButton: {
 buttonTextStyle: {
   color: 'white',
   // paddingVertical: 10,
-  fontSize: 16,
+  fontSize: 24,
   fontWeight: '600',
+  fontFamily: 'Rationale-Regular',
+
 },
 });

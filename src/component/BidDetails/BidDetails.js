@@ -153,13 +153,17 @@ const Styles = StyleSheet.create({
         marginLeft: 40,
     },
     imgContainorLogo: {
-        marginTop: 25,
+        marginTop: 30,
         marginLeft: 55,
+        justifyContent:"center"
     },
     SetupProfileText: {
-        fontSize: 24,
+        fontSize: 28,
         color: '#fff',
-        fontFamily: "Rationale"
+        // fontFamily: "Rationale"
+        fontFamily: 'Rationale-Regular',
+
+
     },
     BidDetailsBox: {
         // borderWidth: 1,
@@ -182,17 +186,23 @@ const Styles = StyleSheet.create({
         color: '#F5F8FA',
         fontSize: 20,
         fontWeight: '600',
-        paddingTop: 10
+        paddingTop: 10,
+        fontFamily: 'Rationale-Regular',
+
 
     },
     BidDetailsminiBoxTextOne: {
         color: '#AAB8C2',
-        fontSize: 12
+        fontSize: 12,
+        fontFamily: 'Rationale-Regular',
+
     },
     BidDetailsminiBoxTextTwo: {
         color: '#F5F8FA',
         fontSize: 15,
-        marginLeft: 10
+        marginLeft: 10,
+        fontFamily: 'Rationale-Regular',
+
     },
     BidDetailsMainBox: {
         backgroundColor: '#253341',
@@ -213,12 +223,16 @@ const Styles = StyleSheet.create({
         justifyContent: 'space-between'
     },
     BidDetailsMainBoxViewText: {
-        fontSize: 17,
-        color: '#F5F8FA'
+        fontSize: 22,
+        color: '#F5F8FA',
+        fontFamily: 'Rationale-Regular',
+
     },
     DropDownpicker: {
         backgroundColor: '#253341',
         width: 120,
+        fontFamily: 'Rationale-Regular',
+
 
         // borderWidth: 1,
         // borderRadius: 10
@@ -230,6 +244,8 @@ const Styles = StyleSheet.create({
         color: '#fff',
         paddingTop: 14,
         paddingBottom: 14,
+        fontFamily: 'Rationale-Regular',
+
     },
     belowInput: {
         backgroundColor: '#253341',
@@ -240,6 +256,8 @@ const Styles = StyleSheet.create({
         // marginTop: 30,
         flexDirection: 'row',
         borderRadius: 10,
+        fontFamily: 'Rationale-Regular',
+
         // justifyContent: ''
     },
     belowButton: {
@@ -258,14 +276,18 @@ const Styles = StyleSheet.create({
     buttonTextStyle: {
         color: 'white',
         // paddingVertical: 10,
-        fontSize: 16,
+        fontSize: 24,
         fontWeight: '600',
+        fontFamily: 'Rationale-Regular',
+
     },
     BidHistoryText: {
         color: "#FFFFFF",
-        fontFamily: 'Rationale',
-        fontSize: 20,
-        fontWeight: '800'
+        // fontFamily: 'Rationale',
+        fontFamily: 'Rationale-Regular',
+
+        fontSize: 24,
+        fontWeight: '600'
     },
     TabsRankingcard: {
         backgroundColor: '#253341',
@@ -281,11 +303,15 @@ const Styles = StyleSheet.create({
     TabsActivityImageText: {
         color: "#AAB8C2",
         fontSize: 15,
+        fontFamily: 'Rationale-Regular',
+
     },
     TabsActivityImageTextOne: {
         color: '#F5F8FA',
         fontSize: 17,
-        fontWeight: '500'
+        fontWeight: '500',
+        fontFamily: 'Rationale-Regular',
+
     },
     innerView: {
         flexDirection: 'row',
@@ -307,16 +333,22 @@ const Styles = StyleSheet.create({
         color: '#00CB6A',
         fontSize: 13,
         fontWeight: '400',
+        fontFamily: 'Rationale-Regular',
+
 
     },
     TabsActivityminitextOne: {
         color: '#F5F8FA',
         fontSize: 15,
+        fontFamily: 'Rationale-Regular',
+
     },
     TabsActivityminitextTwo: {
         color: '#AAB8C2',
         fontSize: 15,
-        paddingTop: 8
+        paddingTop: 8,
+        fontFamily: 'Rationale-Regular',
+
     },
     CardsOne: {
         flexDirection: 'row',
@@ -328,21 +360,29 @@ const Styles = StyleSheet.create({
     },
     CardsOneText: {
         color: '#AAB8C2',
-        fontSize: 15
+        fontSize: 15,
+        fontFamily: 'Rationale-Regular',
+
     },
     CardsOneTextgreen: {
         color: '#F5F8FA',
         fontSize: 13,
-        paddingTop: 8
+        paddingTop: 8,
+        fontFamily: 'Rationale-Regular',
+
     },
     CardsOneTextsecond: {
         paddingTop: 8,
         color: "#F5F8FA",
         fontSize: 13,
+        fontFamily: 'Rationale-Regular',
+
     },
     cardsimagetext: {
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
+        fontFamily: 'Rationale-Regular',
+
     }
 
 

@@ -178,11 +178,15 @@ const Styles = StyleSheet.create({
     },
     cardsText: {
         color: '#F5F8FA',
-        fontSize: 16
+        fontSize: 18,
+        fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
     },
     cardsTextOne: {
         color: '#F5F8FA',
-        fontSize: 13
+        fontSize: 15,
+        fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
     },
     miniCard: {
         // borderWidth: 1,
@@ -204,20 +208,28 @@ const Styles = StyleSheet.create({
     },
     CardsOneText: {
         color: '#AAB8C2',
-        fontSize: 17
+        fontSize: 19,
+        fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
     },
     CardsOneTextgreen: {
         color: '#00CB6A',
-        fontSize: 15,
+        fontSize: 17,
+        fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
         paddingTop: 8
     },
     CardsOneTextsecond: {
         paddingTop: 8,
         color: "#F5F8FA",
-        fontSize: 15,
+        fontSize: 17,
+        fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
     },
     cardsimagetext:{
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
+        fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
     }
 })

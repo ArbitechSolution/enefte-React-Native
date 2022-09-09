@@ -104,12 +104,16 @@ const Styles = StyleSheet.create({
   },
   ProfilePageDownImageBoxText: {
     color: '#F5F8FA',
-    fontWeight: '500'
+    fontWeight: '500',
+    // fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
   },
   ProfilePageText: {
     color: '#fff',
-    fontSize: 30,
-    fontWeight: '600',
+    fontSize: 34,
+    // fontWeight: '600',
+    fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
     paddingLeft: 20,
   },
   ProfilePageAddress: {
@@ -132,14 +136,18 @@ const Styles = StyleSheet.create({
     marginTop: 5
   },
   ProfilePageAddressText: {
-    fontFamily: 'Rationale',
-    fontSize: 15,
-    paddingLeft: 10
+    // fontFamily: 'Rationale',
+    fontSize: 17,
+    paddingLeft: 10,
+    fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
   },
   ProfilePageSellAnyThing: {
-    fontFamily: 'Rationale',
-    fontSize: 20,
-    fontWeight: '600',
+    // fontFamily: 'Rationale',
+    fontSize: 22,
+    // fontWeight: '600',
+    fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
     paddingLeft: 20,
     marginTop: 7
   },
@@ -147,7 +155,9 @@ const Styles = StyleSheet.create({
     flexDirection: 'row',
     // borderWidth: 1,
     width: 120,
-    alignItems: 'center'
+    alignItems: 'center',
+    fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
 
   },
   ProfilePageTextUpper: {
@@ -157,17 +167,19 @@ const Styles = StyleSheet.create({
     paddingTop: 10
   },
   ProfilePageTextMiniText: {
-    fontFamily: 'Rationale',
+    // fontFamily: 'Rationale',
     color: '#F5F8FA',
-    fontSize: 20,
-    fontWeight: '600',
+    fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
+    fontSize: 22,
+    // fontWeight: '600',
   },
   ProfilePageTextMiniTextOne: {
     color: '#AAB8C2',
-    fontFamily: 'Rationale',
-    fontSize: 16,
-    fontWeight: '600',
-    paddingLeft: 5
+    fontSize: 18,
+    paddingLeft: 5,
+    fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
   }
 
 })

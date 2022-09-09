@@ -110,7 +110,9 @@ export default function UploadItemTwo({ navigation }) {
     headerTxt:{
         fontSize:24,
         fontWeight:"400",
-        color:"#FFFFFF"
+        color:"#FFFFFF",
+        fontFamily: 'Rationale-Regular',
+
     },
     imgContainor:{
         justifyContent:'center',
@@ -121,11 +123,15 @@ export default function UploadItemTwo({ navigation }) {
     commonText:{
         textAlign:"center",
         color:"#AAB8C2",
-        padding:20
+        padding:20,
+        fontFamily: 'Rationale-Regular',
+
     },
     commonTxtViewOnTh:{
         color:"#1D9BF0",
         textAlign:"center",
+        fontFamily: 'Rationale-Regular',
+
     },
     TabsRankingcard: {
         backgroundColor: '#253341',
@@ -141,11 +147,15 @@ export default function UploadItemTwo({ navigation }) {
     TabsActivityImageText: {
         color: "#AAB8C2",
         fontSize: 15,
+        fontFamily: 'Rationale-Regular',
+
     },
     TabsActivityImageTextOne: {
         color: '#F5F8FA',
         fontSize: 17,
-        fontWeight: '500'
+        fontWeight: '500',
+        fontFamily: 'Rationale-Regular',
+
     },
     innerView:{
         flexDirection: 'row',
@@ -167,18 +177,24 @@ export default function UploadItemTwo({ navigation }) {
         color: '#00CB6A',
         fontSize: 13,
         fontWeight: '400',
+        fontFamily: 'Rationale-Regular',
+
 
     },
     TabsActivityminitextOne:{
         color: '#F5F8FA',
         fontSize: 15,
+        fontFamily: 'Rationale-Regular',
+
         // textAlign:"flex-end"
     },
     TabsActivityminitextTwo:{
         color: '#AAB8C2',
         fontSize: 15,
         paddingTop: 8,
-        alignItems:'flex-end'
+        alignItems:'flex-end',
+        fontFamily: 'Rationale-Regular',
+
     },
     CardsOne: {
         flexDirection: 'row',
@@ -190,17 +206,23 @@ export default function UploadItemTwo({ navigation }) {
     },
     CardsOneText: {
         color: '#AAB8C2',
-        fontSize: 15
+        fontSize: 15,
+        fontFamily: 'Rationale-Regular',
+
     },
     CardsOneTextgreen: {
         color: '#F5F8FA',
         fontSize: 13,
-        paddingTop: 8
+        paddingTop: 8,
+        fontFamily: 'Rationale-Regular',
+
     },
     CardsOneTextsecond: {
         paddingTop: 8,
         color: "#F5F8FA",
         fontSize: 13,
+        fontFamily: 'Rationale-Regular',
+
     },
     belowButton: {
         backgroundColor: '#1D9BF0',
@@ -215,9 +237,10 @@ export default function UploadItemTwo({ navigation }) {
       },
       buttonTextStyle: {
         color: 'white',
+        fontFamily: 'Rationale-Regular',
         
         paddingVertical: 10,
-        fontSize: 16,
+        fontSize: 24,
         fontWeight: '600',
       },
     });

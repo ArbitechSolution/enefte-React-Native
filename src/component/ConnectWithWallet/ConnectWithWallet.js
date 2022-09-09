@@ -86,7 +86,8 @@ const Styles = StyleSheet.create({
     fontSize: 30,
     marginLeft: 25,
     // textAlign:'center',
-    fontFamily: 'Rationale',
+    // fontFamily: 'Rationale',
+    fontFamily: 'Rationale-Regular',
     lineHeight: 30,
     fontWeight: "400",
     marginTop: -20
@@ -96,7 +97,7 @@ const Styles = StyleSheet.create({
     fontSize: 16,
     marginLeft: 25,
     marginTop: 15,
-    fontFamily: 'Rationale',
+    fontFamily: 'Rationale-Regular',
     lineHeight: 30,
     fontWeight: "400",
 
@@ -115,6 +116,8 @@ const Styles = StyleSheet.create({
     fontSize: 18,
     color: '#F5F8FA',
     fontWeight: '600',
+    fontFamily: 'Rationale-Regular',
+
     marginLeft: 10
   },
   ButtonContinue: {
@@ -131,5 +134,7 @@ const Styles = StyleSheet.create({
     fontSize: 18,
     color: '#F5F8FA',
     fontWeight: '600',
+    fontFamily: 'Rationale-Regular',
+
   }
 });

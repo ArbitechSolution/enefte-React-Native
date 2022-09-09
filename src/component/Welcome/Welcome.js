@@ -40,7 +40,9 @@ const Styles = StyleSheet.create({
       fontSize:30,
       margin:35,
       textAlign:'center',
-      fontFamily:'Rationale'
+      // fontFamily:'Rationale',
+          fontFamily: 'Rationale-Regular',
+
   
     },
     belowText:{
@@ -48,7 +50,8 @@ const Styles = StyleSheet.create({
       fontSize:16,
       // margin:,
       textAlign:'center',
-      fontFamily:'Rationale',
+      // fontFamily:'Rationale',
+    fontFamily: 'Rationale-Regular',
       lineHeight:19.2
   
     },

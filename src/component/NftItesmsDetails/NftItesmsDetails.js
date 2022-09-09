@@ -120,8 +120,8 @@ export default function NftItesmsDetails({ navigation }) {
                                 style={Styles.DropDownpicker}
                                 onValueChange={(itemValue, itemIndex) => setSelectedValueOne(itemValue)}
                             >
-                                <Picker.Item label="Properties" value="Properties" />
-                                <Picker.Item label="Date" value="Date" />
+                                <Picker.Item style={Styles.dropLabelTxt} label="Properties" value="Properties" />
+                                <Picker.Item style={Styles.dropLabelTxt}  label="Date" value="Date" />
                             </Picker>
                         </View>
                     </View>
@@ -306,13 +306,17 @@ const Styles = StyleSheet.create({
         color: "#AAB8C2",
         fontSize: 12,
         fontWeight: "400",
+    fontFamily: 'Rationale-Regular',
+
     },
     BelowTxt: {
         color: "#F5F8FA",
         fontSize: 16,
         fontWeight: "400",
         marginTop: 10,
-        textAlign: "center"
+        textAlign: "center",
+    fontFamily: 'Rationale-Regular',
+
     },
     dropCont: {
         // backgroundColor:"red",
@@ -326,7 +330,9 @@ const Styles = StyleSheet.create({
         fontWeight: "400",
         fontFamily: "Rationale",
         marginLeft: 25,
-        marginTop: 20
+        marginTop: 20,
+    fontFamily: 'Rationale-Regular',
+
     },
     card: {
         flexDirection: 'row',
@@ -365,11 +371,20 @@ const Styles = StyleSheet.create({
         fontSize: 15,
         fontWeight: '500',
         color: '#F5F8FA',
-        paddingBottom: 10
+        paddingBottom: 10,
+    fontFamily: 'Rationale-Regular',
+
     },
     FavoritedBox: {
         // borderWidth: 1,
         width: 155,
         justifyContent: 'flex-start'
+    },
+    dropLabelTxt:{
+        color:"#F5F8FA",
+        fontSize: 15,
+    fontFamily: 'Rationale-Regular',
+
+
     }
 });
