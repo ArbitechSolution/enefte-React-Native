@@ -8,13 +8,16 @@ import {
     TextInput,
     ScrollView,
   } from 'react-native';
+  import AntDesign from "react-native-vector-icons/AntDesign"
 export default function EditProfile({navigation}) {
   return (
 <View style={Styles.mainBg}>
 <View style={Styles.headerCont}>
     <View  style={Styles.backIconImg}>
         <View>
-        <Image source={require("../../Assets/forward.png")}/>
+          <AntDesign name='left'
+          size={30} color={"white"}/>
+        {/* <Image source={require("../../Assets/forward.png")}/> */}
         </View>
         <View>
         <TouchableOpacity
@@ -119,6 +122,7 @@ const Styles = StyleSheet.create({
       inputLabel:{
         color:"#AAB8C2",
         // margin:6
+        fontSize: 15,
         marginLeft:20,
         marginTop:10
       },

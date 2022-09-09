@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ScrollView 
 import React, { useState } from 'react'
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { Picker } from '@react-native-picker/picker';
+// import AntDesign from "react-native-vector-icons/AntDesign"
 // import { ScrollView } from 'react-native-gesture-handler';
 export default function BidDetails({ navigation }) {
     const [selectedValue, setSelectedValue] = useState("Date");
@@ -12,7 +13,8 @@ export default function BidDetails({ navigation }) {
                     <TouchableOpacity
                         onPress={() => navigation.navigate("CollectionItems")}
                     >
-                        <Image source={require('../../Assets/forward.png')} />
+                         <AntDesign name='left'
+              size={30} color={"white"} />
                     </TouchableOpacity>
                 </View>
                 <View style={Styles.imgContainorLogo}>

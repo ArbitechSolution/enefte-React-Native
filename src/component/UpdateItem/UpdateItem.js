@@ -7,6 +7,7 @@ import {
     TouchableOpacity,
     Button,
   } from 'react-native';
+  import Fontisto from 'react-native-vector-icons/Fontisto';
 export default function UpdateItem({ navigation }) {
   return (
     <View style={Styles.mainBg}>
@@ -28,19 +29,19 @@ export default function UpdateItem({ navigation }) {
       </Text>
       <View style={Styles.shareIconsContainor}>
         <View style={Styles.iconsStyle}>
-      <Image style={Styles.image} source={require('../../Assets/InstaGramVector.png')} />
+        <Fontisto name='instagram' size={25} />
 
         </View>
         <View style={Styles.iconsStyle}>
-      <Image style={Styles.image} source={require('../../Assets/twiVector.png')} />
+        <Fontisto name='twitter' size={25} />
 
         </View>
         <View style={Styles.iconsStyle}>
-      <Image style={Styles.image} source={require('../../Assets/whatsappVector.png')} />
+        <Fontisto name='whatsapp' size={25} />
 
         </View>
         <View style={Styles.iconsStyle}>
-      <Image style={Styles.image} source={require('../../Assets/LineVector.png')} />
+        <Fontisto name='line' size={25} />
 
         </View>
       </View>
@@ -93,7 +94,8 @@ image: {
 shareIconsContainor:{
 justifyContent:'center',
 alignItems:"center",
-flexDirection:"row"
+flexDirection:"row",
+marginTop: 20,
 },
 belowText: {
   color: 'white',

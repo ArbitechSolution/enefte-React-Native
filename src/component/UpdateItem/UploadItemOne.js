@@ -11,6 +11,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 export default function UploadItemOne({ navigation }) {
   return (
     <View style={Styles.mainBg}>
@@ -18,13 +19,14 @@ export default function UploadItemOne({ navigation }) {
         <View style={Styles.headerCont}>
           <View>
             <TouchableOpacity onPress={()=>navigation.navigate('BidFinished')}>
-            <Image source={require('../../Assets/forward.png')} />
+            <AntDesign name='left'
+              size={30} color={"white"} />
             </TouchableOpacity>
           </View>
           <View style={Styles.headerTxtCont}>
             <Text style={Styles.headerTxt}>Upload Items</Text>
           </View>
-          <View></View>
+          
         </View>
         <View style={Styles.topTxtContainer}>
           <Text style={Styles.headerTxt}>Upload New Items*</Text>
@@ -62,7 +64,7 @@ export default function UploadItemOne({ navigation }) {
         <View style={Styles.belowInputBio}>
           <TextInput
             style={Styles.searchInput}
-            numberOfLines={1}
+            numberOfLines={4}
             placeholder="Bio"
           />
         </View>
@@ -89,7 +91,7 @@ const Styles = StyleSheet.create({
   },
   headerCont: {
     flexDirection: 'row',
-    marginTop: 20,
+    marginTop: 0,
   },
   headerTxtCont: {
     // backgroundColor:"red",
@@ -103,7 +105,7 @@ const Styles = StyleSheet.create({
     fontFamily: 'Roboto-Regular',
   },
   topTxtContainer: {
-    marginTop: 30,
+    marginTop: 20,
   },
   commonTxt: {
     color: '#AAB8C2',
@@ -138,9 +140,9 @@ const Styles = StyleSheet.create({
   },
   belowInput: {
     backgroundColor: '#253341',
-    width: wp('82%'),
-    height: hp('6%'),
-    marginTop: 30,
+    // width: wp('82%'),
+    // height: hp('6%'),
+    marginTop: 20,
     flexDirection: 'row',
     borderRadius: 10,
   },
@@ -156,8 +158,8 @@ const Styles = StyleSheet.create({
   },
   belowInputBio: {
     backgroundColor: '#253341',
-    width: wp('82%'),
-    height: hp('10%'),
+    // width: wp('82%'),
+    // height: hp('10%'),
     marginTop: 30,
     flexDirection: 'row',
     borderRadius: 10,

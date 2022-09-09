@@ -6,6 +6,7 @@ import {
     Image,
     TouchableOpacity,
 } from 'react-native';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 export default function SellNft({navigation}) {
     return (
         <View style={Styles.mainBg}>
@@ -14,17 +15,18 @@ export default function SellNft({navigation}) {
                     <TouchableOpacity 
                     onPress={()=>navigation.navigate('UpdateItem')}>
                     <View>
-                        <Image source={require("../../Assets/forward.png")} />
+                    <AntDesign name='left'
+              size={30} color={"white"} />
                     </View>
                     </TouchableOpacity>
                     <View style={Styles.IconsContainor}>
-                        <TouchableOpacity
+                        {/* <TouchableOpacity
                             style={Styles.belowButton}
                             activeOpacity={0.5}
                         >
                             <Image style={Styles.filterImg} source={require("../../Assets/filter.png")} />
                             <Image style={Styles.filterImg} source={require("../../Assets/share.png")} />
-                        </TouchableOpacity>
+                        </TouchableOpacity> */}
                     </View>
                 </View>
             </View>

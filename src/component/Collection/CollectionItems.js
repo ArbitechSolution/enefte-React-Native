@@ -1,16 +1,24 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import AntDesign from "react-native-vector-icons/AntDesign"
 import Fontisto from 'react-native-vector-icons/Fontisto';
+import Entypo from "react-native-vector-icons/Entypo"
 import CollectionItemsBar from './CollectionItemsBar';
-export default function CollectionItems({navigation}) {
+export default function CollectionItems({ navigation }) {
     return (
         <View style={Styles.mainBg}>
             <View style={Styles.ProfilePageImage}>
                 <Image source={require('../../Assets/CollectionBanner-Image.png')} />
                 <View style={Styles.iconsCont}>
-                    <TouchableOpacity onPress={() => navigation.navigate('NftItesmsDetails')}><Image source={require("../../Assets/IconArrow.png")} /></TouchableOpacity>
-                    <Image source={require("../../Assets/share.png")} />
+                    <TouchableOpacity onPress={() => navigation.navigate('NftItesmsDetails')}>
+                        <View style={Styles.iconbox}>
+                            <AntDesign name='left' size={25} color={'#F5F8FA'} />
+                        </View>
+                    </TouchableOpacity>
+                    <View style={Styles.iconbox}>
+                    <Entypo name='share' size={25} color={'#F5F8FA'} />
+                        </View>
                 </View>
                 <View style={Styles.ProfilePageDownImage}>
                     <Image source={require('../../Assets/Profile-Verified22.png')} />
@@ -53,7 +61,7 @@ export default function CollectionItems({navigation}) {
                 </View>
             </View>
             <View>
-                <CollectionItemsBar/>
+                <CollectionItemsBar />
             </View>
         </View>
     )
@@ -152,5 +160,13 @@ const Styles = StyleSheet.create({
         marginTop: 7,
         width: 60
 
+    },
+    iconbox: {
+        backgroundColor: "#253341",
+        width: 40,
+        height: 40,
+        borderRadius: 50,
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 })

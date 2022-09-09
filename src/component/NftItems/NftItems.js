@@ -1,28 +1,30 @@
 import React from 'react';
-import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
+import AntDesign from "react-native-vector-icons/AntDesign"
+import FontAwesome from "react-native-vector-icons/FontAwesome"
+import Entypo from "react-native-vector-icons/Entypo"
 export default function NftItems({ navigation }) {
   return (
     <View style={Styles.mainBg}>
       <View style={Styles.headerCont}>
         <View style={Styles.backIconImg}>
           <View>
-            <Image source={require('../../Assets/forward.png')} />
+            <AntDesign name='left'
+              size={30} color={"white"} />
           </View>
           <View style={Styles.IconsContainor}>
-            <TouchableOpacity style={Styles.belowButton} activeOpacity={0.5}>
-              <Image
-                style={Styles.filterImg}
-                source={require('../../Assets/filter.png')}
-              />
-              <Image
-                style={Styles.filterImg}
-                source={require('../../Assets/share.png')}
-              />
-            </TouchableOpacity>
+           
+              <View style={Styles.iconbox}>
+                <FontAwesome name='filter' size={25} color={'#F5F8FA'} />
+              </View>
+           
+              <View style={Styles.iconbox}>
+                <Entypo name='share' size={25} color={'#F5F8FA'} />
+              </View>
           </View>
         </View>
       </View>
@@ -48,7 +50,7 @@ export default function NftItems({ navigation }) {
         </View>
         <View style={Styles.innerCOnt}>
           <Image
-            style={{marginLeft: 20}}
+            style={{ marginLeft: 20 }}
             source={require('../../Assets/ellipse2.png')}
           />
           <View style={Styles.textContainor}>
@@ -67,15 +69,16 @@ export default function NftItems({ navigation }) {
       <View style={Styles.bottomCont}>
         <View style={Styles.footerbg}>
           <View style={Styles.buttonOne}>
-          <Image  source={require("../../Assets/logos_ethereum.png")}/>
+            <Image source={require("../../Assets/logos_ethereum.png")} />
 
-            <Text style={Styles.sellitemTxt}>2,75 ETH</Text>
+            <Text style={[Styles.sellitemTxt, {fontSize: 18}]}>2,75 ETH</Text>
           </View>
           <TouchableOpacity onPress={() => navigation.navigate("NftItesmsDetails")}>
-          <View style={Styles.buttonTwo}>
-            <Image source={require("../../Assets/folder.png")}/>
-            <Text style={Styles.sellitemTxt}>Place a bid</Text>
-          </View>
+            <View style={Styles.buttonTwo}>
+              <Entypo name='wallet' size={25} color={'#F5F8FA'}/>
+              {/* <Image source={require("../../Assets/folder.png")} /> */}
+              <Text style={Styles.sellitemTxt}>Place a bid</Text>
+            </View>
           </TouchableOpacity>
         </View>
       </View>
@@ -98,18 +101,18 @@ const Styles = StyleSheet.create({
     // alignSelf:"flex-end",
     justifyContent: 'space-between',
   },
-  belowButton: {
-    flexDirection: 'row',
-    // backgroundColor: '#1D9BF0',
-    width: 120,
-    height: 50,
-    height: 40,
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 10,
-    marginTop: -5,
-    paddingLeft: 20,
-  },
+  // belowButton: {
+  //   flexDirection: 'row',
+  //   // backgroundColor: '#1D9BF0',
+  //   width: 120,
+  //   height: 50,
+  //   height: 40,
+  //   justifyContent: 'center',
+  //   alignItems: 'center',
+  //   borderRadius: 10,
+  //   marginTop: -5,
+  //   paddingLeft: 20,
+  // },
   buttonTextStyle: {
     color: 'white',
     paddingVertical: 10,
@@ -118,6 +121,9 @@ const Styles = StyleSheet.create({
   },
   IconsContainor: {
     flexDirection: 'row',
+    // borderWidth: 1,
+    justifyContent: 'space-around',
+    width: 110
   },
   filterImg: {
     marginLeft: 20,
@@ -143,7 +149,7 @@ const Styles = StyleSheet.create({
   commonTxt: {
     fontSize: 16,
     color: '#F5F8FA',
-    
+
   },
   HeadTxtCont: {
     marginTop: 10,
@@ -189,9 +195,9 @@ const Styles = StyleSheet.create({
     height: 50,
     borderColor: '#1D9BF0',
     borderRadius: 10,
-    borderWidth: 1,
+    // borderWidth: 1,
     width: 140,
-    flexDirection:"row",
+    flexDirection: "row",
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -199,7 +205,7 @@ const Styles = StyleSheet.create({
     height: 50,
     backgroundColor: '#1D9BF0',
     borderRadius: 10,
-    flexDirection:"row",
+    flexDirection: "row",
 
     // border:"##1D9BF0",
     // borderWidth:1,
@@ -210,11 +216,20 @@ const Styles = StyleSheet.create({
   ethImg: {
     color: '#F5F8FA',
 
-    paddingLeft:10
+    paddingLeft: 10
   },
   sellitemTxt: {
     color: '#F5F8FA',
-    paddingLeft:10
+    paddingLeft: 10,
+    
 
   },
+  iconbox: {
+    backgroundColor: "#253341",
+    width: 40,
+    height: 40,
+    borderRadius: 50,
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
 });

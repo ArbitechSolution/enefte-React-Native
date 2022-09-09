@@ -13,7 +13,7 @@ import { Picker } from '@react-native-picker/picker';
 //   widthPercentageToDP as wp,
 //   heightPercentageToDP as hp,
 // } from 'react-native-responsive-screen';
-
+import AntDesign from "react-native-vector-icons/AntDesign"
 export default function UpdateItemsFour({navigation}) {
     const [selectedValue, setSelectedValue] = useState("Select Blockchain");
     const [selectedValueOne, setSelectedValueOne] = useState("Select Blockchain");
@@ -39,7 +39,8 @@ export default function UpdateItemsFour({navigation}) {
                 <View style={Styles.headerCont}>
                     <View>
                         <TouchableOpacity onPress={()=>navigation.navigate('UploadItemThree')}>
-                        <Image source={require('../../Assets/forward.png')} />
+                        <AntDesign name='left'
+              size={30} color={"white"} />
                         </TouchableOpacity>
                     </View>
                     <View style={Styles.headerTxtCont}>

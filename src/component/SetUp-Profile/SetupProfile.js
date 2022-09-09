@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native'
 import React from 'react'
+import AntDesign from "react-native-vector-icons/AntDesign"
 // import { TextInput } from 'react-native-element-textinput';
 // import { TextInput } from "@react-native-material/core";
 export default function SetupProfile({ navigation }) {
@@ -10,7 +11,9 @@ export default function SetupProfile({ navigation }) {
                     <TouchableOpacity
                         onPress={() => navigation.navigate("SetupProfile")}
                     >
-                        <Image source={require('../../Assets/forward.png')} />
+                         <AntDesign name='left'
+          size={30} color={"white"}/>
+                        {/* <Image source={require('../../Assets/forward.png')} /> */}
                     </TouchableOpacity>
                 </View>
                 <View style={Styles.imgContainorLogo}>
@@ -33,7 +36,25 @@ export default function SetupProfile({ navigation }) {
             <View>
 
             </View>
-            <View style={Styles.inputView}>
+            <View style={Styles.belowInput}>
+                <Text style={Styles.inputLabel}>
+                    UserName
+                </Text>
+                <TextInput label="Username" numberOfLines={1} placeholder='Kevin' style={[Styles.profileTextInput]} />
+            </View>
+            <View style={Styles.belowInput}>
+                <Text style={Styles.inputLabel}>
+                    Email
+                </Text>
+                <TextInput label="Username" numberOfLines={1} placeholder='Luke36erockedmai.com' style={[Styles.profileTextInput]} />
+            </View>
+            <View style={Styles.belowInput}>
+                <Text style={Styles.inputLabel}>
+                    Bio
+                </Text>
+                <TextInput label="Username" numberOfLines={4} placeholder='Sell AnyThing' style={[Styles.profileTextInput]} />
+            </View>
+            {/* <View style={Styles.inputView}>
                 <Text style={Styles.InputText}>
                     Username
                 </Text>
@@ -50,8 +71,8 @@ export default function SetupProfile({ navigation }) {
                     Bio
                 </Text>
                 <TextInput label="Username" placeholder='Bio' style={[Styles.profileTextInput]} numberOfLines={3} />
-            </View>
-            <TouchableOpacity onPress={()=>navigation.navigate("EditProfile")}>
+            </View> */}
+            <TouchableOpacity onPress={() => navigation.navigate("EditProfile")}>
                 <View style={Styles.ButtonContinue}>
                     <Text style={Styles.ButtonContinueText}>Submit</Text>
                 </View>
@@ -126,14 +147,14 @@ const Styles = StyleSheet.create({
         // left: 5,
         // right: 5
     },
-    profileTextInput: {
-        fontSize: 18,
-        borderWidth: 1,
-        borderRadius: 10,
-        borderColor: '#253341',
-        paddingLeft: 10,
-        backgroundColor: '#253341'
-    },
+    // profileTextInput: {
+    //     fontSize: 18,
+    //     borderWidth: 1,
+    //     borderRadius: 10,
+    //     borderColor: '#253341',
+    //     paddingLeft: 10,
+    //     backgroundColor: '#253341'
+    // },
     InputText: {
         marginLeft: 5,
         marginTop: 15,
@@ -154,6 +175,32 @@ const Styles = StyleSheet.create({
         fontSize: 18,
         color: '#F5F8FA',
         fontWeight: '600',
-    }
+    },
+    belowInput:{
+        backgroundColor:"#253341",
+        width:"90%",
+        height:"8%",
+        margin:20,
+        // paddingLeft: 20,
+        borderRadius:10
+      },
+      inputLabel:{
+        color:"#AAB8C2",
+        // margin:6
+        fontSize: 15,
 
+        marginLeft:15,
+        marginTop:10
+      },
+      profileTextInput: {
+        fontSize: 16,
+        borderWidth: 1,
+        borderRadius: 10,
+        borderColor: '#253341',
+        paddingLeft: 10,
+        backgroundColor: '#253341',
+        color:"#F5F8FA",
+        paddingLeft:20
+        // marginLeft:20,
+      }
 })

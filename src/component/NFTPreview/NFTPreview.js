@@ -7,13 +7,14 @@ import {
     TouchableOpacity,
     Button,
   } from 'react-native';
+  import AntDesign from "react-native-vector-icons/AntDesign"
 export default function NFTPreview({navigation}) {
   return (
     <View style={Styles.mainBg}>
         <View style={Styles.topImage}>
             {/* <Image style={require("../../Assets/line.png")}/> */}
             <TouchableOpacity onPress={()=>navigation.navigate('NftItesmsDetails')}>
-            <Image source ={require("../../Assets/crossVector.png")}/>
+            <AntDesign name='close' size={35} color={'#F5F8FA'} />
             </TouchableOpacity>
 
         </View>

@@ -2,7 +2,11 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "assets/fonts/Rationale-Regular.ttf",
+      "path": "src/Assets/Fonts/OFL.txt",
+      "sha1": "762a248b67b0ecd9a4723c7a4e32d34f608b1d26"
+    },
+    {
+      "path": "src/Assets/Fonts/Rationale-Regular.ttf",
       "sha1": "469725f05dcb5b7fdcc7d10552ea7e4c63229695"
     }
   ]

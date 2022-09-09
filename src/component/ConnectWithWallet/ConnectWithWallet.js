@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
-
+import AntDesign from "react-native-vector-icons/AntDesign"
 export default function ConnectWithWallet({ navigation }) {
   return (
     <View style={Styles.mainBg}>
@@ -9,7 +9,9 @@ export default function ConnectWithWallet({ navigation }) {
           <TouchableOpacity
             onPress={() => navigation.navigate("Startscreen")}
           >
-            <Image source={require('../../Assets/forward.png')} />
+            <AntDesign name='left'
+          size={30} color={"white"}/>
+            
           </TouchableOpacity>
 
         </View>

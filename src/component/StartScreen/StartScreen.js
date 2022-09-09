@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   Button,
 } from 'react-native';
+import AntDesign from "react-native-vector-icons/AntDesign"
 // import url('https://fonts.googleapis.com/css2?family=Rationale&display=swap');
 export default function Startscreen({navigation}) {
     
@@ -45,8 +46,9 @@ export default function Startscreen({navigation}) {
             onPress={()=>navigation.navigate("welcome")}
           >
         <View style={Styles.buttonTwo} >
-
-        <Image source={require('../../Assets/arrowVectorForward.png')} />
+        <AntDesign name='right'
+          size={20} color={"white"}/>
+        {/* <Image source={require('../../Assets/arrowVectorForward.png')} /> */}
         </View>
           </TouchableOpacity>
 

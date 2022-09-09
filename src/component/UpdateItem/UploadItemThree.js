@@ -2,7 +2,9 @@ import React from 'react'
 import { View ,StyleSheet,Image,Text,TouchableOpacity} from 'react-native'
 import Dropdown from './Dropdown'
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
-
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import FontAwesome from "react-native-vector-icons/FontAwesome"
+import Entypo from "react-native-vector-icons/Entypo"
 export default function UploadItemThree({navigation}) {
   return (
     <View style={Styles.mainBg}>
@@ -11,7 +13,8 @@ export default function UploadItemThree({navigation}) {
             <View>
                 <TouchableOpacity onPress={()=>navigation.navigate('UploadItemOne')}>
 
-                <Image source ={require("../../Assets/forward.png")}/>
+                <AntDesign name='left'
+              size={30} color={"white"} />
                 </TouchableOpacity>
             </View>
             <View style={Styles.headerTxtCont}>
@@ -34,9 +37,9 @@ export default function UploadItemThree({navigation}) {
                 Textual traits that show up as rectangles
                 </Text>
                 </View>
-                <View>
-                    <Image source ={require("../../Assets/plus.png")}/>
-                </View>
+                <View style={Styles.iconbox}>
+                <AntDesign name='plus' size={25} color={'#1C212B'} />
+              </View>
 
             </View>
             <View style={Styles.belowCont}>
@@ -48,9 +51,9 @@ export default function UploadItemThree({navigation}) {
                 Numerical traits that show as a progress bar
                 </Text>
                 </View>
-                <View>
-                    <Image source ={require("../../Assets/plus.png")}/>
-                </View>
+                <View style={Styles.iconbox}>
+                <AntDesign name='plus' size={25} color={'#1C212B'} />
+              </View>
 
             </View>
             <View style={Styles.belowCont}>
@@ -62,9 +65,9 @@ export default function UploadItemThree({navigation}) {
                 Numerical traits that show as a number
                 </Text>
                 </View>
-                <View>
-                    <Image source ={require("../../Assets/plus.png")}/>
-                </View>
+                <View style={Styles.iconbox}>
+                <AntDesign name='plus' size={25} color={'#1C212B'} />
+              </View>
 
             </View>
           
@@ -126,7 +129,7 @@ const Styles = StyleSheet.create({
     commonTxt:{
         color:"#AAB8C2",
         fontFamily:"Rationale",
-        fontSize:12,
+        fontSize:11,
         fontWeight:"400"
     },
     belowButton:{
@@ -146,4 +149,12 @@ const Styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: "600",
     },
+    iconbox: {
+        backgroundColor: "#1D9BF0",
+        width: 40,
+        height: 40,
+        borderRadius: 50,
+        justifyContent: 'center',
+        alignItems: 'center'
+      }
 })

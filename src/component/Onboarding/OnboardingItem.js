@@ -9,7 +9,8 @@ const OnboardingItem = ({ item }) => {
                 <Image source={item.image} style={[]} />
             </View>
             <View style={Styles.bottomContainer}>
-                <Text style={Styles.headText}>{item.title}</Text>
+                {/* <Text style={[Styles.headText, {fontFamily:"Rationale-Regular",}]}>{item.title}</Text> */}
+                <Text style={[Styles.headText, {fontFamily:"Rationale-Regular",}]}>{item.title}</Text>
                 <Text style={Styles.belowText}>{item.description}</Text>
                 
             </View>
@@ -44,19 +45,22 @@ const Styles = StyleSheet.create({
     },
     headText: {
         color: "white",
-        fontSize: 19,
-        fontWeight: '800',
+        fontSize: 34,
+        fontWeight: '400',
         marginTop: 25,
         textAlign: 'center',
-        fontFamily: 'Rationale'
+        fontFamily:"Rationale",
+        // borderWidth: 1,
+        width: 300
 
     },
     belowText: {
         color: "white",
-        fontSize: 14,
+        fontSize: 18,
         textAlign: 'center',
-        fontFamily: 'Rationale',
-        lineHeight: 48.2
+        // fontFamily: 'Rationale',
+        lineHeight: 48.2,
+        fontFamily:"Rationale-Regular",
 
     },
 
