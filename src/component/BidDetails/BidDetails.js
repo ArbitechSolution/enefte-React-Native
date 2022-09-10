@@ -48,6 +48,11 @@ export default function BidDetails({ navigation }) {
                             <AntDesign name='pluscircle' size={25} color={'#AAB8C2'} />
                         </View>
                     </View>
+                    <View style={{justifyContent: 'center', alignItems: 'center'}}>
+                        <Text style={Styles.inputdowntext}>
+                        You must bid at least <Text style={{color:'#F5F8FA'}}>2,75 ETH</Text>
+                        </Text>
+                    </View>
                     <View style={{ marginLeft: 20, marginTop: 20 }}>
                         <Text style={{ color: '#FFFFFF' }}>Set expiration date and time</Text>
                     </View>
@@ -322,7 +327,7 @@ const Styles = StyleSheet.create({
         alignItems: 'center',
         // borderWidth: 1,
         justifyContent: 'space-between',
-        width: 80,
+        width: 40,
         paddingTop: 8
 
     },
@@ -387,6 +392,13 @@ const Styles = StyleSheet.create({
         alignItems: 'center',
         fontFamily: 'Rationale-Regular',
 
+    }
+    ,
+    inputdowntext:{
+        fontFamily: 'Rationale-Regular',
+        fontSize: 20,
+        color: '#AAB8C2',
+        marginTop: 10
     }
 
 

@@ -1,30 +1,28 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
-import AntDesign from "react-native-vector-icons/AntDesign"
-import FontAwesome from "react-native-vector-icons/FontAwesome"
-import Entypo from "react-native-vector-icons/Entypo"
-export default function NftItems({ navigation }) {
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import Entypo from 'react-native-vector-icons/Entypo';
+export default function NftItems({navigation}) {
   return (
     <View style={Styles.mainBg}>
       <View style={Styles.headerCont}>
         <View style={Styles.backIconImg}>
           <View>
-            <AntDesign name='left'
-              size={30} color={"white"} />
+            <AntDesign name="left" size={30} color={'white'} />
           </View>
           <View style={Styles.IconsContainor}>
-           
-              <View style={Styles.iconbox}>
-                <FontAwesome name='filter' size={25} color={'#F5F8FA'} />
-              </View>
-           
-              <View style={Styles.iconbox}>
-                <Entypo name='share' size={25} color={'#F5F8FA'} />
-              </View>
+            <View style={Styles.iconbox}>
+              <FontAwesome name="filter" size={25} color={'#F5F8FA'} />
+            </View>
+
+            <View style={Styles.iconbox}>
+              <Entypo name="share" size={25} color={'#F5F8FA'} />
+            </View>
           </View>
         </View>
       </View>
@@ -36,6 +34,10 @@ export default function NftItems({ navigation }) {
       </View>
       <View style={Styles.InvitTxtCont}>
         <Text style={Styles.commonTxt}>Karafuru</Text>
+        <Image
+          source={require('../../Assets/ic_round-verified.png')}
+          style={{marginLeft: 10}}
+        />
       </View>
       <View style={Styles.HeadTxtCont}>
         <Text style={Styles.headTxt}>Mosu #1930</Text>
@@ -50,7 +52,7 @@ export default function NftItems({ navigation }) {
         </View>
         <View style={Styles.innerCOnt}>
           <Image
-            style={{ marginLeft: 20 }}
+            style={{marginLeft: 20}}
             source={require('../../Assets/ellipse2.png')}
           />
           <View style={Styles.textContainor}>
@@ -66,16 +68,31 @@ export default function NftItems({ navigation }) {
           Toys.
         </Text>
       </View>
+
+      <View style={Styles.lastview}>
+        <View>
+          <Text style={Styles.lastviewText}>Current Bid</Text>
+          <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center',  width: 100, marginTop: 8 }}>
+            <Image source={require('../../Assets/logos_ethereum.png')} />
+            <Text style={Styles.lastviewTextOne}>Current Bid</Text>
+          </View>
+        </View>
+        <View style={{alignItems: 'flex-end'}}>
+        <Text style={Styles.lastviewText}>Ends In</Text>
+        <Text style={[Styles.lastviewTextOne, {marginTop: 8}]}>June 21, 2022 at 23.00</Text>
+        </View>
+      </View>
       <View style={Styles.bottomCont}>
         <View style={Styles.footerbg}>
           <View style={Styles.buttonOne}>
-            <Image source={require("../../Assets/logos_ethereum.png")} />
+            <Image source={require('../../Assets/logos_ethereum.png')} />
 
             <Text style={[Styles.sellitemTxt, {fontSize: 18}]}>2,75 ETH</Text>
           </View>
-          <TouchableOpacity onPress={() => navigation.navigate("NftItesmsDetails")}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('NftItesmsDetails')}>
             <View style={Styles.buttonTwo}>
-              <Entypo name='wallet' size={25} color={'#F5F8FA'}/>
+              <Entypo name="wallet" size={25} color={'#F5F8FA'} />
               {/* <Image source={require("../../Assets/folder.png")} /> */}
               <Text style={Styles.sellitemTxt}>Place a bid</Text>
             </View>
@@ -103,6 +120,7 @@ const Styles = StyleSheet.create({
     alignItems: 'center',
     // borderWidth: 1
   },
+
   // belowButton: {
   //   flexDirection: 'row',
   //   // backgroundColor: '#1D9BF0',
@@ -125,7 +143,7 @@ const Styles = StyleSheet.create({
     flexDirection: 'row',
     // borderWidth: 1,
     justifyContent: 'space-around',
-    width: 110
+    width: 110,
   },
   filterImg: {
     marginLeft: 20,
@@ -146,31 +164,29 @@ const Styles = StyleSheet.create({
   InvitTxtCont: {
     marginLeft: 20,
     marginTop: 10,
-    marginRight: 5
+    marginRight: 5,
+    flexDirection: 'row',
   },
   commonTxt: {
     fontSize: 18,
     color: '#F5F8FA',
     fontFamily: 'Rationale-Regular',
-
-
   },
   HeadTxtCont: {
     marginTop: 10,
     marginLeft: 20,
     // fontFamily: 'Rationale-Regular',
-
   },
   headTxt: {
     color: '#F5F8FA',
     fontSize: 34,
     fontWeight: '400',
     fontFamily: 'Rationale-Regular',
-
   },
   belowImageContainor: {
     flexDirection: 'row',
-    marginLeft: 25,
+    justifyContent: 'space-around',
+    // marginLeft: 25,
     marginTop: 15,
   },
   innerCOnt: {
@@ -178,19 +194,17 @@ const Styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   textContainor: {
-    marginLeft: 30,
+    marginLeft: 10,
   },
   textone: {
     color: '#AAB8C2',
     fontFamily: 'Rationale-Regular',
-    fontSize:18,
-
+    fontSize: 18,
   },
   texttwo: {
     color: '#F5F8FA',
-    fontSize:18,
+    fontSize: 18,
     fontFamily: 'Rationale-Regular',
-
   },
   bottomCont: {
     // height:"10%",
@@ -211,7 +225,7 @@ const Styles = StyleSheet.create({
     borderRadius: 10,
     // borderWidth: 1,
     width: 140,
-    flexDirection: "row",
+    flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -219,7 +233,7 @@ const Styles = StyleSheet.create({
     height: 50,
     backgroundColor: '#1D9BF0',
     borderRadius: 10,
-    flexDirection: "row",
+    flexDirection: 'row',
     // fontFamily: 'Rationale-Regular',
 
     // border:"##1D9BF0",
@@ -231,22 +245,38 @@ const Styles = StyleSheet.create({
   ethImg: {
     color: '#F5F8FA',
 
-    paddingLeft: 10
+    paddingLeft: 10,
   },
   sellitemTxt: {
     color: '#F5F8FA',
-    fontSize:22,
+    fontSize: 22,
     paddingLeft: 10,
     fontFamily: 'Rationale-Regular',
-    
-
   },
   iconbox: {
-    backgroundColor: "#253341",
+    backgroundColor: '#253341',
     width: 40,
     height: 40,
     borderRadius: 50,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+  },
+  lastview:{
+    flexDirection: 'row',
+    // borderWidth: 1,
+    justifyContent: 'space-between',
+    margin: 15
+  },
+  lastviewText:{
+    fontFamily: 'Rationale-Regular',
+    fontSize: 20,
+    color: '#AAB8C2'
+  },
+  lastviewTextOne:{
+    fontFamily: 'Rationale-Regular',
+    fontSize: 20,
+    // marginTop: 10,
+    color: '#F5F8FA'
+    
   }
 });

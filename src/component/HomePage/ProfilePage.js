@@ -19,12 +19,12 @@ export default function ProfilePage({ navigation }) {
           <View style={Styles.iconbox}>
           <TouchableOpacity onPress={() => navigation.navigate('AppBars')}>
             <AntDesign name='left'
-              size={30} color={"white"} />
+              size={20} color={"white"} />
               </TouchableOpacity>
           </View>
 
           <View style={Styles.iconbox}>
-            <Entypo name='share' size={25} color={'#F5F8FA'} />
+            <Entypo name='share' size={20} color={'#F5F8FA'} />
           </View>
           {/* <TouchableOpacity onPress={() => navigation.navigate('AppBars')}><Image source={require("../../Assets/IconArrow.png")} /></TouchableOpacity>
           <Image source={require("../../Assets/share.png")} /> */}
@@ -38,6 +38,7 @@ export default function ProfilePage({ navigation }) {
           </View>
         </View>
       </View>
+      {/* <ScrollView vertical={true} showsVerticalScrollIndicator={true} > */}
       {/* <ScrollView vertical={true} showsVerticalScrollIndicator={true}> */}
       <View >
         <Text style={Styles.ProfilePageText}>kevin</Text>
@@ -70,15 +71,14 @@ export default function ProfilePage({ navigation }) {
           <Text style={Styles.ProfilePageTextMiniTextOne}>Liked</Text>
         </View>
       </View>
-      <View style>
         {/* <ScrollView> */}
+        {/* <ScrollView nestedScrollEnabled={true}> */}
+        <View >
         <ProfileAppBar />
-        {/* </ScrollView> */}
-   
-
       </View>
       {/* </ScrollView> */}
-
+        {/* </ScrollView> */}
+     
     </View>
   )
 }
@@ -203,8 +203,8 @@ const Styles = StyleSheet.create({
   },
   iconbox: {
     backgroundColor: "#253341",
-    width: 40,
-    height: 40,
+    width: 35,
+    height: 35,
     borderRadius: 50,
     justifyContent: 'center',
     alignItems: 'center'

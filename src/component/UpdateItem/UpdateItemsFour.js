@@ -88,8 +88,9 @@ export default function UpdateItemsFour({navigation}) {
                         borderTopLeftRadius: 10,
                         borderTopRightRadius: 10,
                         borderBottomLeftRadius: 10,
-                        borderBottomRightRadius: 10, borderWidth: 1, borderColor: '#253341', overflow: 'hidden'
+                        borderBottomRightRadius: 10, borderWidth: 1, borderColor: '#253341', overflow: 'hidden', position: 'relative',
                     }}>
+                        <Image source={require('../../Assets/logos_ethereum.png')} style={Styles.ImagePicker}/>
                         <Picker
                             selectedValue={selectedValueOne}
                             style={Styles.DropDownpickerOne}
@@ -409,7 +410,8 @@ const Styles = StyleSheet.create({
     DropDownpickerOne:{
         backgroundColor: '#253341',
         width: 120,
-        color:"#fff"
+        color:"#fff",
+        
     },
     AmountCont: {
         flexDirection: 'row',
@@ -462,5 +464,8 @@ const Styles = StyleSheet.create({
         fontFamily: 'Rationale-Regular',
 
       },
-    
+      ImagePicker:{
+        position: 'absolute',
+        left: 200
+      }
 })

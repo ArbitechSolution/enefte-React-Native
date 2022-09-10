@@ -175,7 +175,8 @@ const Styles = StyleSheet.create({
     },
     belowImageContainor: {
         flexDirection: "row",
-        marginLeft: 25,
+        // marginLeft: 25,
+        justifyContent: 'space-around',
         marginTop: 15
     },
     innerCOnt: {
@@ -183,7 +184,7 @@ const Styles = StyleSheet.create({
         justifyContent: "space-between"
     },
     textContainor: {
-        marginLeft: 30
+        marginLeft: 10
 
     },
     textone: {

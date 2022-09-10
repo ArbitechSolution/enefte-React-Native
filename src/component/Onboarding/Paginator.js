@@ -10,13 +10,14 @@ export default function Paginator({data, scrollX}) {
 
         const dotWidth = scrollX.interpolate({
             inputRange,
-            outputRange : [10, 20,10],
-            extrapolate: 'clamp'
+            outputRange : [10, 10,10],
+            extrapolate: 'clamp',
+            backgroundColor: '#fff'
         })
         const opacity = scrollX.interpolate({
             inputRange,
-            outputRange : [10, 20,10],
-            extrapolate: 'clamp'
+            outputRange : [10, 10,10],
+            extrapolate: 'clamp',
         })
         return <Animated.View style={[Styles.dot, {width: dotWidth, opacity}]} key={i.toString()} />
      })}
