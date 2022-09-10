@@ -68,6 +68,7 @@ export default function SellNftDetails({navigation}) {
           </View>
           <View style={Styles.belowInput}>
             <TextInput
+            placeholderTextColor="#AAB8C2"
               style={Styles.searchInput}
               numberOfLines={1}
               placeholder="Price"
@@ -98,6 +99,7 @@ export default function SellNftDetails({navigation}) {
           </View>
           <View style={Styles.belowInput}>
             <TextInput
+            placeholderTextColor="#AAB8C2"
               style={Styles.searchInput}
               numberOfLines={1}
               placeholder="Time"
@@ -173,9 +175,11 @@ const Styles = StyleSheet.create({
   },
   headerTxt: {
     color: '#FFFFFF',
-    fontSize: 24,
+    fontSize: 32,
     fontWeight: '400',
-    fontFamily: 'Roboto-Regular',
+    // fontFamily: 'Roboto-Regular',
+    fontFamily: 'Rationale-Regular',
+        // fontSize:24
   },
   botFooter: {
     // alignSelf:"flex-end",
@@ -198,8 +202,10 @@ const Styles = StyleSheet.create({
   },
   buttonTextStyle: {
     color: 'white',
-    fontSize: 16,
+    fontSize: 24,
     fontWeight: '600',
+    fontFamily: 'Rationale-Regular',
+
   },
   cardsContainerHere: {
     flexDirection: 'row',
@@ -228,8 +234,10 @@ const Styles = StyleSheet.create({
     borderRadius: 10,
   },
   searchInput: {
-    fontSize: 18,
+    fontSize: 20,
     marginLeft: 20,
+    fontFamily: 'Rationale-Regular',
+
   },
   AmountCont: {
     flexDirection: 'row',
@@ -245,20 +253,26 @@ const Styles = StyleSheet.create({
   },
   feeTxts: {
     marginTop: 10,
-    fontSize: 16,
+    fontSize: 20,
     color: '#fff',
-    fontFamily: 'Rationale',
+    // fontFamily: 'Rationale',
+    fontFamily: 'Rationale-Regular',
+
   },
   numberTxts: {
     marginTop: 10,
-    fontSize: 14,
+    fontSize: 16,
     color: '#AAB8C2',
-    fontFamily: 'Rationale',
+    // fontFamily: 'Rationale',
+    fontFamily: 'Rationale-Regular',
+
   },
   leftTxt: {
     marginTop: 20,
     color: '#AAB8C2',
-    fontSize: 15,
+    fontSize: 18,
+    fontFamily: 'Rationale-Regular',
+
   },
   bottomContainor: {
     flexDirection: 'row',
@@ -267,17 +281,22 @@ const Styles = StyleSheet.create({
   RightTxt: {
     marginTop: 20,
     color: '#AAB8C2',
-    fontSize: 12,
+    fontSize: 20,
+    fontFamily: 'Rationale-Regular',
+
     textAlign: 'right',
   },
   feeAmount: {
     fontSize: 24,
     color: '#F5F8FA',
-    paddingLeft: 10
+    paddingLeft: 10,
+    fontFamily: 'Rationale-Regular',
+
   },
   DropDownpicker: {
     backgroundColor: '#253341',
     width: 120,
+    color:"#fff"
 
     // borderWidth: 1,
     // borderRadius: 10
@@ -289,12 +308,16 @@ const Styles = StyleSheet.create({
     color: '#fff',
     paddingTop: 14,
     paddingBottom: 14,
+    fontFamily: 'Rationale-Regular',
+
   },
   belowInput: {
     backgroundColor: '#253341',
     // width: wp('82%'),
     // height: hp('6%'),
     width: '55%',
+    fontFamily: 'Rationale-Regular',
+
 
     // marginTop: 30,
     flexDirection: 'row',
@@ -312,8 +335,10 @@ const Styles = StyleSheet.create({
   },
   ButtonContinueText:{
     textAlign: 'center',
-    fontSize: 18,
+    fontSize: 24,
     color: '#F5F8FA',
-    fontWeight: '600',
+    fontWeight: '400',
+    fontFamily: 'Rationale-Regular',
+
   }
 });

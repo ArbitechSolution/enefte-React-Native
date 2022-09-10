@@ -21,7 +21,7 @@ export default function SearchPage({navigation}) {
     <View style={Styles.belowInput}>
   
     <Image style={Styles.searchIconImage} source={require("../../Assets/searchone.png")}/>
-    <TextInput style={Styles.searchInput}  numberOfLines={1}  placeholder='Search Your Nft'  />
+    <TextInput placeholderTextColor={"#AAB8C2"} style={Styles.searchInput}  numberOfLines={1}  placeholder='Search Your Nft'  />
 </View>
 <View  style={Styles.catView}>
   <Text style={Styles.catText}>
@@ -329,9 +329,11 @@ const Styles = StyleSheet.create({
         marginTop:50,
     },
     searchHeadTxt:{
-        fontSize:34,
-        fontWeight:"400",
-        color:"#ffffff"
+        fontSize:38,
+        fontWeight: '500',
+        fontFamily: 'Rationale-Regular',
+        color:"#ffffff",
+        
     },
     belowInput:{
       backgroundColor:"#253341",
@@ -346,9 +348,11 @@ const Styles = StyleSheet.create({
       marginLeft:20
     },
     searchInput:{
-      fontSize:22,
+      fontSize:26,
       alignSelf:"center",
-      marginLeft:20
+      marginLeft:20,
+      fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
     },
     catView:{
       marginLeft:20,
@@ -357,13 +361,17 @@ const Styles = StyleSheet.create({
     catText:{
       color:"#FFFFFF",
       fontSize:28,
-      fontFamily:"Rationale"
+      // fontFamily:"Rationale"
+      fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
     },
     featuredText:{
       color:"#FFFFFF",
       fontSize:28,
-      fontFamily:"Rationale",
-      marginLeft:20
+      // fontFamily:"Rationale",
+      marginLeft:20,
+      fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
     },
     imageSlider:{
       marginTop:5,
@@ -397,7 +405,10 @@ const Styles = StyleSheet.create({
     },
     headTxt:{
       color:"#F5F8FA",
-      marginTop:5
+      marginTop:5,
+      fontSize:16,
+      fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
     },
     bottomCont:{
       justifyContent:"space-between",
@@ -411,15 +422,19 @@ const Styles = StyleSheet.create({
     },
     cardHeadTxt:{
       color:"#AAB8C2",
-      fontWeight:"400",
+      // fontWeight:"400",
       padding:5,
-      fontSize:16
+      fontSize:18,
+      fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
     },
     cardNormalTxt:{
       padding:5,
       color:"#F5F8FA",
-      fontWeight:"400",
-      fontSize:22
+      // fontWeight:"400",
+      fontSize:26,
+      fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
     }
    
 })

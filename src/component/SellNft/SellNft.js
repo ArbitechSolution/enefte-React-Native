@@ -10,26 +10,26 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome from "react-native-vector-icons/FontAwesome"
 import Entypo from "react-native-vector-icons/Entypo"
-export default function SellNft({navigation}) {
+export default function SellNft({ navigation }) {
     return (
         <View style={Styles.mainBg}>
             <View style={Styles.headerCont}>
                 <View style={Styles.backIconImg}>
-                    <TouchableOpacity 
-                    onPress={()=>navigation.navigate('UpdateItem')}>
-                    <View>
-                    <AntDesign name='left'
-              size={30} color={"white"} />
-                    </View>
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate('UpdateItem')}>
+                        <View>
+                            <AntDesign name='left'
+                                size={30} color={"white"} />
+                        </View>
                     </TouchableOpacity>
                     <View style={Styles.IconsContainor}>
-                    <View style={Styles.iconbox}>
-                        <FontAwesome name='filter' size={25} color={'#F5F8FA'} />
-                    </View>
+                        <View style={Styles.iconbox}>
+                            <FontAwesome name='filter' size={25} color={'#F5F8FA'} />
+                        </View>
 
-                    <View style={Styles.iconbox}>
-                        <Entypo name='share' size={25} color={'#F5F8FA'} />
-                    </View>
+                        <View style={Styles.iconbox}>
+                            <Entypo name='share' size={25} color={'#F5F8FA'} />
+                        </View>
                     </View>
                 </View>
             </View>
@@ -78,17 +78,17 @@ export default function SellNft({navigation}) {
                             Edit
                         </Text>
                     </View>
-                    <TouchableOpacity onPress={()=> navigation.navigate('SellNftDetails')}>
-                    <View style={Styles.buttonTwo}>
-                        <Text style={Styles.sellitemTxt}>
-                            Sell Items
-                        </Text>
-                    </View>
-                </TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('SellNftDetails')}>
+                        <View style={Styles.buttonTwo}>
+                            <Text style={Styles.sellitemTxt}>
+                                Sell Items
+                            </Text>
+                        </View>
+                    </TouchableOpacity>
+                </View>
             </View>
-        </View>
-    </View >
-      )
+        </View >
+    )
 }
 const Styles = StyleSheet.create({
     mainBg: {
@@ -111,7 +111,7 @@ const Styles = StyleSheet.create({
         alignItems: 'center',
         width: '95%',
         // borderWidth: 1
-        
+
     },
     belowButton: {
         flexDirection: "row",
@@ -156,8 +156,10 @@ const Styles = StyleSheet.create({
 
     },
     commonTxt: {
-        fontSize: 16,
-        color: '#F5F8FA'
+        fontSize: 18,
+        color: '#F5F8FA',
+        fontFamily: 'Rationale-Regular',
+
 
     },
     HeadTxtCont: {
@@ -166,8 +168,10 @@ const Styles = StyleSheet.create({
     },
     headTxt: {
         color: "#F5F8FA",
-        fontSize: 34,
-        fontWeight: "400"
+        fontSize: 36,
+        fontWeight: "400",
+        fontFamily: 'Rationale-Regular',
+
     },
     belowImageContainor: {
         flexDirection: "row",
@@ -183,10 +187,14 @@ const Styles = StyleSheet.create({
 
     },
     textone: {
-        color: "#AAB8C2"
+        color: "#AAB8C2",
+        fontFamily: 'Rationale-Regular',
+        fontSize: 16
     },
     texttwo: {
-        color: "#F5F8FA"
+        color: "#F5F8FA",
+        fontFamily: 'Rationale-Regular',
+        fontSize: 16
     },
     bottomCont: {
         // height:"10%",
@@ -221,10 +229,14 @@ const Styles = StyleSheet.create({
         alignItems: "center"
     },
     editTxt: {
-        color: "#1D9BF0"
+        color: "#1D9BF0",
+        fontFamily: 'Rationale-Regular',
+        fontSize: 20
     },
     sellitemTxt: {
-        color: "#F5F8FA"
+        color: "#F5F8FA",
+        fontFamily: 'Rationale-Regular',
+        fontSize: 20
     },
     iconbox: {
         backgroundColor: "#253341",
@@ -233,6 +245,6 @@ const Styles = StyleSheet.create({
         borderRadius: 50,
         justifyContent: 'center',
         alignItems: 'center'
-    },
+    }
 
 })

@@ -40,12 +40,12 @@ export default function BidDetails({ navigation }) {
                         alignItems: 'center'
                     }}>
                         <View style={Styles.BidDetailsMainBox}>
-                            <AntDesign name='minuscircle' size={25} />
+                            <AntDesign name='minuscircle' size={25} color={'#AAB8C2'} />
                             <View style={Styles.BidDetailsMainBoxView}>
                                 <Image source={require('../../Assets/logos_ethereum.png')} />
                                 <Text style={Styles.BidDetailsMainBoxViewText}>2,75</Text>
                             </View>
-                            <AntDesign name='pluscircle' size={25} color={''} />
+                            <AntDesign name='pluscircle' size={25} color={'#AAB8C2'} />
                         </View>
                     </View>
                     <View style={{ marginLeft: 20, marginTop: 20 }}>
@@ -70,6 +70,7 @@ export default function BidDetails({ navigation }) {
                         </View>
                         <View style={Styles.belowInput}>
                             <TextInput
+                            placeholderTextColor={"#AAB8C2"}
                                 style={Styles.searchInput}
                                 numberOfLines={1}
                                 placeholder="Time"
@@ -153,13 +154,19 @@ const Styles = StyleSheet.create({
     marginLeft: 20,
     },
     imgContainorLogo: {
-        marginTop: 35,
-    marginLeft: 75,
+
+
+        marginTop: 30,
+        marginLeft: 55,
+        justifyContent:"center"
     },
     SetupProfileText: {
-        fontSize: 24,
+        fontSize: 32,
         color: '#fff',
-        fontFamily: "Rationale"
+        // fontFamily: "Rationale"
+        fontFamily: 'Rationale-Regular',
+
+
     },
     BidDetailsBox: {
         // borderWidth: 1,
@@ -180,19 +187,25 @@ const Styles = StyleSheet.create({
     },
     BidDetailsminiBoxText: {
         color: '#F5F8FA',
-        fontSize: 20,
+        fontSize: 24,
         fontWeight: '600',
-        paddingTop: 10
+        paddingTop: 10,
+        fontFamily: 'Rationale-Regular',
+
 
     },
     BidDetailsminiBoxTextOne: {
         color: '#AAB8C2',
-        fontSize: 12
+        fontSize: 16,
+        fontFamily: 'Rationale-Regular',
+
     },
     BidDetailsminiBoxTextTwo: {
         color: '#F5F8FA',
-        fontSize: 15,
-        marginLeft: 10
+        fontSize: 18,
+        marginLeft: 10,
+        fontFamily: 'Rationale-Regular',
+
     },
     BidDetailsMainBox: {
         backgroundColor: '#253341',
@@ -213,23 +226,30 @@ const Styles = StyleSheet.create({
         justifyContent: 'space-between'
     },
     BidDetailsMainBoxViewText: {
-        fontSize: 17,
-        color: '#F5F8FA'
+        fontSize: 26,
+        color: '#F5F8FA',
+        fontFamily: 'Rationale-Regular',
+
     },
     DropDownpicker: {
         backgroundColor: '#253341',
         width: 120,
+        fontFamily: 'Rationale-Regular',
+        color: '#fff',
+
 
         // borderWidth: 1,
         // borderRadius: 10
     },
     searchInput: {
-        fontSize: 18,
+        fontSize: 22,
         alignSelf: 'center',
         marginLeft: 20,
         color: '#fff',
         paddingTop: 14,
         paddingBottom: 14,
+        fontFamily: 'Rationale-Regular',
+
     },
     belowInput: {
         backgroundColor: '#253341',
@@ -240,6 +260,8 @@ const Styles = StyleSheet.create({
         // marginTop: 30,
         flexDirection: 'row',
         borderRadius: 10,
+        fontFamily: 'Rationale-Regular',
+
         // justifyContent: ''
     },
     belowButton: {
@@ -258,14 +280,18 @@ const Styles = StyleSheet.create({
     buttonTextStyle: {
         color: 'white',
         // paddingVertical: 10,
-        fontSize: 16,
+        fontSize: 28,
         fontWeight: '600',
+        fontFamily: 'Rationale-Regular',
+
     },
     BidHistoryText: {
         color: "#FFFFFF",
-        fontFamily: 'Rationale',
-        fontSize: 20,
-        fontWeight: '800'
+        // fontFamily: 'Rationale',
+        fontFamily: 'Rationale-Regular',
+
+        fontSize: 26,
+        fontWeight: '600'
     },
     TabsRankingcard: {
         backgroundColor: '#253341',
@@ -280,12 +306,16 @@ const Styles = StyleSheet.create({
     },
     TabsActivityImageText: {
         color: "#AAB8C2",
-        fontSize: 15,
+        fontSize: 18,
+        fontFamily: 'Rationale-Regular',
+
     },
     TabsActivityImageTextOne: {
         color: '#F5F8FA',
-        fontSize: 17,
-        fontWeight: '500'
+        fontSize: 20,
+        fontWeight: '500',
+        fontFamily: 'Rationale-Regular',
+
     },
     innerView: {
         flexDirection: 'row',
@@ -305,18 +335,24 @@ const Styles = StyleSheet.create({
     },
     TabsActivityminitext: {
         color: '#00CB6A',
-        fontSize: 13,
+        fontSize: 16,
         fontWeight: '400',
+        fontFamily: 'Rationale-Regular',
+
 
     },
     TabsActivityminitextOne: {
         color: '#F5F8FA',
-        fontSize: 15,
+        fontSize: 18,
+        fontFamily: 'Rationale-Regular',
+
     },
     TabsActivityminitextTwo: {
         color: '#AAB8C2',
-        fontSize: 15,
-        paddingTop: 8
+        fontSize: 18,
+        paddingTop: 8,
+        fontFamily: 'Rationale-Regular',
+
     },
     CardsOne: {
         flexDirection: 'row',
@@ -328,21 +364,29 @@ const Styles = StyleSheet.create({
     },
     CardsOneText: {
         color: '#AAB8C2',
-        fontSize: 15
+        fontSize: 18,
+        fontFamily: 'Rationale-Regular',
+
     },
     CardsOneTextgreen: {
         color: '#F5F8FA',
-        fontSize: 13,
-        paddingTop: 8
+        fontSize: 16,
+        paddingTop: 8,
+        fontFamily: 'Rationale-Regular',
+
     },
     CardsOneTextsecond: {
         paddingTop: 8,
         color: "#F5F8FA",
-        fontSize: 13,
+        fontSize: 16,
+        fontFamily: 'Rationale-Regular',
+
     },
     cardsimagetext: {
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
+        fontFamily: 'Rationale-Regular',
+
     }
 
 

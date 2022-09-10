@@ -41,19 +41,19 @@ export default function EditProfile({navigation}) {
     <Text style={Styles.inputLabel}>
         UserName
     </Text>
-    <TextInput label="Username" numberOfLines={1}  placeholder='Kevin' style={[Styles.profileTextInput]} />
+    <TextInput label="Username" numberOfLines={1}  placeholder='Kevin' style={[Styles.profileTextInput]} placeholderTextColor={"#F5F8FA"}/>
 </View>
 <View style={Styles.belowInput}>
     <Text style={Styles.inputLabel}>
         Email
     </Text>
-    <TextInput label="Username" numberOfLines={1}  placeholder='Luke36erockedmai.com' style={[Styles.profileTextInput]} />
+    <TextInput label="Username" numberOfLines={1}  placeholder='Luke36erockedmai.com' style={[Styles.profileTextInput]} placeholderTextColor={"#F5F8FA"}/>
 </View>
 <View style={Styles.belowInput}>
     <Text style={Styles.inputLabel}>
         Bio
     </Text>
-    <TextInput label="Username" numberOfLines={4}  placeholder='Sell AnyThing' style={[Styles.profileTextInput]} />
+    <TextInput label="Username" numberOfLines={4}  placeholder='Sell AnyThing' style={[Styles.profileTextInput]} placeholderTextColor={"#F5F8FA"} />
 </View>
 <View style={Styles.headLinktxtContanor}>
   <Text style={Styles.headLinktxt}>
@@ -64,13 +64,13 @@ export default function EditProfile({navigation}) {
     <Text style={Styles.inputLabel}>
         Twitter
     </Text>
-    <TextInput label="Username" numberOfLines={1}  placeholder='hhtps://twitter.com/kevin' style={[Styles.profileTextInput]} />
+    <TextInput label="Username" numberOfLines={1}  placeholder='hhtps://twitter.com/kevin' style={[Styles.profileTextInput]} placeholderTextColor={"#F5F8FA"}/>
 </View>
 <View style={Styles.belowInput}>
     <Text style={Styles.inputLabel}>
         Instagram
     </Text>
-    <TextInput label="Username" numberOfLines={1}    placeholder='hhtps://www.instagram.com/kevin/?hl-en' style={[Styles.profileTextInput]} />
+    <TextInput label="Username" numberOfLines={1}    placeholder='hhtps://www.instagram.com/kevin/?hl-en' style={[Styles.profileTextInput]} placeholderTextColor={"#F5F8FA"}/>
 </View>
 </ScrollView>
 </View>
@@ -107,8 +107,10 @@ const Styles = StyleSheet.create({
       buttonTextStyle: {
         color: 'white',
         paddingVertical: 10,
-        fontSize: 16,
+        fontSize: 20,
         fontWeight: '600',
+    fontFamily: 'Rationale-Regular',
+
       },
       editphotoPrfile:{
         marginLeft:20,
@@ -124,15 +126,18 @@ const Styles = StyleSheet.create({
       inputLabel:{
         color:"#AAB8C2",
         // margin:6
-        fontSize: 15,
+        fontSize: 18,
         marginLeft:20,
-        marginTop:10
+        marginTop:10,
+    fontFamily: 'Rationale-Regular',
       },
       headLinktxt:{
         color:"#FFFFFF",
         fontWeight:"400",
-        fontSize:16,
+        fontSize:20,
         // marginLeft:25,
+    fontFamily: 'Rationale-Regular',
+
         marginTop:10
       },
       headLinktxtContanor:{
@@ -144,14 +149,16 @@ const Styles = StyleSheet.create({
       },
 
       profileTextInput: {
-        fontSize: 16,
+        fontSize: 18,
         borderWidth: 1,
         borderRadius: 10,
         borderColor: '#253341',
         paddingLeft: 10,
         backgroundColor: '#253341',
         color:"#F5F8FA",
-        paddingLeft:20
+        paddingLeft:20,
+    fontFamily: 'Rationale-Regular',
+
         // marginLeft:20,
 
     }

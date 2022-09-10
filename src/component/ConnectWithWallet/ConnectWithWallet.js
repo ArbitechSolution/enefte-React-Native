@@ -87,20 +87,21 @@ const Styles = StyleSheet.create({
   },
   headttext: {
     color: "white",
-    fontSize: 30,
+    fontSize: 32,
     marginLeft: 25,
     // textAlign:'center',
-    fontFamily: 'Rationale',
+    // fontFamily: 'Rationale',
+    fontFamily: 'Rationale-Regular',
     lineHeight: 30,
     fontWeight: "400",
     marginTop: -20
   },
   normalText: {
     color: "#AAB8C2",
-    fontSize: 16,
+    fontSize: 18,
     marginLeft: 25,
     marginTop: 15,
-    fontFamily: 'Rationale',
+    fontFamily: 'Rationale-Regular',
     lineHeight: 30,
     fontWeight: "400",
 
@@ -116,9 +117,11 @@ const Styles = StyleSheet.create({
 
   },
   BoxOneText: {
-    fontSize: 18,
+    fontSize: 22,
     color: '#F5F8FA',
     fontWeight: '600',
+    fontFamily: 'Rationale-Regular',
+
     marginLeft: 10
   },
   ButtonContinue: {
@@ -132,8 +135,10 @@ const Styles = StyleSheet.create({
   },
   ButtonContinueText:{
     textAlign: 'center',
-    fontSize: 18,
+    fontSize: 24,
     color: '#F5F8FA',
     fontWeight: '600',
+    fontFamily: 'Rationale-Regular',
+
   }
 });

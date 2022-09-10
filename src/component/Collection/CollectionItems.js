@@ -23,10 +23,10 @@ export default function CollectionItems({ navigation }) {
                 <View style={Styles.ProfilePageDownImage}>
                     <Image source={require('../../Assets/Profile-Verified22.png')} />
                     <View style={Styles.ProfilePageDownImageBox}>
-                        <Fontisto name='world' size={25} />
-                        <Fontisto name='instagram' size={25} />
-                        <Fontisto name='twitter' size={25} />
-                        <Fontisto name='discord' size={25} />
+                        <Fontisto name='world' size={25} color={'#AAB8C2'} />
+                        <Fontisto name='instagram' size={25} color={'#AAB8C2'} />
+                        <Fontisto name='twitter' size={25} color={'#AAB8C2'} />
+                        <Fontisto name='discord' size={25} color={'#AAB8C2'} />
                     </View>
                 </View>
             </View>
@@ -110,18 +110,22 @@ const Styles = StyleSheet.create({
         fontWeight: '500'
     },
     CollectionItemsText: {
-        fontSize: 24,
-        fontFamily: 'Rationale',
+        fontSize: 32,
+        // fontFamily: 'Rationale',
+    fontFamily: 'Rationale-Regular',
+
         color: "#FFFFFF",
-        fontWeight: '800',
+        fontWeight: '500',
         paddingLeft: 20,
     },
     CollectionItemsTextOne: {
-        fontSize: 15,
+        fontSize: 18,
         paddingLeft: 20,
         paddingRight: 8.5,
         paddingTop: 10,
-        color: "#AAB8C2"
+        color: "#AAB8C2",
+    fontFamily: 'Rationale-Regular',
+
     },
     CollectionItemsBox: {
         backgroundColor: '#253341',
@@ -136,17 +140,23 @@ const Styles = StyleSheet.create({
     },
     CardsOneText: {
         color: '#AAB8C2',
-        fontSize: 15
+        fontSize: 18,
+    fontFamily: 'Rationale-Regular',
+
     },
     CardsOneTextgreen: {
         color: '#F5F8FA',
-        fontSize: 13,
-        paddingTop: 8
+        fontSize: 18,
+        paddingTop: 8,
+    fontFamily: 'Rationale-Regular',
+
     },
     CardsOneTextsecond: {
 
         color: "#F5F8FA",
-        fontSize: 13,
+    fontFamily: 'Rationale-Regular',
+
+        fontSize: 18,
     },
     cardsimagetext: {
         flexDirection: 'row',

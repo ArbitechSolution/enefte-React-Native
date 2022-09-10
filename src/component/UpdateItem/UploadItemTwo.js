@@ -77,7 +77,7 @@ export default function UploadItemTwo({ navigation }) {
                  which requires a one-time gas fee 
                 </Text>
             </View>
-            <View>
+            <View style={{justifyContent: 'center', alignItems: 'center'}}>
         <TouchableOpacity
         style={Styles.belowButton}
           activeOpacity={0.5}
@@ -108,9 +108,11 @@ export default function UploadItemTwo({ navigation }) {
         width:"100%"
     },
     headerTxt:{
-        fontSize:24,
+        fontSize:32,
         fontWeight:"400",
-        color:"#FFFFFF"
+        color:"#FFFFFF",
+        fontFamily: 'Rationale-Regular',
+
     },
     imgContainor:{
         justifyContent:'center',
@@ -121,11 +123,18 @@ export default function UploadItemTwo({ navigation }) {
     commonText:{
         textAlign:"center",
         color:"#AAB8C2",
-        padding:20
+        padding:20,
+        fontSize:18,
+        fontFamily: 'Rationale-Regular',
+
     },
     commonTxtViewOnTh:{
         color:"#1D9BF0",
         textAlign:"center",
+        fontFamily: 'Rationale-Regular',
+        fontSize: 18,
+
+
     },
     TabsRankingcard: {
         backgroundColor: '#253341',
@@ -140,12 +149,16 @@ export default function UploadItemTwo({ navigation }) {
     },
     TabsActivityImageText: {
         color: "#AAB8C2",
-        fontSize: 15,
+        fontSize: 18,
+        fontFamily: 'Rationale-Regular',
+
     },
     TabsActivityImageTextOne: {
         color: '#F5F8FA',
-        fontSize: 17,
-        fontWeight: '500'
+        fontSize: 19,
+        fontWeight: '500',
+        fontFamily: 'Rationale-Regular',
+
     },
     innerView:{
         flexDirection: 'row',
@@ -165,20 +178,26 @@ export default function UploadItemTwo({ navigation }) {
     }, 
     TabsActivityminitext:{
         color: '#00CB6A',
-        fontSize: 13,
+        fontSize: 16,
         fontWeight: '400',
+        fontFamily: 'Rationale-Regular',
+
 
     },
     TabsActivityminitextOne:{
         color: '#F5F8FA',
-        fontSize: 15,
+        fontSize: 17,
+        fontFamily: 'Rationale-Regular',
+
         // textAlign:"flex-end"
     },
     TabsActivityminitextTwo:{
         color: '#AAB8C2',
-        fontSize: 15,
+        fontSize: 18,
         paddingTop: 8,
-        alignItems:'flex-end'
+        alignItems:'flex-end',
+        fontFamily: 'Rationale-Regular',
+
     },
     CardsOne: {
         flexDirection: 'row',
@@ -190,17 +209,23 @@ export default function UploadItemTwo({ navigation }) {
     },
     CardsOneText: {
         color: '#AAB8C2',
-        fontSize: 15
+        fontSize: 18,
+        fontFamily: 'Rationale-Regular',
+
     },
     CardsOneTextgreen: {
         color: '#F5F8FA',
-        fontSize: 13,
-        paddingTop: 8
+        fontSize: 16,
+        paddingTop: 8,
+        fontFamily: 'Rationale-Regular',
+
     },
     CardsOneTextsecond: {
         paddingTop: 8,
         color: "#F5F8FA",
-        fontSize: 13,
+        fontSize: 16,
+        fontFamily: 'Rationale-Regular',
+
     },
     belowButton: {
         backgroundColor: '#1D9BF0',
@@ -209,15 +234,16 @@ export default function UploadItemTwo({ navigation }) {
       justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 10,
-        marginLeft: 35,
-        marginRight: 35,
+        // marginLeft: 20,
+        // marginRight: 20,
         marginTop: 30,
       },
       buttonTextStyle: {
         color: 'white',
+        fontFamily: 'Rationale-Regular',
         
         paddingVertical: 10,
-        fontSize: 16,
+        fontSize: 24,
         fontWeight: '600',
       },
     });

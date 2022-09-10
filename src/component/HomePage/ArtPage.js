@@ -347,14 +347,19 @@ const Styles = StyleSheet.create({
   headerTxt: {
     color: "#FFFFFF",
     fontWeight: "400",
-    fontSize: 34,
-    fontFamily: "Rationale"
+    fontSize: 32,
+    // fontFamily: "Rationale"
+    fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
   },
   commonTxt: {
     color: "#AAB8C2",
     fontWeight: "400",
-    fontSize: 12,
-    fontFamily: "Rationale"
+    fontSize: 17,
+    // fontFamily: "Rationale"
+    fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
+    marginRight:10
   },
   featContainor: {
     marginLeft: 20,
@@ -385,7 +390,10 @@ const Styles = StyleSheet.create({
   },
   headTxt: {
     color: "#F5F8FA",
-    marginTop: 5
+    marginTop: 5,
+    fontWeight: '500',
+    fontSize:19,
+    fontFamily: 'Rationale-Regular',
   },
   bottomCont: {
     justifyContent: "space-between",
@@ -396,8 +404,10 @@ const Styles = StyleSheet.create({
   }, featuredText: {
     color: "#FFFFFF",
     fontSize: 28,
-    fontFamily: "Rationale",
-    marginLeft: 20
+    // fontFamily: "Rationale",
+    marginLeft: 20,
+    fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
   },
   innerContainor: {
     // borderWidth:1
@@ -406,13 +416,17 @@ const Styles = StyleSheet.create({
     color: "#AAB8C2",
     fontWeight: "400",
     padding: 5,
-    fontSize: 16
+    fontSize: 18,
+    // fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
   },
   cardNormalTxt: {
     padding: 5,
     color: "#F5F8FA",
     fontWeight: "400",
-    fontSize: 22
+    fontSize: 22,
+    // fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
   }
 
 })

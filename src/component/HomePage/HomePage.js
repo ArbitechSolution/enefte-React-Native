@@ -58,9 +58,9 @@ export default function HomePage() {
               <View style={Styles.CardText}>
                 <Text style={Styles.CardTextOne}>Mosu #1930</Text>
                 <View style={Styles.CardPageOne}>
-                  <AntDesign name={'clockcircleo'} size={18} />
+                  <AntDesign style={Styles.CardTextOne} name={'clockcircleo'} size={18} />
                   {/* <Image source={require('../../Assets/IconTime.png')} style={Styles.CardPageImageOne}/> */}
-                  <Text >102d Left</Text>
+                  <Text style={Styles.CardTextOne} >102d Left</Text>
                 </View>
               </View>
 
@@ -92,7 +92,7 @@ export default function HomePage() {
               <View style={Styles.CardText}>
                 <Text style={Styles.CardTextOne}>Mosu #1930</Text>
                 <View style={Styles.CardPageOne}>
-                  <AntDesign name={'clockcircleo'} size={18} />
+                  <AntDesign name={'clockcircleo'} size={20} color={"#fff"} />
                   {/* <Image source={require('../../Assets/IconTime.png')} style={Styles.CardPageImageOne}/> */}
                   <Text style={Styles.CardTextOne}>102d Left</Text>
                 </View>
@@ -190,7 +190,10 @@ const Styles = StyleSheet.create({
   HomePageText: {
     // position: "absolute",
     color: "#F5F8FA",
-    fontWeight: "bold",
+    fontSize:18,
+    fontWeight: "400",
+    fontFamily: 'Rationale-Regular',
+
   },
   HomePageButton: {
     marginTop: 40,
@@ -221,8 +224,10 @@ const Styles = StyleSheet.create({
   },
   HomePageButtonPendingText: {
     color: "#F9FBFC",
-    fontSize: 14,
-    fontWeight: 'bold',
+    fontSize: 20,
+    fontWeight: '400',
+    fontFamily: 'Rationale-Regular',
+
   },
   CardPage: {
     width: 287,
@@ -256,6 +261,8 @@ const Styles = StyleSheet.create({
     flexDirection: "row",
     width: 260,
     marginTop: 20,
+    fontFamily: 'Rationale-Regular',
+
     // justifyContent: "space-between"
     justifyContent: "space-between",
     // borderWidth: 2
@@ -263,8 +270,10 @@ const Styles = StyleSheet.create({
   },
   CardTextOne: {
     color: "#FFFFFF",
-    fontSize: 16,
-    fontWeight: 'bold'
+    fontSize: 20,
+    fontWeight: '400',
+    fontFamily: 'Rationale-Regular',
+
   },
   CardPageImageOne: {
     width: 30,
@@ -290,7 +299,9 @@ const Styles = StyleSheet.create({
   },
   CardPageBoxText: {
     color: '#fff',
-    fontSize: 13
+    fontSize: 18,
+    fontFamily: 'Rationale-Regular',
+
   },
   CardPageProfileVerified: {
     flexDirection: 'row',
@@ -300,8 +311,10 @@ const Styles = StyleSheet.create({
   CardTextProfileVerifiedOne: {
     marginLeft: 10,
     color: "#FFFFFF",
-    fontSize: 14,
-    fontWeight: 'bold'
+    fontSize: 18,
+    fontWeight: '400',
+    fontFamily: 'Rationale-Regular',
+
   },
   CardPageOneETH: {
     borderColor: '#1D9BF0',
@@ -322,8 +335,10 @@ const Styles = StyleSheet.create({
   TrendingCollectionsText: {
     fontSize: 24,
     color: '#fff',
-    fontWeight: 'bold',
-    marginLeft: 20
+    fontWeight: '400',
+    marginLeft: 20,
+    fontFamily: 'Rationale-Regular',
+
   },
   HomePageGhozali: {
     flexDirection: 'row',
@@ -339,28 +354,36 @@ const Styles = StyleSheet.create({
     flexDirection: 'row',
   },
   HomePageGhozaliDownText:{
-    fontSize: 16,
+    fontSize: 18,
     color: '#fff',
-    fontWeight: 'bold'
+    fontWeight: '400',
+    fontFamily: 'Rationale-Regular',
+
   },
   HomePageGhozaliDownTextOne:{
-    fontSize: 13,
+    fontSize: 15,
     color: '#AAB8C2',
-    paddingTop: 5
+    paddingTop: 5,
+    fontFamily: 'Rationale-Regular',
+
     // fontWeight: 'bold'
   },
   HomePageGhozaliBottomDown:{
     flexDirection: 'row'
   },
   HomePageGhozaliBottomDownText:{
-    fontSize: 15,
+    fontSize: 20,
     color: '#fff',
-    fontWeight: 'bold'
+    fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
+
   },
   HomePageGhozaliBottomDownTextOne:{
     color: "#00CB6A",
     alignItems: 'flex-end',
-    paddingTop: 10
+    paddingTop: 10,
+    fontWeight: '500',
+    fontFamily: 'Rationale-Regular',
 
   }
 

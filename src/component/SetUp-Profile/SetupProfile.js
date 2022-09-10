@@ -29,7 +29,7 @@ export default function SetupProfile({ navigation }) {
                 </View>
                 <TouchableOpacity>
                     <View style={Styles.UploadProfile}>
-                        <Text>Upload Profile</Text>
+                        <Text style={Styles.uploadBtnTxt}>Upload Profile</Text>
                     </View>
                 </TouchableOpacity>
             </View>
@@ -40,19 +40,19 @@ export default function SetupProfile({ navigation }) {
                 <Text style={Styles.inputLabel}>
                     UserName
                 </Text>
-                <TextInput label="Username" numberOfLines={1} placeholder='Kevin' style={[Styles.profileTextInput]} />
+                <TextInput label="Username" numberOfLines={1} placeholder='Kevin' style={[Styles.profileTextInput]} placeholderTextColor={"#F5F8FA"} />
             </View>
             <View style={Styles.belowInput}>
                 <Text style={Styles.inputLabel}>
                     Email
                 </Text>
-                <TextInput label="Username" numberOfLines={1} placeholder='Luke36erockedmai.com' style={[Styles.profileTextInput]} />
+                <TextInput label="Username" numberOfLines={1} placeholder='Luke36erockedmai.com' style={[Styles.profileTextInput]} placeholderTextColor={"#F5F8FA"}/>
             </View>
             <View style={Styles.belowInput}>
                 <Text style={Styles.inputLabel}>
                     Bio
                 </Text>
-                <TextInput label="Username" numberOfLines={4} placeholder='Sell AnyThing' style={[Styles.profileTextInput]} />
+                <TextInput label="Username" numberOfLines={4} placeholder='Sell AnyThing' style={[Styles.profileTextInput]} placeholderTextColor={"#F5F8FA"}/>
             </View>
             {/* <View style={Styles.inputView}>
                 <Text style={Styles.InputText}>
@@ -103,9 +103,10 @@ const Styles = StyleSheet.create({
         marginLeft: 65,
     },
     SetupProfileText: {
-        fontSize: 24,
+        fontSize: 28,
         color: '#fff',
-        fontFamily: "Rationale"
+    fontFamily: 'Rationale-Regular',
+    // fontFamily: "Rationale",
     },
     SetupProfileView: {
         marginTop: 35
@@ -113,8 +114,10 @@ const Styles = StyleSheet.create({
     SetupProfiletext: {
         marginLeft: 30,
         marginRight: 20,
-        fontSize: 22,
-        color: '#F5F8FA'
+        fontSize: 26,
+        color: '#F5F8FA',
+    fontFamily: 'Rationale-Regular',
+
     },
     profileSetup: {
         marginLeft: 20,
@@ -159,7 +162,9 @@ const Styles = StyleSheet.create({
         marginLeft: 5,
         marginTop: 15,
         marginBottom: 5,
-        fontSize: 18,
+        fontSize: 20,
+    fontFamily: 'Rationale-Regular',
+
     },
     ButtonContinue: {
         marginLeft: 20,
@@ -172,9 +177,11 @@ const Styles = StyleSheet.create({
     },
     ButtonContinueText: {
         textAlign: 'center',
-        fontSize: 18,
+        fontSize: 24,
         color: '#F5F8FA',
         fontWeight: '600',
+    fontFamily: 'Rationale-Regular',
+
     },
     belowInput:{
         backgroundColor:"#253341",
@@ -186,21 +193,26 @@ const Styles = StyleSheet.create({
       },
       inputLabel:{
         color:"#AAB8C2",
-        // margin:6
-        fontSize: 15,
-
+        fontSize: 18,
+        fontFamily: 'Rationale-Regular',
         marginLeft:15,
         marginTop:10
       },
       profileTextInput: {
-        fontSize: 16,
+        fontSize: 18,
         borderWidth: 1,
         borderRadius: 10,
         borderColor: '#253341',
         paddingLeft: 10,
         backgroundColor: '#253341',
         color:"#F5F8FA",
-        paddingLeft:20
-        // marginLeft:20,
+        paddingLeft:20,
+    fontFamily: 'Rationale-Regular',
+      },
+      uploadBtnTxt:{
+        color:"#fff",
+        fontSize:20,
+    fontFamily: 'Rationale-Regular',
+
       }
 })

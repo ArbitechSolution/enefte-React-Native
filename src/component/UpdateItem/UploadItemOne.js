@@ -43,6 +43,7 @@ export default function UploadItemOne({ navigation }) {
 
         <View style={Styles.belowInput}>
           <TextInput
+          placeholderTextColor={"#AAB8C2"}
             style={Styles.searchInput}
             numberOfLines={1}
             placeholder="Name"
@@ -50,6 +51,8 @@ export default function UploadItemOne({ navigation }) {
         </View>
         <View style={Styles.belowInput}>
           <TextInput
+          placeholderTextColor={"#AAB8C2"}
+
             style={Styles.searchInput}
             numberOfLines={1}
             placeholder="External Link"
@@ -64,8 +67,10 @@ export default function UploadItemOne({ navigation }) {
         </View>
         <View style={Styles.belowInputBio}>
           <TextInput
+          placeholderTextColor={"#AAB8C2"}
+
             style={Styles.searchInput}
-            numberOfLines={4}
+            numberOfLines={2}
             placeholder="Bio"
           />
         </View>
@@ -85,7 +90,7 @@ export default function UploadItemOne({ navigation }) {
 }
 const Styles = StyleSheet.create({
   mainBg: {
-    height: hp('100%'),
+    height: '100%',
     // height: '100%',
     // justifyContent: 'center',
     backgroundColor: '#1C212B',
@@ -122,9 +127,11 @@ const Styles = StyleSheet.create({
   },
   headerTxt: {
     color: '#FFFFFF',
-    fontSize: 24,
+    fontSize: 32,
     fontWeight: '400',
-    fontFamily: 'Roboto-Regular',
+    // fontFamily: 'Roboto-Regular',
+    fontFamily: 'Rationale-Regular',
+
   },
   topTxtContainer: {
     marginTop: 10,
@@ -132,14 +139,18 @@ const Styles = StyleSheet.create({
   commonTxt: {
     color: '#AAB8C2',
     fontWeight: '400',
-    fontSize: 12,
+    fontSize: 16,
     paddingTop: 10,
+    fontFamily: 'Rationale-Regular',
+
   },
   commonTxtTwo: {
     color: '#AAB8C2',
     fontWeight: '400',
     fontSize: 16,
     paddingTop: 10,
+    fontFamily: 'Rationale-Regular',
+
   },
   belowImgInputCont: {
     borderWidth: 1,
@@ -153,12 +164,14 @@ const Styles = StyleSheet.create({
   },
   searchHeadContainer: {
     marginLeft: 20,
-    marginTop: 50,
+    marginTop: 30,
   },
   searchHeadTxt: {
     fontSize: 34,
     fontWeight: '400',
     color: '#ffffff',
+    fontFamily: 'Rationale-Regular',
+
   },
   belowInput: {
     backgroundColor: '#253341',
@@ -167,16 +180,20 @@ const Styles = StyleSheet.create({
     marginTop: 20,
     flexDirection: 'row',
     borderRadius: 10,
+    fontFamily: 'Rationale-Regular',
+
   },
   searchIconImage: {
     marginTop: 15,
     marginLeft: 20,
   },
   searchInput: {
-    fontSize: 18,
+    fontSize: 22,
     alignSelf: 'center',
     marginLeft: 20,
     color: '#fff',
+    fontFamily: 'Rationale-Regular',
+
   },
   belowInputBio: {
     backgroundColor: '#253341',
@@ -200,8 +217,10 @@ const Styles = StyleSheet.create({
   },
   buttonTextStyle: {
     color: 'white',
-    fontSize: 16,
+    fontSize: 26,
     fontWeight: '600',
+    fontFamily: 'Rationale-Regular',
+
   },
   ButtonContinue: {
     marginLeft: 4,
@@ -214,8 +233,9 @@ const Styles = StyleSheet.create({
   },
   ButtonContinueText:{
     textAlign: 'center',
-    fontSize: 18,
+    fontSize: 24,
     color: '#F5F8FA',
     fontWeight: '600',
+    fontFamily: 'Rationale-Regular',
   }
 });

@@ -69,8 +69,7 @@ export default function App() {
         <Stack.Screen name='ItemReadyForSell' options={{ headerShown: false }} component={ItemReadyForSell} />
         <Stack.Screen name='AppBars' options={{ headerShown: false }} component={AppBars} />
         <Stack.Screen name='ArtPage' options={{ headerShown: false }} component={ArtPage} />
-        {/* <Image source={require('./src/Assets/Fonts')}/> */}
-        {/*  */}
+      
         {/* 
         <
         <Stack.Screen name='SearchPage' options={{ headerShown: false }} component={SearchPage} />

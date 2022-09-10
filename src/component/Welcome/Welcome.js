@@ -40,15 +40,18 @@ const Styles = StyleSheet.create({
       fontSize:30,
       margin:35,
       textAlign:'center',
-      fontFamily:'Rationale'
+      // fontFamily:'Rationale',
+          fontFamily: 'Rationale-Regular',
+
   
     },
     belowText:{
       color:"white",
-      fontSize:16,
+      fontSize:18,
       // margin:,
       textAlign:'center',
-      fontFamily:'Rationale',
+      // fontFamily:'Rationale',
+    fontFamily: 'Rationale-Regular',
       lineHeight:19.2
   
     },

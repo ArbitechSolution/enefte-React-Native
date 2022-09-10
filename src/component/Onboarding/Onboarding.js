@@ -73,7 +73,8 @@ const Styles = StyleSheet.create({
   },
   buttonTextStyle: {
     color: "white",
-        fontSize: 16,
+        fontSize: 20,
     fontWeight: "600",
+    fontFamily:"Rationale-Regular"
   },
 })

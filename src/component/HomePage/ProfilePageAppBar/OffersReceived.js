@@ -69,12 +69,18 @@ const Styles = StyleSheet.create({
     },
     TabsActivityImageText: {
         color: "#AAB8C2",
-        fontSize: 15,
+        fontSize: 18,
+            
+    fontWeight:"400",
+    fontFamily: 'Rationale-Regular',
     },
     TabsActivityImageTextOne: {
         color: '#F5F8FA',
-        fontSize: 17,
-        fontWeight: '500'
+        fontSize: 19,
+        fontWeight: '500',
+            
+    fontWeight:"400",
+    fontFamily: 'Rationale-Regular',
     },
     innerView: {
         flexDirection: 'row',
@@ -94,18 +100,26 @@ const Styles = StyleSheet.create({
     },
     TabsActivityminitext: {
         color: '#00CB6A',
-        fontSize: 13,
+        fontSize: 16,
         fontWeight: '400',
+            
+    fontWeight:"400",
+    fontFamily: 'Rationale-Regular',
 
     },
     TabsActivityminitextOne: {
         color: '#F5F8FA',
-        fontSize: 15,
+        fontSize: 18,
+        fontWeight:"400",
+        fontFamily: 'Rationale-Regular',
     },
     TabsActivityminitextTwo: {
         color: '#AAB8C2',
-        fontSize: 15,
-        paddingTop: 8
+        fontSize: 18,
+        paddingTop: 8,
+        
+        fontWeight:"400",
+        fontFamily: 'Rationale-Regular',
     },
     CardsOne: {
         flexDirection: 'row',
@@ -117,20 +131,30 @@ const Styles = StyleSheet.create({
     },
     CardsOneText: {
         color: '#AAB8C2',
-        fontSize: 15
+        fontSize: 18,
+        
+        fontWeight:"400",
+        fontFamily: 'Rationale-Regular',
     },
     CardsOneTextgreen: {
         color: '#F5F8FA',
-        fontSize: 13,
-        paddingTop: 8
+        fontSize: 18,
+        paddingTop: 8,
+        
+        fontWeight:"400",
+        fontFamily: 'Rationale-Regular',
     },
     CardsOneTextsecond: {
         paddingTop: 8,
         color: "#F5F8FA",
-        fontSize: 13,
+        fontSize: 18,
+        fontWeight:"400",
+        fontFamily: 'Rationale-Regular',
     },
     cardsimagetext: {
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
+        fontWeight:"400",
+        fontFamily: 'Rationale-Regular',
     }
 })
