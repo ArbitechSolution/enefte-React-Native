@@ -106,14 +106,14 @@ const Styles = StyleSheet.create({
   },
   headText: {
     color: 'white',
-    fontSize: 28,
+    fontSize: 32,
     margin: 40,
     textAlign: 'left',
     fontFamily: 'Rationale-Regular',
   },
   belowText: {
     color: '#AAB8C2',
-    fontSize: 14,
+    fontSize: 17,
     margin: 40,
     //   fontWeight:400,
     fontWeight: '450',
@@ -123,7 +123,7 @@ const Styles = StyleSheet.create({
   buttonTextStyle: {
     color: 'white',
     paddingVertical: 7,
-    fontSize: 16,
+    fontSize: 22,
     fontWeight: '400',
     fontFamily: 'Rationale-Regular',
 

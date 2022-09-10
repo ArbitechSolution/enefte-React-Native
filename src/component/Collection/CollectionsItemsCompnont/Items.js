@@ -13,10 +13,10 @@ export default function Items({navigation}) {
                             <Image source={require('../../../Assets/FavoritedImage.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
                             </TouchableOpacity>
                             <View style={Styles.ActivitCardDown}>
-                                <Text>Azuki</Text>
+                                <Text style={Styles.FavoritedText}>Azuki</Text>
                                 <View style={Styles.ActivitCardDownOne}>
-                                    <Ionicons name='heart-outline' size={20} />
-                                    <Text>320</Text>
+                                    <Ionicons style={Styles.FavoritedText} name='heart-outline' size={20} />
+                                    <Text style={Styles.FavoritedText}>320</Text>
                                 </View>
                             </View>
                             <View style={Styles.FavoritedBox}>
@@ -34,10 +34,10 @@ export default function Items({navigation}) {
                         <View style={Styles.ActivitCard}>
                             <Image source={require('../../../Assets/FavoritedImageOne.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
                             <View style={Styles.ActivitCardDown}>
-                                <Text>The Invitation</Text>
+                                <Text style={Styles.FavoritedText}>The Invitation</Text>
                                 <View style={Styles.ActivitCardDownOne}>
-                                    <Ionicons name='heart-outline' size={20} />
-                                    <Text>192</Text>
+                                    <Ionicons style={Styles.FavoritedText} name='heart-outline' size={20} />
+                                    <Text style={Styles.FavoritedText}>192</Text>
                                 </View>
                             </View>
                             <View style={Styles.FavoritedBox}>
@@ -55,14 +55,14 @@ export default function Items({navigation}) {
                         <View style={[Styles.ActivitCard,]}>
                             <Image source={require('../../../Assets/FavoritedImage.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
                             <View style={Styles.ActivitCardDown}>
-                                <Text>Azuki</Text>
+                                <Text style={Styles.FavoritedText}>Azuki</Text>
                                 <View style={Styles.ActivitCardDownOne}>
-                                    <Ionicons name='heart-outline' size={20} />
-                                    <Text>192</Text>
+                                    <Ionicons style={Styles.FavoritedText}  name='heart-outline' size={20} />
+                                    <Text style={Styles.FavoritedText} >192</Text>
                                 </View>
                             </View>
                             <View style={Styles.FavoritedBox}>
-                                <Text style={Styles.FavoritedText}>
+                                <Text  style={Styles.FavoritedText}>
                                     Azuki #4092
                                 </Text>
                             </View>
@@ -76,10 +76,10 @@ export default function Items({navigation}) {
                         <View style={[Styles.ActivitCard,]}>
                             <Image source={require('../../../Assets/FavoritedImageOne.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
                             <View style={Styles.ActivitCardDown}>
-                                <Text>The Invitation</Text>
+                                <Text style={Styles.FavoritedText}>The Invitation</Text>
                                 <View style={Styles.ActivitCardDownOne}>
-                                    <Ionicons name='heart-outline' size={20} />
-                                    <Text>192</Text>
+                                    <Ionicons style={Styles.FavoritedText} name='heart-outline' size={20} />
+                                    <Text style={Styles.FavoritedText}>192</Text>
                                 </View>
                             </View>
                             <View style={Styles.FavoritedBox}>
@@ -167,7 +167,7 @@ const Styles = StyleSheet.create({
     FavoritedText: {
         justifyContent: 'flex-start',
         textAlign: 'left',
-        fontSize: 15,
+        fontSize: 18,
         fontWeight: '500',
         color: '#F5F8FA',
         paddingBottom: 10,
@@ -197,6 +197,7 @@ const Styles = StyleSheet.create({
     ItemsBoxText:{
         color: "#F5F8FA",
     fontFamily: 'Rationale-Regular',
+    fontSize:20
 
     }
 })

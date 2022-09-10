@@ -17,7 +17,8 @@ export default function ConnectWithWallet({ navigation }) {
         </View>
         <View style={Styles.imgContainorLogo}>
           <Image source={require('../../Assets/Logo.png')} />
-        </View>
+
+          </View>
       </View>
       <View style={Styles.walletImgCont}>
         <Image source={require('../../Assets/WalletLogo.png')} />
@@ -61,17 +62,20 @@ const Styles = StyleSheet.create({
   },
   headerContainor: {
     flexDirection: 'row',
-    backgroundColor: 'Red',
+    // backgroundColor: 'Red',
+    // borderWidth: 1,
   },
   imgContainor: {
-    marginTop: 40,
-    marginLeft: 40,
+    marginTop: 35,
+    marginLeft: 20,
+    // borderWidth: 1
   },
   imgContainorLogo: {
     marginTop: 35,
-    marginLeft: 55,
+    marginLeft: 75,
     // justifyContent:"center",
     // alignItems:"center"
+    // borderWidth: 1
   },
   walletImgCont: {
     justifyContent: 'center',
@@ -83,7 +87,7 @@ const Styles = StyleSheet.create({
   },
   headttext: {
     color: "white",
-    fontSize: 30,
+    fontSize: 32,
     marginLeft: 25,
     // textAlign:'center',
     // fontFamily: 'Rationale',
@@ -94,7 +98,7 @@ const Styles = StyleSheet.create({
   },
   normalText: {
     color: "#AAB8C2",
-    fontSize: 16,
+    fontSize: 18,
     marginLeft: 25,
     marginTop: 15,
     fontFamily: 'Rationale-Regular',
@@ -113,7 +117,7 @@ const Styles = StyleSheet.create({
 
   },
   BoxOneText: {
-    fontSize: 18,
+    fontSize: 22,
     color: '#F5F8FA',
     fontWeight: '600',
     fontFamily: 'Rationale-Regular',
@@ -131,7 +135,7 @@ const Styles = StyleSheet.create({
   },
   ButtonContinueText:{
     textAlign: 'center',
-    fontSize: 18,
+    fontSize: 24,
     color: '#F5F8FA',
     fontWeight: '600',
     fontFamily: 'Rationale-Regular',

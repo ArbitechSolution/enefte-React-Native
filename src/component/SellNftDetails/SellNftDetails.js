@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 // import DropDownPicker from 'react-native-dropdown-picker';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
@@ -26,8 +27,9 @@ export default function SellNftDetails({navigation}) {
     <View style={Styles.mainBg}>
       <View style={Styles.innerMainBg}>
         <View style={Styles.headerCont}>
-          <View>
-            <Image source={require('../../Assets/forward.png')} />
+          <View >
+          <AntDesign name='left'
+              size={30} color={"white"} />
           </View>
           <View style={Styles.headerTxtCont}>
             <Text style={Styles.headerTxt}>Sell Items</Text>
@@ -66,6 +68,7 @@ export default function SellNftDetails({navigation}) {
           </View>
           <View style={Styles.belowInput}>
             <TextInput
+            placeholderTextColor="#AAB8C2"
               style={Styles.searchInput}
               numberOfLines={1}
               placeholder="Price"
@@ -96,6 +99,7 @@ export default function SellNftDetails({navigation}) {
           </View>
           <View style={Styles.belowInput}>
             <TextInput
+            placeholderTextColor="#AAB8C2"
               style={Styles.searchInput}
               numberOfLines={1}
               placeholder="Time"
@@ -138,11 +142,12 @@ export default function SellNftDetails({navigation}) {
             <Text style={Styles.numberTxts}>[$1,759.20]</Text>
           </View>
         </View> */}
-        <View style={Styles.botFooter}>
-          <TouchableOpacity style={Styles.belowButton} activeOpacity={0.5} onPress={()=>navigation.navigate('ItemReadyForSell')}>
-            <Text style={Styles.buttonTextStyle}>NEXT</Text>
-          </TouchableOpacity>
-        </View>
+
+<TouchableOpacity onPress={() => navigation.navigate("ItemReadyForSell")}>
+      <View style={Styles.ButtonContinue}>
+        <Text style={Styles.ButtonContinueText}>NEXT</Text>
+      </View>
+      </TouchableOpacity>
       </View>
     </View>
   );
@@ -155,11 +160,13 @@ const Styles = StyleSheet.create({
     // alignContent: 'center',
   },
   innerMainBg: {
-    padding: 30,
+    padding: 20,
   },
   headerCont: {
     flexDirection: 'row',
     marginTop: 20,
+    // borderWidth: 1,
+    width: '100%'
   },
   headerTxtCont: {
     // backgroundColor:"red",
@@ -168,7 +175,7 @@ const Styles = StyleSheet.create({
   },
   headerTxt: {
     color: '#FFFFFF',
-    fontSize: 30,
+    fontSize: 32,
     fontWeight: '400',
     // fontFamily: 'Roboto-Regular',
     fontFamily: 'Rationale-Regular',
@@ -176,14 +183,16 @@ const Styles = StyleSheet.create({
   },
   botFooter: {
     // alignSelf:"flex-end",
-    // justifyContent:"flex-end"
-    marginTop: 40
+    justifyContent:"center",
+    alignItems :"center",
+    marginTop: 40,
+    borderWidth: 1,
   },
 
   belowButton: {
     backgroundColor: '#1D9BF0',
-    width: wp('84%'),
-    height: hp('7%'),
+    // width: wp('84%'),
+    // height: hp('7%'),
     alignItems: 'center',
     borderRadius: 10,
     justifyContent: 'center',
@@ -225,7 +234,7 @@ const Styles = StyleSheet.create({
     borderRadius: 10,
   },
   searchInput: {
-    fontSize: 18,
+    fontSize: 20,
     marginLeft: 20,
     fontFamily: 'Rationale-Regular',
 
@@ -243,8 +252,8 @@ const Styles = StyleSheet.create({
     borderColor: '#253341',
   },
   feeTxts: {
-    // marginTop: 20,
-    fontSize: 16,
+    marginTop: 10,
+    fontSize: 20,
     color: '#fff',
     // fontFamily: 'Rationale',
     fontFamily: 'Rationale-Regular',
@@ -261,7 +270,7 @@ const Styles = StyleSheet.create({
   leftTxt: {
     marginTop: 20,
     color: '#AAB8C2',
-    fontSize: 15,
+    fontSize: 18,
     fontFamily: 'Rationale-Regular',
 
   },
@@ -272,7 +281,7 @@ const Styles = StyleSheet.create({
   RightTxt: {
     marginTop: 20,
     color: '#AAB8C2',
-    fontSize: 12,
+    fontSize: 20,
     fontFamily: 'Rationale-Regular',
 
     textAlign: 'right',
@@ -287,6 +296,7 @@ const Styles = StyleSheet.create({
   DropDownpicker: {
     backgroundColor: '#253341',
     width: 120,
+    color:"#fff"
 
     // borderWidth: 1,
     // borderRadius: 10
@@ -314,4 +324,21 @@ const Styles = StyleSheet.create({
     borderRadius: 10,
     // justifyContent: ''
   },
+  ButtonContinue: {
+    marginLeft: 10,
+    marginRight: 10,
+    backgroundColor: '#1D9BF0',
+    borderRadius: 10,
+    padding: 15,
+    marginTop: 50
+    
+  },
+  ButtonContinueText:{
+    textAlign: 'center',
+    fontSize: 24,
+    color: '#F5F8FA',
+    fontWeight: '400',
+    fontFamily: 'Rationale-Regular',
+
+  }
 });

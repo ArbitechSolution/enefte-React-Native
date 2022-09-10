@@ -13,8 +13,8 @@ export default function BidDetails({ navigation }) {
                     <TouchableOpacity
                         onPress={() => navigation.navigate("CollectionItems")}
                     >
-                         <AntDesign name='left'
-              size={30} color={"white"} />
+                        <AntDesign name='left'
+                            size={30} color={"white"} />
                     </TouchableOpacity>
                 </View>
                 <View style={Styles.imgContainorLogo}>
@@ -40,12 +40,12 @@ export default function BidDetails({ navigation }) {
                         alignItems: 'center'
                     }}>
                         <View style={Styles.BidDetailsMainBox}>
-                            <AntDesign name='minuscircle' size={25} />
+                            <AntDesign name='minuscircle' size={25} color={'#AAB8C2'} />
                             <View style={Styles.BidDetailsMainBoxView}>
                                 <Image source={require('../../Assets/logos_ethereum.png')} />
                                 <Text style={Styles.BidDetailsMainBoxViewText}>2,75</Text>
                             </View>
-                            <AntDesign name='pluscircle' size={25} color={''} />
+                            <AntDesign name='pluscircle' size={25} color={'#AAB8C2'} />
                         </View>
                     </View>
                     <View style={{ marginLeft: 20, marginTop: 20 }}>
@@ -70,6 +70,7 @@ export default function BidDetails({ navigation }) {
                         </View>
                         <View style={Styles.belowInput}>
                             <TextInput
+                            placeholderTextColor={"#AAB8C2"}
                                 style={Styles.searchInput}
                                 numberOfLines={1}
                                 placeholder="Time"
@@ -81,7 +82,7 @@ export default function BidDetails({ navigation }) {
                         <TouchableOpacity
                             style={Styles.belowButton}
                             activeOpacity={0.5}
-                          onPress={()=> navigation.navigate("BidFinished")}
+                            onPress={() => navigation.navigate("BidFinished")}
                         >
                             <Text style={Styles.buttonTextStyle}>Submit </Text>
                         </TouchableOpacity>
@@ -92,10 +93,10 @@ export default function BidDetails({ navigation }) {
                         </Text>
                     </View>
                     <View>
-                    <View style={[Styles.TabsRankingcard]}>
+                        <View style={[Styles.TabsRankingcard]}>
                             <View style={Styles.mainView}>
                                 <View style={Styles.TabsActivityImage}>
-                                    <Image source={require('../../Assets/biddetailsImage.png')} style={{width: 60, height: 60}}/>
+                                    <Image source={require('../../Assets/biddetailsImage.png')} style={{ width: 60, height: 60 }} />
                                     <View style={{ paddingLeft: 8 }}>
                                         <Text style={Styles.TabsActivityImageText}>Karafuru</Text>
                                         <Text style={Styles.TabsActivityImageTextOne}>Uzachi #3330</Text>
@@ -149,16 +150,18 @@ const Styles = StyleSheet.create({
         backgroundColor: 'Red',
     },
     imgContainor: {
-        marginTop: 30,
-        marginLeft: 40,
+        marginTop: 35,
+    marginLeft: 20,
     },
     imgContainorLogo: {
+
+
         marginTop: 30,
         marginLeft: 55,
         justifyContent:"center"
     },
     SetupProfileText: {
-        fontSize: 28,
+        fontSize: 32,
         color: '#fff',
         // fontFamily: "Rationale"
         fontFamily: 'Rationale-Regular',
@@ -184,7 +187,7 @@ const Styles = StyleSheet.create({
     },
     BidDetailsminiBoxText: {
         color: '#F5F8FA',
-        fontSize: 20,
+        fontSize: 24,
         fontWeight: '600',
         paddingTop: 10,
         fontFamily: 'Rationale-Regular',
@@ -193,13 +196,13 @@ const Styles = StyleSheet.create({
     },
     BidDetailsminiBoxTextOne: {
         color: '#AAB8C2',
-        fontSize: 12,
+        fontSize: 16,
         fontFamily: 'Rationale-Regular',
 
     },
     BidDetailsminiBoxTextTwo: {
         color: '#F5F8FA',
-        fontSize: 15,
+        fontSize: 18,
         marginLeft: 10,
         fontFamily: 'Rationale-Regular',
 
@@ -223,7 +226,7 @@ const Styles = StyleSheet.create({
         justifyContent: 'space-between'
     },
     BidDetailsMainBoxViewText: {
-        fontSize: 22,
+        fontSize: 26,
         color: '#F5F8FA',
         fontFamily: 'Rationale-Regular',
 
@@ -232,13 +235,14 @@ const Styles = StyleSheet.create({
         backgroundColor: '#253341',
         width: 120,
         fontFamily: 'Rationale-Regular',
+        color: '#fff',
 
 
         // borderWidth: 1,
         // borderRadius: 10
     },
     searchInput: {
-        fontSize: 18,
+        fontSize: 22,
         alignSelf: 'center',
         marginLeft: 20,
         color: '#fff',
@@ -276,7 +280,7 @@ const Styles = StyleSheet.create({
     buttonTextStyle: {
         color: 'white',
         // paddingVertical: 10,
-        fontSize: 24,
+        fontSize: 28,
         fontWeight: '600',
         fontFamily: 'Rationale-Regular',
 
@@ -286,7 +290,7 @@ const Styles = StyleSheet.create({
         // fontFamily: 'Rationale',
         fontFamily: 'Rationale-Regular',
 
-        fontSize: 24,
+        fontSize: 26,
         fontWeight: '600'
     },
     TabsRankingcard: {
@@ -302,13 +306,13 @@ const Styles = StyleSheet.create({
     },
     TabsActivityImageText: {
         color: "#AAB8C2",
-        fontSize: 15,
+        fontSize: 18,
         fontFamily: 'Rationale-Regular',
 
     },
     TabsActivityImageTextOne: {
         color: '#F5F8FA',
-        fontSize: 17,
+        fontSize: 20,
         fontWeight: '500',
         fontFamily: 'Rationale-Regular',
 
@@ -331,7 +335,7 @@ const Styles = StyleSheet.create({
     },
     TabsActivityminitext: {
         color: '#00CB6A',
-        fontSize: 13,
+        fontSize: 16,
         fontWeight: '400',
         fontFamily: 'Rationale-Regular',
 
@@ -339,13 +343,13 @@ const Styles = StyleSheet.create({
     },
     TabsActivityminitextOne: {
         color: '#F5F8FA',
-        fontSize: 15,
+        fontSize: 18,
         fontFamily: 'Rationale-Regular',
 
     },
     TabsActivityminitextTwo: {
         color: '#AAB8C2',
-        fontSize: 15,
+        fontSize: 18,
         paddingTop: 8,
         fontFamily: 'Rationale-Regular',
 
@@ -360,13 +364,13 @@ const Styles = StyleSheet.create({
     },
     CardsOneText: {
         color: '#AAB8C2',
-        fontSize: 15,
+        fontSize: 18,
         fontFamily: 'Rationale-Regular',
 
     },
     CardsOneTextgreen: {
         color: '#F5F8FA',
-        fontSize: 13,
+        fontSize: 16,
         paddingTop: 8,
         fontFamily: 'Rationale-Regular',
 
@@ -374,7 +378,7 @@ const Styles = StyleSheet.create({
     CardsOneTextsecond: {
         paddingTop: 8,
         color: "#F5F8FA",
-        fontSize: 13,
+        fontSize: 16,
         fontFamily: 'Rationale-Regular',
 
     },

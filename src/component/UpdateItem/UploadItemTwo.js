@@ -77,7 +77,7 @@ export default function UploadItemTwo({ navigation }) {
                  which requires a one-time gas fee 
                 </Text>
             </View>
-            <View>
+            <View style={{justifyContent: 'center', alignItems: 'center'}}>
         <TouchableOpacity
         style={Styles.belowButton}
           activeOpacity={0.5}
@@ -108,7 +108,7 @@ export default function UploadItemTwo({ navigation }) {
         width:"100%"
     },
     headerTxt:{
-        fontSize:24,
+        fontSize:32,
         fontWeight:"400",
         color:"#FFFFFF",
         fontFamily: 'Rationale-Regular',
@@ -124,6 +124,7 @@ export default function UploadItemTwo({ navigation }) {
         textAlign:"center",
         color:"#AAB8C2",
         padding:20,
+        fontSize:18,
         fontFamily: 'Rationale-Regular',
 
     },
@@ -131,6 +132,8 @@ export default function UploadItemTwo({ navigation }) {
         color:"#1D9BF0",
         textAlign:"center",
         fontFamily: 'Rationale-Regular',
+        fontSize: 18,
+
 
     },
     TabsRankingcard: {
@@ -146,13 +149,13 @@ export default function UploadItemTwo({ navigation }) {
     },
     TabsActivityImageText: {
         color: "#AAB8C2",
-        fontSize: 15,
+        fontSize: 18,
         fontFamily: 'Rationale-Regular',
 
     },
     TabsActivityImageTextOne: {
         color: '#F5F8FA',
-        fontSize: 17,
+        fontSize: 19,
         fontWeight: '500',
         fontFamily: 'Rationale-Regular',
 
@@ -175,7 +178,7 @@ export default function UploadItemTwo({ navigation }) {
     }, 
     TabsActivityminitext:{
         color: '#00CB6A',
-        fontSize: 13,
+        fontSize: 16,
         fontWeight: '400',
         fontFamily: 'Rationale-Regular',
 
@@ -183,14 +186,14 @@ export default function UploadItemTwo({ navigation }) {
     },
     TabsActivityminitextOne:{
         color: '#F5F8FA',
-        fontSize: 15,
+        fontSize: 17,
         fontFamily: 'Rationale-Regular',
 
         // textAlign:"flex-end"
     },
     TabsActivityminitextTwo:{
         color: '#AAB8C2',
-        fontSize: 15,
+        fontSize: 18,
         paddingTop: 8,
         alignItems:'flex-end',
         fontFamily: 'Rationale-Regular',
@@ -206,13 +209,13 @@ export default function UploadItemTwo({ navigation }) {
     },
     CardsOneText: {
         color: '#AAB8C2',
-        fontSize: 15,
+        fontSize: 18,
         fontFamily: 'Rationale-Regular',
 
     },
     CardsOneTextgreen: {
         color: '#F5F8FA',
-        fontSize: 13,
+        fontSize: 16,
         paddingTop: 8,
         fontFamily: 'Rationale-Regular',
 
@@ -220,7 +223,7 @@ export default function UploadItemTwo({ navigation }) {
     CardsOneTextsecond: {
         paddingTop: 8,
         color: "#F5F8FA",
-        fontSize: 13,
+        fontSize: 16,
         fontFamily: 'Rationale-Regular',
 
     },
@@ -231,8 +234,8 @@ export default function UploadItemTwo({ navigation }) {
       justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 10,
-        marginLeft: 35,
-        marginRight: 35,
+        // marginLeft: 20,
+        // marginRight: 20,
         marginTop: 30,
       },
       buttonTextStyle: {

@@ -2,6 +2,9 @@ import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView } from 'rea
 import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Fontisto from 'react-native-vector-icons/Fontisto';
+import AntDesign from "react-native-vector-icons/AntDesign"
+import FontAwesome from "react-native-vector-icons/FontAwesome"
+import Entypo from "react-native-vector-icons/Entypo"
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ProfileAppBar from './ProfileAppBar';
@@ -14,8 +17,18 @@ export default function ProfilePage({ navigation }) {
       <View style={Styles.ProfilePageImage}>
         <Image source={require('../../Assets/banner-photo1.png')} />
         <View style={Styles.iconsCont}>
-          <TouchableOpacity onPress={() => navigation.navigate('AppBars')}><Image source={require("../../Assets/IconArrow.png")} /></TouchableOpacity>
-          <Image source={require("../../Assets/share.png")} />
+          <View style={Styles.iconbox}>
+          <TouchableOpacity onPress={() => navigation.navigate('AppBars')}>
+            <AntDesign name='left'
+              size={30} color={"white"} />
+              </TouchableOpacity>
+          </View>
+
+          <View style={Styles.iconbox}>
+            <Entypo name='share' size={25} color={'#F5F8FA'} />
+          </View>
+          {/* <TouchableOpacity onPress={() => navigation.navigate('AppBars')}><Image source={require("../../Assets/IconArrow.png")} /></TouchableOpacity>
+          <Image source={require("../../Assets/share.png")} /> */}
         </View>
         <View style={Styles.ProfilePageDownImage}>
           <Image source={require('../../Assets/Profile-Verified21.png')} />
@@ -35,9 +48,9 @@ export default function ProfilePage({ navigation }) {
           <Text style={Styles.ProfilePageAddressText}>0x841a...8a57</Text>
         </View>
         <View style={Styles.ProfilePageSocialIcons}>
-          <Fontisto name='world' size={25} />
-          <Fontisto name='instagram' size={25} />
-          <Fontisto name='twitter' size={25} />
+          <Fontisto name='world' size={25} color={"#AAB8C2"} />
+          <Fontisto name='instagram' size={25} color={"#AAB8C2"} />
+          <Fontisto name='twitter' size={25} color={"#AAB8C2"} />
         </View>
       </View>
       <View >
@@ -59,10 +72,10 @@ export default function ProfilePage({ navigation }) {
       </View>
       {/* </ScrollView> */}
       <View style>
-        <ProfileAppBar/>
-      
+        <ProfileAppBar />
+
       </View>
-      
+
     </View>
   )
 }
@@ -105,12 +118,13 @@ const Styles = StyleSheet.create({
   ProfilePageDownImageBoxText: {
     color: '#F5F8FA',
     fontWeight: '500',
+    fontSize:18,
     // fontWeight: '500',
     fontFamily: 'Rationale-Regular',
   },
   ProfilePageText: {
     color: '#fff',
-    fontSize: 34,
+    fontSize: 32,
     // fontWeight: '600',
     fontWeight: '500',
     fontFamily: 'Rationale-Regular',
@@ -137,19 +151,21 @@ const Styles = StyleSheet.create({
   },
   ProfilePageAddressText: {
     // fontFamily: 'Rationale',
-    fontSize: 17,
+    fontSize: 19,
     paddingLeft: 10,
     fontWeight: '500',
+    color:"#AAB8C2",
     fontFamily: 'Rationale-Regular',
   },
   ProfilePageSellAnyThing: {
     // fontFamily: 'Rationale',
-    fontSize: 22,
+    fontSize: 24,
     // fontWeight: '600',
     fontWeight: '500',
     fontFamily: 'Rationale-Regular',
     paddingLeft: 20,
-    marginTop: 7
+    color:"#fff",
+    marginTop: 10
   },
   ProfilePageTextMini: {
     flexDirection: 'row',
@@ -157,6 +173,7 @@ const Styles = StyleSheet.create({
     width: 120,
     alignItems: 'center',
     fontWeight: '500',
+    fontSize:18,
     fontFamily: 'Rationale-Regular',
 
   },
@@ -176,10 +193,18 @@ const Styles = StyleSheet.create({
   },
   ProfilePageTextMiniTextOne: {
     color: '#AAB8C2',
-    fontSize: 18,
+    fontSize: 20,
     paddingLeft: 5,
     fontWeight: '500',
     fontFamily: 'Rationale-Regular',
+  },
+  iconbox: {
+    backgroundColor: "#253341",
+    width: 40,
+    height: 40,
+    borderRadius: 50,
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 
 })

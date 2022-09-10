@@ -29,19 +29,19 @@ export default function UpdateItem({ navigation }) {
       </Text>
       <View style={Styles.shareIconsContainor}>
         <View style={Styles.iconsStyle}>
-        <Fontisto name='instagram' size={25} />
+        <Fontisto name='instagram' size={27} color={"#AAB8C2"} />
 
         </View>
         <View style={Styles.iconsStyle}>
-        <Fontisto name='twitter' size={25} />
+        <Fontisto name='twitter' size={27} color={"#AAB8C2"} />
 
         </View>
         <View style={Styles.iconsStyle}>
-        <Fontisto name='whatsapp' size={25} />
+        <Fontisto name='whatsapp' size={27} color={"#AAB8C2"} />
 
         </View>
         <View style={Styles.iconsStyle}>
-        <Fontisto name='line' size={25} />
+        <Fontisto name='line' size={27} color={"#AAB8C2"} />
 
         </View>
       </View>

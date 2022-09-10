@@ -106,7 +106,7 @@ const Styles = StyleSheet.create({
     },
     headerTxt:{
         color:"#FFFFFF",
-        fontSize:28,
+        fontSize:32,
         fontWeight:"400",
         fontFamily: 'Rationale-Regular',
 
@@ -124,7 +124,7 @@ const Styles = StyleSheet.create({
     },
     headingTxt:{
         color:"#FFFFFF",
-        fontSize:16,
+        fontSize:19,
         fontWeight:"400",
         // fontFamily:"Roboto-Regular"
         fontFamily: 'Rationale-Regular',
@@ -133,7 +133,7 @@ const Styles = StyleSheet.create({
     commonTxt:{
         color:"#AAB8C2",
         // fontFamily:"Rationale",
-        fontSize:11,
+        fontSize:15,
         fontWeight:"400",
         fontFamily: 'Rationale-Regular',
 
@@ -153,7 +153,7 @@ const Styles = StyleSheet.create({
       buttonTextStyle: {
         color: "white",
         fontSize: 24,
-        fontWeight: "600",
+        fontWeight: "400",
         fontFamily: 'Rationale-Regular',
 
     },

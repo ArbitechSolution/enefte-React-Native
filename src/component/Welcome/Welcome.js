@@ -47,7 +47,7 @@ const Styles = StyleSheet.create({
     },
     belowText:{
       color:"white",
-      fontSize:16,
+      fontSize:18,
       // margin:,
       textAlign:'center',
       // fontFamily:'Rationale',

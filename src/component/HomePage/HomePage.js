@@ -92,7 +92,7 @@ export default function HomePage() {
               <View style={Styles.CardText}>
                 <Text style={Styles.CardTextOne}>Mosu #1930</Text>
                 <View style={Styles.CardPageOne}>
-                  <AntDesign name={'clockcircleo'} size={18} />
+                  <AntDesign name={'clockcircleo'} size={20} color={"#fff"} />
                   {/* <Image source={require('../../Assets/IconTime.png')} style={Styles.CardPageImageOne}/> */}
                   <Text style={Styles.CardTextOne}>102d Left</Text>
                 </View>
@@ -224,7 +224,7 @@ const Styles = StyleSheet.create({
   },
   HomePageButtonPendingText: {
     color: "#F9FBFC",
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: '400',
     fontFamily: 'Rationale-Regular',
 

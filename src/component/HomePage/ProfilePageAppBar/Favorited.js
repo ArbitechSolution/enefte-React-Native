@@ -12,10 +12,10 @@ export default function Favorited() {
         <View style={Styles.ActivitCard}>
           <Image source={require('../../../Assets/FavoritedImage.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
           <View style={Styles.ActivitCardDown}>
-            <Text>Azuki</Text>
+            <Text  style={Styles.FavoritedText}>Azuki</Text>
             <View style={Styles.ActivitCardDownOne}>
-              <Ionicons name='heart-outline' size={20}/>
-              <Text>320</Text>
+              <Ionicons  style={Styles.FavoritedText} name='heart-outline' size={20}/>
+              <Text  style={Styles.FavoritedText}>320</Text>
             </View>
           </View>
           <View style={Styles.FavoritedBox}>
@@ -27,10 +27,10 @@ export default function Favorited() {
         <View style={Styles.ActivitCard}>
           <Image source={require('../../../Assets/FavoritedImageOne.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
           <View style={Styles.ActivitCardDown}>
-            <Text>The Invitation</Text>
+            <Text  style={Styles.FavoritedText} >The Invitation</Text>
             <View style={Styles.ActivitCardDownOne}>
-              <Ionicons name='heart-outline' size={20}/>
-              <Text>192</Text>
+              <Ionicons style={Styles.FavoritedText} name='heart-outline' size={20}/>
+              <Text style={Styles.FavoritedText}>192</Text>
             </View>
           </View>
           <View style={Styles.FavoritedBox}>
@@ -42,10 +42,10 @@ export default function Favorited() {
         <View style={[Styles.ActivitCard,]}>
           <Image source={require('../../../Assets/FavoritedImage.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
           <View style={Styles.ActivitCardDown}>
-            <Text>Azuki</Text>
+            <Text style={Styles.FavoritedText}>Azuki</Text>
             <View style={Styles.ActivitCardDownOne}>
-              <Ionicons name='heart-outline' size={20}/>
-              <Text>192</Text>
+              <Ionicons style={Styles.FavoritedText} name='heart-outline' size={20}/>
+              <Text style={Styles.FavoritedText}>192</Text>
             </View>
           </View>
           <View style={Styles.FavoritedBox}>
@@ -57,10 +57,10 @@ export default function Favorited() {
         <View style={[Styles.ActivitCard, ]}>
           <Image source={require('../../../Assets/FavoritedImageOne.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
           <View style={Styles.ActivitCardDown}>
-            <Text>The Invitation</Text>
+            <Text style={Styles.FavoritedText}>The Invitation</Text>
             <View style={Styles.ActivitCardDownOne}>
-              <Ionicons name='heart-outline' size={20}/>
-              <Text>192</Text>
+              <Ionicons style={Styles.FavoritedText} name='heart-outline' size={20}/>
+              <Text style={Styles.FavoritedText}>192</Text>
             </View>
           </View>
           <View style={Styles.FavoritedBox}>
@@ -90,7 +90,8 @@ const Styles = StyleSheet.create({
   DropDownpicker: {
     backgroundColor: '#253341',
     width: 188,
-    borderRadius: 10
+    borderRadius: 10,
+    color:"#fff"
   },
   ActivityButton: {
     backgroundColor: '#1D9BF0',
@@ -102,7 +103,9 @@ const Styles = StyleSheet.create({
   },
   ActivityButtonText: {
     color: '#F5F8FA',
-    fontSize: 15
+    fontSize: 18,
+    fontWeight:"400",
+    fontFamily: 'Rationale-Regular',
   },
   card: {
     flexDirection: 'row',
@@ -138,10 +141,12 @@ const Styles = StyleSheet.create({
   FavoritedText:{
     justifyContent:'flex-start',
     textAlign: 'left',
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: '500',
     color: '#F5F8FA',
-    paddingBottom: 10
+    paddingBottom: 10,
+    fontWeight:"400",
+    fontFamily: 'Rationale-Regular',
   },
   FavoritedBox:{
     // borderWidth: 1,

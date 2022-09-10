@@ -109,13 +109,13 @@ const Styles = StyleSheet.create({
     },
     TabsActivityImageText: {
         color: "#AAB8C2",
-        fontSize: 15,
+        fontSize: 18,
     fontFamily: 'Rationale-Regular',
 
     },
     TabsActivityImageTextOne: {
         color: '#F5F8FA',
-        fontSize: 17,
+        fontSize: 19,
         fontWeight: '500',
     fontFamily: 'Rationale-Regular',
 
@@ -144,13 +144,13 @@ const Styles = StyleSheet.create({
     },
     TabsActivityminitextOne: {
         color: '#F5F8FA',
-        fontSize: 15,
+        fontSize: 18,
     fontFamily: 'Rationale-Regular',
 
     },
     TabsActivityminitextTwo: {
         color: '#AAB8C2',
-        fontSize: 15,
+        fontSize: 18,
         paddingTop: 8,
     fontFamily: 'Rationale-Regular',
 
@@ -165,13 +165,13 @@ const Styles = StyleSheet.create({
     },
     CardsOneText: {
         color: '#AAB8C2',
-        fontSize: 15,
+        fontSize: 18,
     fontFamily: 'Rationale-Regular',
 
     },
     CardsOneTextgreen: {
         color: '#F5F8FA',
-        fontSize: 13,
+        fontSize: 16,
         paddingTop: 8,
     fontFamily: 'Rationale-Regular',
 
@@ -179,7 +179,7 @@ const Styles = StyleSheet.create({
     CardsOneTextsecond: {
         paddingTop: 8,
         color: "#F5F8FA",
-        fontSize: 13,
+        fontSize: 16,
     fontFamily: 'Rationale-Regular',
 
     },

@@ -20,8 +20,8 @@ export default function SearchPage({navigation}) {
     </View>
     <View style={Styles.belowInput}>
   
-    <Image style={Styles.searchIconImage} source={require("../../Assets/SearchVector.png")}/>
-    <TextInput style={Styles.searchInput}  numberOfLines={1}  placeholder='Search Your Nft'  />
+    <Image style={Styles.searchIconImage} source={require("../../Assets/searchone.png")}/>
+    <TextInput placeholderTextColor={"#AAB8C2"} style={Styles.searchInput}  numberOfLines={1}  placeholder='Search Your Nft'  />
 </View>
 <View  style={Styles.catView}>
   <Text style={Styles.catText}>

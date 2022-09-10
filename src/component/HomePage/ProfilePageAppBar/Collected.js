@@ -84,7 +84,8 @@ const Styles = StyleSheet.create({
   DropDownpicker: {
     backgroundColor: '#253341',
     width: 188,
-    borderRadius: 10
+    borderRadius: 10,
+    color:"#fff"
   },
   ActivityButton: {
     backgroundColor: '#1D9BF0',

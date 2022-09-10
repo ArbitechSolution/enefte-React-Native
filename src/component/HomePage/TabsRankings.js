@@ -151,12 +151,15 @@ const Styles = StyleSheet.create({
     DropDownpicker: {
         backgroundColor: '#253341',
         width: 178,
-        borderRadius: 10
+        borderRadius: 10,
+        color:"#fff"
+
     },
     DropDownpickerone: {
         backgroundColor: '#253341',
         width: 155,
-        borderRadius: 10
+        borderRadius: 10,
+        color:"#fff"
     },
     TabsRankingsView: {
         marginTop: 15,
@@ -178,13 +181,13 @@ const Styles = StyleSheet.create({
     },
     cardsText: {
         color: '#F5F8FA',
-        fontSize: 18,
+        fontSize: 22,
         fontWeight: '500',
     fontFamily: 'Rationale-Regular',
     },
     cardsTextOne: {
         color: '#F5F8FA',
-        fontSize: 15,
+        fontSize: 18,
         fontWeight: '500',
     fontFamily: 'Rationale-Regular',
     },
@@ -208,13 +211,13 @@ const Styles = StyleSheet.create({
     },
     CardsOneText: {
         color: '#AAB8C2',
-        fontSize: 19,
+        fontSize: 22,
         fontWeight: '500',
     fontFamily: 'Rationale-Regular',
     },
     CardsOneTextgreen: {
         color: '#00CB6A',
-        fontSize: 17,
+        fontSize: 20,
         fontWeight: '500',
     fontFamily: 'Rationale-Regular',
         paddingTop: 8
@@ -222,7 +225,7 @@ const Styles = StyleSheet.create({
     CardsOneTextsecond: {
         paddingTop: 8,
         color: "#F5F8FA",
-        fontSize: 17,
+        fontSize: 20,
         fontWeight: '500',
     fontFamily: 'Rationale-Regular',
     },
@@ -230,6 +233,7 @@ const Styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         fontWeight: '500',
+        fontSize:18,
     fontFamily: 'Rationale-Regular',
     }
 })

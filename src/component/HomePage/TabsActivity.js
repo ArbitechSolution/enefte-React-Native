@@ -153,11 +153,13 @@ const Styles = StyleSheet.create({
     DropDownpicker: {
         backgroundColor: '#253341',
         width: 178,
-        borderRadius: 10
+        borderRadius: 10,
+        color:"#fff"
     },
     DropDownpickerone: {
         backgroundColor: '#253341',
         width: 155,
+        color:"#fff",
         borderRadius: 10
     },
     TabsRankingsView: {
@@ -207,7 +209,7 @@ const Styles = StyleSheet.create({
     }, 
     TabsActivityminitext:{
         color: '#00CB6A',
-        fontSize: 15,
+        fontSize: 18,
         // fontWeight: '400',
         fontWeight: '500',
     fontFamily: 'Rationale-Regular',
@@ -215,13 +217,13 @@ const Styles = StyleSheet.create({
     },
     TabsActivityminitextOne:{
         color: '#F5F8FA',
-        fontSize: 17,
+        fontSize: 19,
         fontWeight: '500',
     fontFamily: 'Rationale-Regular',
     },
     TabsActivityminitextTwo:{
         color: '#AAB8C2',
-        fontSize: 17,
+        fontSize: 19,
         paddingTop: 8,
         fontWeight: '500',
     fontFamily: 'Rationale-Regular',
@@ -236,13 +238,13 @@ const Styles = StyleSheet.create({
     },
     CardsOneText: {
         color: '#AAB8C2',
-        fontSize: 17,
+        fontSize: 19,
         fontWeight: '500',
     fontFamily: 'Rationale-Regular',
     },
     CardsOneTextgreen: {
         color: '#F5F8FA',
-        fontSize: 15,
+        fontSize: 18,
         paddingTop: 8,
         fontWeight: '500',
     fontFamily: 'Rationale-Regular',
@@ -250,13 +252,14 @@ const Styles = StyleSheet.create({
     CardsOneTextsecond: {
         paddingTop: 8,
         color: "#F5F8FA",
-        fontSize: 15,
+        fontSize: 18,
         fontWeight: '500',
     fontFamily: 'Rationale-Regular',
     },
     cardsimagetext:{
         flexDirection: 'row',
         alignItems: 'center',
+        fontSize:18,
         fontWeight: '500',
     fontFamily: 'Rationale-Regular',
     }

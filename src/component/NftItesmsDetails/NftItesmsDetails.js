@@ -102,8 +102,8 @@ export default function NftItesmsDetails({ navigation }) {
                                 style={Styles.DropDownpicker}
                                 onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
                             >
-                                <Picker.Item label="About Collection" value="About Collection" />
-                                <Picker.Item label="Date" value="Date" />
+                                <Picker.Item  style={Styles.dropLabelTxt} label="About Collection" value="About Collection" />
+                                <Picker.Item   style={Styles.dropLabelTxt} label="Date" value="Date" />
                             </Picker>
                         </View>
                     </View>
@@ -138,8 +138,8 @@ export default function NftItesmsDetails({ navigation }) {
                                 style={Styles.DropDownpicker}
                                 onValueChange={(itemValue, itemIndex) => setSelectedValueTwo(itemValue)}
                             >
-                                <Picker.Item label="Details" value="Details" />
-                                <Picker.Item label="Date" value="Date" />
+                                <Picker.Item  style={Styles.dropLabelTxt} label="Details" value="Details" />
+                                <Picker.Item   style={Styles.dropLabelTxt} label="Date" value="Date" />
                             </Picker>
                         </View>
                     </View>
@@ -156,8 +156,8 @@ export default function NftItesmsDetails({ navigation }) {
                                 style={Styles.DropDownpicker}
                                 onValueChange={(itemValue, itemIndex) => setSelectedValueThree(itemValue)}
                             >
-                                <Picker.Item label="Price History" value="Price History" />
-                                <Picker.Item label="Date" value="Date" />
+                                <Picker.Item   style={Styles.dropLabelTxt} label="Price History" value="Price History" />
+                                <Picker.Item   style={Styles.dropLabelTxt} label="Date" value="Date" />
                             </Picker>
                         </View>
                     </View>
@@ -174,10 +174,10 @@ export default function NftItesmsDetails({ navigation }) {
                                 <Image source={require('../../Assets/FavoritedImage.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
                             </TouchableOpacity>
                             <View style={Styles.ActivitCardDown}>
-                                <Text>Azuki</Text>
+                                <Text style={Styles.FavoritedText}>Azuki</Text>
                                 <View style={Styles.ActivitCardDownOne}>
-                                    <Ionicons name='heart-outline' size={20} />
-                                    <Text>320</Text>
+                                    <Ionicons style={Styles.FavoritedText} name='heart-outline' size={20} />
+                                    <Text style={Styles.FavoritedText}>320</Text>
                                 </View>
                             </View>
                             <View style={Styles.FavoritedBox}>
@@ -191,10 +191,10 @@ export default function NftItesmsDetails({ navigation }) {
                                 <Image source={require('../../Assets/FavoritedImageOne.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
                             </TouchableOpacity>
                             <View style={Styles.ActivitCardDown}>
-                                <Text>The Invitation</Text>
+                                <Text style={Styles.FavoritedText}>The Invitation</Text>
                                 <View style={Styles.ActivitCardDownOne}>
-                                    <Ionicons name='heart-outline' size={20} />
-                                    <Text>192</Text>
+                                    <Ionicons style={Styles.FavoritedText} name='heart-outline' size={20} />
+                                    <Text style={Styles.FavoritedText}>192</Text>
                                 </View>
                             </View>
                             <View style={Styles.FavoritedBox}>
@@ -206,10 +206,10 @@ export default function NftItesmsDetails({ navigation }) {
                         <View style={[Styles.ActivitCard,]}>
                             <Image source={require('../../Assets/FavoritedImage.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
                             <View style={Styles.ActivitCardDown}>
-                                <Text>Azuki</Text>
+                                <Text style={Styles.FavoritedText}>Azuki</Text>
                                 <View style={Styles.ActivitCardDownOne}>
-                                    <Ionicons name='heart-outline' size={20} />
-                                    <Text>192</Text>
+                                    <Ionicons style={Styles.FavoritedText} name='heart-outline' size={20} />
+                                    <Text style={Styles.FavoritedText}>192</Text>
                                 </View>
                             </View>
                             <View style={Styles.FavoritedBox}>
@@ -221,10 +221,10 @@ export default function NftItesmsDetails({ navigation }) {
                         <View style={[Styles.ActivitCard,]}>
                             <Image source={require('../../Assets/FavoritedImageOne.png')} style={{ width: 150, height: 150, borderRadius: 10 }} />
                             <View style={Styles.ActivitCardDown}>
-                                <Text>The Invitation</Text>
+                                <Text style={Styles.FavoritedText}>The Invitation</Text>
                                 <View style={Styles.ActivitCardDownOne}>
-                                    <Ionicons name='heart-outline' size={20} />
-                                    <Text>192</Text>
+                                    <Ionicons style={Styles.FavoritedText} name='heart-outline' size={20} />
+                                    <Text style={Styles.FavoritedText}>192</Text>
                                 </View>
                             </View>
                             <View style={Styles.FavoritedBox}>
@@ -288,7 +288,7 @@ const Styles = StyleSheet.create({
     DropDownpicker: {
         backgroundColor: '#253341',
         width: 320,
-
+color: '#fff'
         // borderWidth: 1,
         // borderRadius: 10
     },
@@ -304,14 +304,14 @@ const Styles = StyleSheet.create({
     },
     topTxt: {
         color: "#AAB8C2",
-        fontSize: 12,
+        fontSize: 16,
         fontWeight: "400",
     fontFamily: 'Rationale-Regular',
 
     },
     BelowTxt: {
         color: "#F5F8FA",
-        fontSize: 16,
+        fontSize: 20,
         fontWeight: "400",
         marginTop: 10,
         textAlign: "center",
@@ -325,10 +325,10 @@ const Styles = StyleSheet.create({
         marginTop: 20
     },
     belowHeadtxt: {
-        fontSize: 24,
+        fontSize: 26,
         color: '#FFFFFF',
         fontWeight: "400",
-        fontFamily: "Rationale",
+        // fontFamily: "Rationale",
         marginLeft: 25,
         marginTop: 20,
     fontFamily: 'Rationale-Regular',
@@ -368,7 +368,7 @@ const Styles = StyleSheet.create({
     FavoritedText: {
         justifyContent: 'flex-start',
         textAlign: 'left',
-        fontSize: 15,
+        fontSize: 17,
         fontWeight: '500',
         color: '#F5F8FA',
         paddingBottom: 10,
@@ -381,9 +381,11 @@ const Styles = StyleSheet.create({
         justifyContent: 'flex-start'
     },
     dropLabelTxt:{
-        color:"#F5F8FA",
-        fontSize: 15,
-    fontFamily: 'Rationale-Regular',
+        color:"#000000",
+        fontSize: 17,
+        fontFamily: 'Rationale-Regular',
+        // backgroundColor:"#253341",
+        // height:"100%"
 
 
     }

@@ -91,15 +91,17 @@ const Styles = StyleSheet.create({
     backgroundColor: '#1C212B',
   },
   headerCont: {
-    height: '11%',
-    width: '100%',
+    // height: '11%',
+    // width: '100%',
     // backgroundColor:"red",
   },
   backIconImg: {
-    margin: 30,
+    margin: 20,
     flexDirection: 'row',
     // alignSelf:"flex-end",
     justifyContent: 'space-between',
+    alignItems: 'center',
+    // borderWidth: 1
   },
   // belowButton: {
   //   flexDirection: 'row',
@@ -147,7 +149,7 @@ const Styles = StyleSheet.create({
     marginRight: 5
   },
   commonTxt: {
-    fontSize: 16,
+    fontSize: 18,
     color: '#F5F8FA',
     fontFamily: 'Rationale-Regular',
 
@@ -181,10 +183,12 @@ const Styles = StyleSheet.create({
   textone: {
     color: '#AAB8C2',
     fontFamily: 'Rationale-Regular',
+    fontSize:18,
 
   },
   texttwo: {
     color: '#F5F8FA',
+    fontSize:18,
     fontFamily: 'Rationale-Regular',
 
   },
@@ -231,7 +235,7 @@ const Styles = StyleSheet.create({
   },
   sellitemTxt: {
     color: '#F5F8FA',
-    fontSize:18,
+    fontSize:22,
     paddingLeft: 10,
     fontFamily: 'Rationale-Regular',
     

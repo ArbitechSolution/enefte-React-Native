@@ -70,7 +70,7 @@ export default function UpdateItemsFour({navigation}) {
                     <TextInput
                         label="Username"
                         numberOfLines={1}
-                        placeholderTextColor="#F5F8FA"
+                        placeholderTextColor="#AAB8C2"
                         placeholder="1"
                         style={[Styles.profileTextInput]}
                     />
@@ -101,6 +101,8 @@ export default function UpdateItemsFour({navigation}) {
                     </View>
                     <View style={Styles.belowInputOne}>
                         <TextInput
+                        placeholderTextColor="#AAB8C2"
+                        
                             style={Styles.searchInputOne}
                             numberOfLines={1}
                             placeholder="Price"
@@ -131,6 +133,8 @@ export default function UpdateItemsFour({navigation}) {
                     </View>
                     <View style={Styles.belowInputOne}>
                         <TextInput
+                        placeholderTextColor="#AAB8C2"
+
                             style={Styles.searchInputOne}
                             numberOfLines={1}
                             placeholder="Price"
@@ -251,6 +255,8 @@ const Styles = StyleSheet.create({
     DropDownpicker: {
         backgroundColor: '#253341',
         width: 330,
+        color:"#fff",
+        fontFamily: 'Rationale-Regular',
 
         // borderWidth: 1,
         // borderRadius: 10
@@ -262,7 +268,7 @@ const Styles = StyleSheet.create({
     },
     headerTxt: {
         color: '#FFFFFF',
-        fontSize: 28,
+        fontSize: 32,
         fontWeight: '400',
         // fontFamily: 'Roboto-Regular',
         fontFamily: 'Rationale-Regular',
@@ -287,6 +293,7 @@ const Styles = StyleSheet.create({
         // marginLeft:20,
         paddingLeft: 10,
         paddingTop: 10,
+        fontSize:17,
         fontFamily: 'Rationale-Regular',
 
     },
@@ -336,7 +343,8 @@ const Styles = StyleSheet.create({
         borderRadius: 10,
     },
     searchInput: {
-        fontSize: 18,
+        color:"#fff",
+        fontSize: 22,
         marginLeft: 20,
         fontFamily: 'Rationale-Regular',
 
@@ -358,7 +366,7 @@ const Styles = StyleSheet.create({
     // },
     numberTxts: {
         marginTop: 10,
-        fontSize: 14,
+        fontSize: 18,
         color: '#AAB8C2',
         // fontFamily: 'Rationale',
         fontFamily: 'Rationale-Regular',
@@ -367,7 +375,7 @@ const Styles = StyleSheet.create({
     leftTxt: {
         marginTop: 10,
         color: '#AAB8C2',
-        fontSize: 15,
+        fontSize: 17,
         fontFamily: 'Rationale-Regular',
 
     },
@@ -378,7 +386,7 @@ const Styles = StyleSheet.create({
     RightTxt: {
         marginTop: 10,
         color: '#AAB8C2',
-        fontSize: 12,
+        fontSize: 18,
         textAlign: 'right',
         fontFamily: 'Rationale-Regular',
 
@@ -394,11 +402,14 @@ const Styles = StyleSheet.create({
         // borderWidth: 1,
         paddingLeft: 13,
         fontFamily: 'Rationale-Regular',
+        fontSize:18,
+        color:"#fff"
 
     },
     DropDownpickerOne:{
         backgroundColor: '#253341',
         width: 120,
+        color:"#fff"
     },
     AmountCont: {
         flexDirection: 'row',
@@ -409,7 +420,7 @@ const Styles = StyleSheet.create({
       },
       feeTxts: {
         marginTop: 10,
-        fontSize: 16,
+        fontSize: 20,
         color: '#fff',
         // fontFamily: 'Rationale',
         fontFamily: 'Rationale-Regular',
@@ -417,14 +428,14 @@ const Styles = StyleSheet.create({
       },
       numberTxts: {
         marginTop: 10,
-        fontSize: 14,
+        fontSize: 18,
         color: '#AAB8C2',
         // fontFamily: 'Rationale',
         fontFamily: 'Rationale-Regular',
 
       },
       feeAmount: {
-        fontSize: 24,
+        fontSize: 26,
         color: '#F5F8FA',
         paddingLeft: 10,
         fontFamily: 'Rationale-Regular',
