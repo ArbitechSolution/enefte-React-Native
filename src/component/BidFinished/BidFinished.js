@@ -52,7 +52,6 @@ const Styles = StyleSheet.create({
     fontSize: 34,
     margin: 35,
     textAlign: 'center',
-    // fontFamily: 'Rationale',
     fontFamily: 'Rationale-Regular',
 
   },
@@ -81,7 +80,6 @@ const Styles = StyleSheet.create({
   },
   buttonTextStyle: {
     color: 'white',
-    // paddingVertical: 10,
     fontSize: 24,
     fontWeight: '600',
     fontFamily: 'Rationale-Regular',
