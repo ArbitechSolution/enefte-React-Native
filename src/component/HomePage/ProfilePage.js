@@ -13,7 +13,6 @@ export default function ProfilePage({ navigation }) {
   const Stack = createNativeStackNavigator()
   return (
     <View style={Styles.mainBg}>
-      {/* <ScrollView vertical={true} showsVerticalScrollIndicator={true}> */}
       <View style={Styles.ProfilePageImage}>
         <Image source={require('../../Assets/banner-photo1.png')} />
         <View style={Styles.iconsCont}>
@@ -39,6 +38,7 @@ export default function ProfilePage({ navigation }) {
           </View>
         </View>
       </View>
+      {/* <ScrollView vertical={true} showsVerticalScrollIndicator={true}> */}
       <View >
         <Text style={Styles.ProfilePageText}>kevin</Text>
       </View>
@@ -70,11 +70,14 @@ export default function ProfilePage({ navigation }) {
           <Text style={Styles.ProfilePageTextMiniTextOne}>Liked</Text>
         </View>
       </View>
-      {/* </ScrollView> */}
       <View style>
+        {/* <ScrollView> */}
         <ProfileAppBar />
+        {/* </ScrollView> */}
+   
 
       </View>
+      {/* </ScrollView> */}
 
     </View>
   )
@@ -165,7 +168,7 @@ const Styles = StyleSheet.create({
     fontFamily: 'Rationale-Regular',
     paddingLeft: 20,
     color:"#fff",
-    marginTop: 10
+    marginTop: 5
   },
   ProfilePageTextMini: {
     flexDirection: 'row',
@@ -206,5 +209,4 @@ const Styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   }
-
 })

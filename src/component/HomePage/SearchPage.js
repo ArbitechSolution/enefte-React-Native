@@ -338,7 +338,7 @@ const Styles = StyleSheet.create({
     belowInput:{
       backgroundColor:"#253341",
       width:"90%",
-      height:"7%",
+      // height:"7%",
       margin:20,
       flexDirection:"row",
       borderRadius:10,
@@ -348,11 +348,13 @@ const Styles = StyleSheet.create({
       marginLeft:20
     },
     searchInput:{
-      fontSize:26,
+      fontSize:18,
       alignSelf:"center",
       marginLeft:20,
       fontWeight: '500',
+color:"#fff",
     fontFamily: 'Rationale-Regular',
+    // height:200
     },
     catView:{
       marginLeft:20,
