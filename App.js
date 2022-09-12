@@ -54,8 +54,8 @@ export default function App() {
         <Stack.Screen name="SetupProfile" options={{ headerShown: false }} component={SetupProfile} />
         <Stack.Screen name='EditProfile' options={{ headerShown: false }} component={EditProfile} />
         <Stack.Screen name='NftItems' options={{ headerShown: false }} component={NftItems} />
-       <Stack.Screen name='NftItesmsDetails' options={{ headerShown: false }} component={NftItesmsDetails} /> 
-       <Stack.Screen name='NFTPreview' options={{ headerShown: false }} component={NFTPreview} />
+        <Stack.Screen name='NftItesmsDetails' options={{ headerShown: false }} component={NftItesmsDetails} /> 
+        <Stack.Screen name='NFTPreview' options={{ headerShown: false }} component={NFTPreview} />
         <Stack.Screen name='CollectionItems' options={{ headerShown: false }} component={CollectionItems} />
         <Stack.Screen name='BidDetails' options={{ headerShown: false }} component={BidDetails} />
         <Stack.Screen name='BidFinished' options={{ headerShown: false }} component={BidFinished} />

@@ -117,7 +117,7 @@ export default function UploadItemTwo({ navigation }) {
     imgContainor:{
         justifyContent:'center',
         alignItems:"center",
-        marginTop:40,
+        marginTop:30,
         paddingBottom:20
     },
     commonText:{
@@ -204,7 +204,7 @@ export default function UploadItemTwo({ navigation }) {
         alignItems: 'center',
         justifyContent: 'space-between',
         padding: 10,
-        paddingTop: 25,
+        paddingTop: 15,
         paddingBottom: 30
     },
     CardsOneText: {
@@ -236,7 +236,7 @@ export default function UploadItemTwo({ navigation }) {
         borderRadius: 10,
         // marginLeft: 20,
         // marginRight: 20,
-        marginTop: 30,
+        marginTop: 20,
       },
       buttonTextStyle: {
         color: 'white',

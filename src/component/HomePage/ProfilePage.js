@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView, SafeAreaView } from 'react-native'
 import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Fontisto from 'react-native-vector-icons/Fontisto';

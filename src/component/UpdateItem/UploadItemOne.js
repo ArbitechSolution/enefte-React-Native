@@ -139,15 +139,15 @@ const Styles = StyleSheet.create({
   commonTxt: {
     color: '#AAB8C2',
     fontWeight: '400',
-    fontSize: 16,
-    paddingTop: 10,
+    fontSize: 15,
+    paddingTop: 5,
     fontFamily: 'Rationale-Regular',
 
   },
   commonTxtTwo: {
     color: '#AAB8C2',
     fontWeight: '400',
-    fontSize: 16,
+    fontSize: 15,
     paddingTop: 10,
     fontFamily: 'Rationale-Regular',
 
