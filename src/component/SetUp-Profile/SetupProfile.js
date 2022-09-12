@@ -1,9 +1,83 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native'
-import React from 'react'
+import React,{useState} from 'react'
 import AntDesign from "react-native-vector-icons/AntDesign"
+import ImagePicker from 'react-native-image-picker';
 // import { TextInput } from 'react-native-element-textinput';
 // import { TextInput } from "@react-native-material/core";
 export default function SetupProfile({ navigation }) {
+    const [path, setPath]= useState('');
+    const [photos, setPhotos] = useState(null)
+    const hendleChooseImage =()=>{
+        const option = {
+            noData: true
+        };
+        launchImageLibrary(option, response =>{
+            console.log("response", response);
+            if(response.uri){
+                setPhotos({photos: response}) 
+            }
+        })
+    }
+
+   const  selectFile = () => {
+    console.log("inside SelectFile")
+
+        var options = {
+    
+          title: 'Select Image',
+    
+          customButtons: [
+    
+            { 
+    
+              name: 'customOptionKey', 
+    
+              title: 'Choose file from Custom Option' 
+    
+            },
+    
+          ],
+    
+          storageOptions: {
+    
+            skipBackup: true,
+    
+            path: 'images',
+    
+          },
+    
+        };
+        ImagePicker.showImagePicker(options, res => {
+
+            console.log('Response = ', res);
+      
+            if (res.didCancel) {
+      
+              console.log('User cancelled image picker');
+      
+            } else if (res.error) {
+      
+              console.log('ImagePicker Error: ', res.error);
+      
+            } else if (res.customButton) {
+      
+              console.log('User tapped custom button: ', res.customButton);
+      
+              alert(res.customButton);
+      
+            } else {
+      
+              let source = res;
+                    setPath(source);
+                    console.log(source)
+        
+            }
+      
+          });
+      
+        };
+
+
     return (
         <View style={Styles.mainBg}>
             <View style={Styles.headerContainor}>
@@ -20,9 +94,12 @@ export default function SetupProfile({ navigation }) {
                     <Text style={Styles.SetupProfileText}>Setup Profile</Text>
                 </View>
             </View>
+            <TouchableOpacity onPress={()=>hendleChooseImage()}>
+
             <View style={Styles.SetupProfileView}>
                 <Text style={Styles.SetupProfiletext}>Upload Photo Profile</Text>
             </View>
+            </TouchableOpacity>
             <View style={Styles.profileSetup}>
                 <View >
                     <Image source={require('../../Assets/Ellipse14.png')} />
