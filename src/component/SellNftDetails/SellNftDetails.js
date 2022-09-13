@@ -27,10 +27,13 @@ export default function SellNftDetails({navigation}) {
     <View style={Styles.mainBg}>
       <View style={Styles.innerMainBg}>
         <View style={Styles.headerCont}>
+          <TouchableOpacity onPress={()=>navigation.navigate("SellNft")}>
+
           <View >
           <AntDesign name='left'
               size={30} color={"white"} />
           </View>
+          </TouchableOpacity>
           <View style={Styles.headerTxtCont}>
             <Text style={Styles.headerTxt}>Sell Items</Text>
           </View>

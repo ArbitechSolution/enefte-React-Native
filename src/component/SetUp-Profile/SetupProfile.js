@@ -6,7 +6,12 @@ import ImagePicker from "react-native-image-picker"
 import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 // import { useForm } from "react-hook-form";
 import { useForm, Controller } from "react-hook-form";
+import axios from 'axios';
+import DocumentPicker from 'react-native-document-picker';
 export default function SetupProfile({ navigation }) {
+
+
+    const [singleFile, setSingleFile] = useState("");
     const { control, handleSubmit, formState: { errors } } = useForm({
         defaultValues: {
             Bio: '',
@@ -15,8 +20,52 @@ export default function SetupProfile({ navigation }) {
             image: ''
         }
     });
-    const onSubmit = data => console.log(data);
+    // const onSubmit = data => console.log(data);
+    const onSubmit =async(data)=>{
+        try{
+            console.log("Data Entered by User", singleFile.assets)
+            const myBio = data.Bio;
+            const myEmail = data.Email;
+            const myUserName = data.UserName;
+            console.log("Image Uploaded by User", singleFile[0].name)
+            console.log("myBio Uploaded by User", myBio)
+            console.log("myEmail Uploaded by User", myEmail)
+            console.log("myUserName Uploaded by User", myUserName)
+            const response = await axios.post(
+                "https://ef7f-2400-adc5-437-1000-d911-217e-db2c-e483.in.ngrok.io/api/user/createProfile",
+                {
+                  proFileImg: singleFile[0].name,
+                  fullName: myUserName,
+                  email:myEmail,
+                  bio:myBio
+                }
+              );
+              console.log("Data addded Successfully",response);
+        }catch(e){
+            console.log("Error While Creating Profile", e);
+        }
+    }
     const [photos, setPhotos] = useState(null)
+    const selectFile = async () => {
+        try {
+          const res = await DocumentPicker.pick({
+            type: [DocumentPicker.types.allFiles],
+            // DocumentPicker.types.allFiles
+          });
+          console.log('res : ' + JSON.stringify(res));
+          setSingleFile(res);
+        } catch (err) {
+          setSingleFile(null);
+          if (DocumentPicker.isCancel(err)) {
+            // If user canceled the document selection
+            alert('Canceled');
+          } else {
+            // For Unknown Error
+            alert('Unknown Error: ' + JSON.stringify(err));
+            throw err;
+          }
+        }
+    }
     const hendleChooseImage = () => {
         const option = {
             noData: true
@@ -24,20 +73,47 @@ export default function SetupProfile({ navigation }) {
         launchImageLibrary(option, response => {
             // console.log("response", response);
             // let getImage = 
-            // console.log("response", );
-            if (response.assets[0].uri) {
+            console.log("response",response.didCancel );
+            if(response.didCancel == true){
+                console.log("User Cancelled to Upload the Image");
+            }else{
+                setSingleFile(response)
+                console.log("Inside it",response.assets[0].uri)
                 let getImage = response.assets[0].uri;
-                // console.log("getImage", getImage);
+                console.log("getImage", getImage);
                 setPhotos(getImage)
             }
+            // if (response.assets[0].uri ) {
+            //     console.log("Inside it",response.assets[0].uri)
+            //     let getImage = response.assets[0].uri;
+            //     console.log("getImage", getImage);
+            //     setPhotos(getImage)
+            // }
         })
+    }
+    const addProfileData =async()=>{
+        try{
+            const response = await axios.post(
+                "https://5433-2400-adc5-437-1000-d911-217e-db2c-e483.in.ngrok.io/api/user/createProfile",
+                {
+                  proFileImg: photos,
+                  fullName: "UserName",
+                  email: "Email",
+                  bio:"Bio"
+                }
+              );
+        }catch(e){
+                console.log("Error while Getting api response",e)
+        }
+        
+
     }
     return (
         <View style={Styles.mainBg}>
             <View style={Styles.headerContainor}>
                 <View style={Styles.imgContainor}>
                     <TouchableOpacity
-                        onPress={() => navigation.navigate("SetupProfile")}
+                        onPress={() => navigation.navigate("ConnectWithWallet")}
                     >
                         <AntDesign name='left'
                             size={30} color={"white"} />
@@ -48,18 +124,30 @@ export default function SetupProfile({ navigation }) {
                     <Text style={Styles.SetupProfileText}>Setup Profile</Text>
                 </View>
             </View>
-            <TouchableOpacity onPress={()=>hendleChooseImage()}>
+            <TouchableOpacity >
 
             <View style={Styles.SetupProfileView}>
                 <Text style={Styles.SetupProfiletext}>Upload Photo Profile</Text>
             </View>
             </TouchableOpacity>
             <View style={Styles.profileSetup}>
-                <View style={{}}>
+            {/* {singleFile != null ? (
+        <Text style={Styles.textStyle}>
+          File Name: {singleFile.name ? singleFile.name : ''}
+          {'\n'}
+          Type: {singleFile.type ? singleFile.type : ''}
+          {'\n'}
+          File Size: {singleFile.size ? singleFile.size : ''}
+          {'\n'}
+          URI: {singleFile.uri ? singleFile.uri : ''}
+          {'\n'}
+        </Text>
+      ) : null} */}
+                <Image source={{ uri:singleFile[0]?.uri }} style={{ width: 120, height: 120, borderRadius: 100 }} />
+                {/* <View style={{}}>
                     {photos
 
                         && (
-                            // <Image source={{ uri: photos }} style={{ width: 150, height: 150, borderRadius: 100 }} />
                             <Controller
                                 control={control}
                                 rules={{
@@ -67,8 +155,8 @@ export default function SetupProfile({ navigation }) {
 
                                 }}
                                 render={({ field: { onChange, onBlur, value } }) => (
-                                    // <TextInput  title="file" source={{ uri: photos }}/>
-                                    <Image source={{ uri: photos }} style={{ width: 150, height: 150, borderRadius: 100 }} 
+                                    <TextInput  title="file" source={{ uri: photos }}/>
+                                    <Image source={{ uri: photos }} style={{ width: 130, height: 130, borderRadius: 100 }} 
                                     onBlur={onBlur}
                             onChangeText={onChange}
                             value={photos}/>
@@ -78,9 +166,9 @@ export default function SetupProfile({ navigation }) {
                             />
                             
                         )}
-                        {/* {errors.image && <Text style={{ color: 'red' }}>Image is mandatory</Text>} */}
-                </View>
-                <TouchableOpacity onPress={() => hendleChooseImage()}>
+                        {errors.image && <Text style={{ color: 'red' }}>Image is mandatory</Text>}
+                </View> */}
+                <TouchableOpacity onPress={() => selectFile()}>
                     <View style={Styles.UploadProfile}>
                         <Text style={Styles.uploadBtnTxt}>Upload Profile</Text>
                     </View>
@@ -155,6 +243,7 @@ export default function SetupProfile({ navigation }) {
             </View>
             <TouchableOpacity
                 // title="Submit" onPress={handleSubmit(onSubmit)}
+                // onPress={()=>addProfileData()}
             onPress={() => navigation.navigate("EditProfile")} type="submit"
             >
                 <View style={Styles.ButtonContinue}>
@@ -213,6 +302,9 @@ const Styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: "center",
         alignItems: "center"
+    },
+    textStyle:{
+    color:"#fff"
     },
     UploadProfile: {
         borderRadius: 10,

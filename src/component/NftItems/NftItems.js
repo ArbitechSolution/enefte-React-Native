@@ -7,14 +7,18 @@ import {
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Entypo from 'react-native-vector-icons/Entypo';
+import { ScrollView } from 'react-native-gesture-handler';
 export default function NftItems({navigation}) {
   return (
     <View style={Styles.mainBg}>
       <View style={Styles.headerCont}>
         <View style={Styles.backIconImg}>
-          <View>
+        <TouchableOpacity onPress={()=>navigation.navigate("EditProfile")}>
+        <View>
             <AntDesign name="left" size={30} color={'white'} />
           </View>
+</TouchableOpacity>
+          
           <View style={Styles.IconsContainor}>
             <View style={Styles.iconbox}>
               <FontAwesome name="filter" size={25} color={'#F5F8FA'} />
@@ -26,12 +30,16 @@ export default function NftItems({navigation}) {
           </View>
         </View>
       </View>
+      <ScrollView style={{marginBottom:5}} showsHorizontalScrollIndicator={true}>
       <View style={Styles.mainImgCont}>
         <Image
           style={Styles.mainImg}
           source={require('../../Assets/myNftPreview.png')}
         />
       </View>
+     
+
+      
       <View style={Styles.InvitTxtCont}>
         <Text style={Styles.commonTxt}>Karafuru</Text>
         <Image
@@ -99,6 +107,7 @@ export default function NftItems({navigation}) {
           </TouchableOpacity>
         </View>
       </View>
+      </ScrollView>
     </View>
   );
 }

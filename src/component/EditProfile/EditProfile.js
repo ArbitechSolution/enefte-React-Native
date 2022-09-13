@@ -14,11 +14,15 @@ export default function EditProfile({navigation}) {
 <View style={Styles.mainBg}>
 <View style={Styles.headerCont}>
     <View  style={Styles.backIconImg}>
-        <View>
+      <TouchableOpacity onPress={()=>navigation.navigate("SetupProfile")}>
+      <View>
           <AntDesign name='left'
           size={30} color={"white"}/>
         {/* <Image source={require("../../Assets/forward.png")}/> */}
         </View>
+      </TouchableOpacity>
+
+        
         <View>
         <TouchableOpacity
         style={Styles.belowButton}

@@ -29,10 +29,13 @@ export default function NftItesmsDetails({ navigation }) {
         <View style={Styles.mainBg}>
             {/* <View style={Styles.headerCont}> */}
             <View style={Styles.backIconImg}>
+                <TouchableOpacity onPress={()=>navigation.navigate("NftItems")}>
                 <View>
                     <AntDesign name='left'
                         size={30} color={"white"} />
                 </View>
+                </TouchableOpacity>
+                
                 <View>
                     <Image source={require("../../Assets/chotakalu.png")} />
                 </View>
