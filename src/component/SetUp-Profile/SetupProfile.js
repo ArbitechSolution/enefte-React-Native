@@ -1,3 +1,4 @@
+
 import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, Form, Button } from 'react-native'
 import React, { useState } from 'react'
 import AntDesign from "react-native-vector-icons/AntDesign";
@@ -31,7 +32,6 @@ export default function SetupProfile({ navigation }) {
             }
         })
     }
-    // console.log("photos", photos);
     return (
         <View style={Styles.mainBg}>
             <View style={Styles.headerContainor}>
@@ -48,9 +48,12 @@ export default function SetupProfile({ navigation }) {
                     <Text style={Styles.SetupProfileText}>Setup Profile</Text>
                 </View>
             </View>
+            <TouchableOpacity onPress={()=>hendleChooseImage()}>
+
             <View style={Styles.SetupProfileView}>
                 <Text style={Styles.SetupProfiletext}>Upload Photo Profile</Text>
             </View>
+            </TouchableOpacity>
             <View style={Styles.profileSetup}>
                 <View style={{}}>
                     {photos

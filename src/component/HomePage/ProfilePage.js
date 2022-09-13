@@ -13,6 +13,8 @@ export default function ProfilePage({ navigation }) {
   const Stack = createNativeStackNavigator()
   return (
     <View style={Styles.mainBg}>
+      
+
       <View style={Styles.ProfilePageImage}>
         <Image source={require('../../Assets/banner-photo1.png')} />
         <View style={Styles.iconsCont}>
@@ -38,6 +40,7 @@ export default function ProfilePage({ navigation }) {
           </View>
         </View>
       </View>
+      
       {/* <ScrollView vertical={true} showsVerticalScrollIndicator={true} > */}
       {/* <ScrollView vertical={true} showsVerticalScrollIndicator={true}> */}
       <View >
@@ -71,13 +74,10 @@ export default function ProfilePage({ navigation }) {
           <Text style={Styles.ProfilePageTextMiniTextOne}>Liked</Text>
         </View>
       </View>
-        {/* <ScrollView> */}
-        {/* <ScrollView nestedScrollEnabled={true}> */}
+      {/* <ScrollView/> */}
         <View >
         <ProfileAppBar />
       </View>
-      {/* </ScrollView> */}
-        {/* </ScrollView> */}
      
     </View>
   )
@@ -108,6 +108,10 @@ const Styles = StyleSheet.create({
     alignItems: 'flex-end',
     justifyContent: 'space-between'
 
+  },
+  scollHere:{
+    height:1200,
+    // backgroundColor:"red"
   },
   ProfilePageDownImageBox: {
     borderWidth: 1,

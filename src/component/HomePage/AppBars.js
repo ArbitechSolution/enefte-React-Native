@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image,ScrollView } from 'react-native'
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 // import Foundation from 'react-native-vector-icons/Foundation';
@@ -13,6 +13,8 @@ export default function AppBars() {
   
   return (
     <View style={Styles.mainBg}>
+      
+
       {/* <NavigationContainer> */}
       {/* <View style={{backgroundColor: "#253341"}}> */}
         <Tab.Navigator
@@ -86,8 +88,7 @@ export default function AppBars() {
           }}
           />
         </Tab.Navigator>
-        {/* </View> */}
-      {/* </NavigationContainer> */}
+
     </View>
   )
 }
@@ -105,5 +106,6 @@ const Styles = StyleSheet.create({
         height: 25,
         marginTop: 10
         
-      }
+      },
+   
 })

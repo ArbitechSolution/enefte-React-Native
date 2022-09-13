@@ -16,8 +16,9 @@ export default function Paginator({data, scrollX}) {
         })
         const opacity = scrollX.interpolate({
             inputRange,
-            outputRange : [10, 10,10],
+            outputRange : [0.3, 10,0.3],
             extrapolate: 'clamp',
+
         })
         return <Animated.View style={[Styles.dot, {width: dotWidth, opacity}]} key={i.toString()} />
      })}
