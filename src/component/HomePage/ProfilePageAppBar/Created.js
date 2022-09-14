@@ -9,6 +9,12 @@ export default function Collected() {
         <ScrollView vertical={true} showsVerticalScrollIndicator={false}>
           <View style={{marginBottom: 330}}>
       <View style={Styles.TabsRankingsView}>
+      <View style={{
+                            borderTopLeftRadius: 10,
+                            borderTopRightRadius: 10,
+                            borderBottomLeftRadius: 10,
+                            borderBottomRightRadius: 10, borderWidth: 1, borderColor: '#253341', overflow: 'hidden'
+                        }}>
         <Picker
           selectedValue={selectedValue}
           style={Styles.DropDownpicker}
@@ -17,6 +23,7 @@ export default function Collected() {
           <Picker.Item label="All Categories" value="All Categories" />
           <Picker.Item label="All Categories" value="All Categories" />
         </Picker>
+        </View>
         <View style={Styles.ActivityButton}>
           <Text style={Styles.ActivityButtonText}>Upload</Text>
         </View>

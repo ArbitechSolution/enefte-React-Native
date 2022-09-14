@@ -10,7 +10,7 @@ export default function ConnectWithWallet({ navigation }) {
             onPress={() => navigation.navigate("Startscreen")}
           >
             <AntDesign name='left'
-          size={30} color={"white"}/>
+          size={25} color={"white"}/>
             
           </TouchableOpacity>
 

@@ -14,7 +14,7 @@ export default function UploadItemThree({navigation}) {
                 <TouchableOpacity onPress={()=>navigation.navigate('UploadItemOne')}>
 
                 <AntDesign name='left'
-              size={30} color={"white"} />
+              size={25} color={"white"} />
                 </TouchableOpacity>
             </View>
             <View style={Styles.headerTxtCont}>

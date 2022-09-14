@@ -14,7 +14,7 @@ export default function BidDetails({ navigation }) {
                         onPress={() => navigation.navigate("CollectionItems")}
                     >
                         <AntDesign name='left'
-                            size={30} color={"white"} />
+                            size={25} color={"white"} />
                     </TouchableOpacity>
                 </View>
                 <View style={Styles.imgContainorLogo}>

@@ -9,6 +9,12 @@ export default function TabsActivity() {
     return (
         <View style={Styles.mainBg}>
             <View style={Styles.TabsRankingsView}>
+            <View style={{
+                            borderTopLeftRadius: 10,
+                            borderTopRightRadius: 10,
+                            borderBottomLeftRadius: 10,
+                            borderBottomRightRadius: 10, borderWidth: 1, borderColor: '#253341', overflow: 'hidden'
+                        }}>
                 <Picker
                     selectedValue={selectedValue}
                     style={Styles.DropDownpicker}
@@ -16,7 +22,15 @@ export default function TabsActivity() {
                 >
                     <Picker.Item label="All Event Type" value="All Event Type" />
                     <Picker.Item label="All Event Type" value="All Event Type" />
-                </Picker><Picker
+                </Picker>
+                </View>
+                <View style={{
+                            borderTopLeftRadius: 10,
+                            borderTopRightRadius: 10,
+                            borderBottomLeftRadius: 10,
+                            borderBottomRightRadius: 10, borderWidth: 1, borderColor: '#253341', overflow: 'hidden'
+                        }}>
+                <Picker
                     selectedOneValue={selectedOneValue}
                     style={Styles.DropDownpickerone}
                     onValueChange={(itemValues, itemIndex) => setSelectedOneValue(itemValues)}
@@ -24,6 +38,7 @@ export default function TabsActivity() {
                     <Picker.Item label="All Chains" value="All Chains" />
                     <Picker.Item label="All Chains" value="All Chains" />
                 </Picker>
+                </View>
             </View>
             <ScrollView vertical={true} showsVerticalScrollIndicator={false}>
             <View style={[Styles.TabsRankingcard, { marginTop: 40 }]}>

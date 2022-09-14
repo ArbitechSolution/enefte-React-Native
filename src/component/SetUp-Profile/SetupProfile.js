@@ -116,7 +116,7 @@ export default function SetupProfile({ navigation }) {
                         onPress={() => navigation.navigate("ConnectWithWallet")}
                     >
                         <AntDesign name='left'
-                            size={30} color={"white"} />
+                            size={25} color={"white"} />
                         {/* <Image source={require('../../Assets/forward.png')} /> */}
                     </TouchableOpacity>
                 </View>

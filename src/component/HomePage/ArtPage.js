@@ -21,7 +21,7 @@ export default function ArtPage({ navigation }) {
         <View style={Styles.iconbox}>
           <TouchableOpacity onPress={() => navigation.navigate('AppBars')}>
             <AntDesign name='left'
-              size={20} color={"white"} />
+              size={25} color={"white"} />
           </TouchableOpacity>
 
         </View>

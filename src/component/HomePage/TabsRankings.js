@@ -8,6 +8,12 @@ export default function TabsRankings() {
     return (
         <View style={Styles.mainBg}>
             <View style={Styles.TabsRankingsView}>
+                <View style={{
+                            borderTopLeftRadius: 10,
+                            borderTopRightRadius: 10,
+                            borderBottomLeftRadius: 10,
+                            borderBottomRightRadius: 10, borderWidth: 1, borderColor: '#253341', overflow: 'hidden'
+                        }}>
                 <Picker
                     selectedValue={selectedValue}
                     style={Styles.DropDownpicker}
@@ -16,6 +22,13 @@ export default function TabsRankings() {
                     <Picker.Item label="Categories" value="Categories" />
                     <Picker.Item label="All Categories" value="All Categories" />
                 </Picker>
+                </View>
+                <View style={{
+                            borderTopLeftRadius: 10,
+                            borderTopRightRadius: 10,
+                            borderBottomLeftRadius: 10,
+                            borderBottomRightRadius: 10, borderWidth: 1, borderColor: '#253341', overflow: 'hidden'
+                        }}>
                 <Picker
                     selectedOneValue={selectedOneValue}
                     style={Styles.DropDownpickerone}
@@ -24,6 +37,7 @@ export default function TabsRankings() {
                     <Picker.Item label="All Chains" value="All Chains" />
                     <Picker.Item label="All Chains" value="All Chains" />
                 </Picker>
+                </View>
             </View>
             <ScrollView vertical={true} showsVerticalScrollIndicator={false}>
             <View style={[Styles.TabsRankingcard, {marginTop: 40}]}>

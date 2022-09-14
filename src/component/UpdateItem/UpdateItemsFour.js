@@ -40,7 +40,7 @@ export default function UpdateItemsFour({navigation}) {
                     <View>
                         <TouchableOpacity onPress={()=>navigation.navigate('UploadItemThree')}>
                         <AntDesign name='left'
-              size={30} color={"white"} />
+              size={25} color={"white"} />
                         </TouchableOpacity>
                     </View>
                     <View style={Styles.headerTxtCont}>

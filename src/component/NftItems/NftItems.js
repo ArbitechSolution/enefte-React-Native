@@ -15,7 +15,7 @@ export default function NftItems({navigation}) {
         <View style={Styles.backIconImg}>
         <TouchableOpacity onPress={()=>navigation.navigate("EditProfile")}>
         <View>
-            <AntDesign name="left" size={30} color={'white'} />
+            <AntDesign name="left" size={25} color={'white'} />
           </View>
 </TouchableOpacity>
           

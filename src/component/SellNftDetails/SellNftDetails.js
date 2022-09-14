@@ -31,7 +31,7 @@ export default function SellNftDetails({navigation}) {
 
           <View >
           <AntDesign name='left'
-              size={30} color={"white"} />
+              size={25} color={"white"} />
           </View>
           </TouchableOpacity>
           <View style={Styles.headerTxtCont}>

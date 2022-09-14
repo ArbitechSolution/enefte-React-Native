@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView, SafeAreaView } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import AntDesign from "react-native-vector-icons/AntDesign"
@@ -11,17 +11,17 @@ import ProfileAppBar from './ProfileAppBar';
 // import { ScrollView } from 'react-native-gesture-handler';
 export default function ProfilePage({ navigation }) {
   const Stack = createNativeStackNavigator()
+  const [content, setContent] = useState({})
   return (
+    
     <View style={Styles.mainBg}>
-      
-
       <View style={Styles.ProfilePageImage}>
         <Image source={require('../../Assets/banner-photo1.png')} />
         <View style={Styles.iconsCont}>
           <View style={Styles.iconbox}>
           <TouchableOpacity onPress={() => navigation.navigate('AppBars')}>
             <AntDesign name='left'
-              size={20} color={"white"} />
+              size={25} color={"white"} />
               </TouchableOpacity>
           </View>
 
@@ -43,6 +43,8 @@ export default function ProfilePage({ navigation }) {
       
       {/* <ScrollView vertical={true} showsVerticalScrollIndicator={true} > */}
       {/* <ScrollView vertical={true} showsVerticalScrollIndicator={true}> */}
+      <ScrollView >
+        <View style={{ height: 1100 }}>
       <View >
         <Text style={Styles.ProfilePageText}>kevin</Text>
       </View>
@@ -78,16 +80,18 @@ export default function ProfilePage({ navigation }) {
         <View >
         <ProfileAppBar />
       </View>
-     
+      </View>
+    </ScrollView>
     </View>
   )
 }
 
 const Styles = StyleSheet.create({
   mainBg: {
-    height: '100%',
+    // height: '100%',
     backgroundColor: '#1C212B',
     alignContent: 'center',
+    height: 1000
   },
   ProfilePageImage: {
     position: 'relative'

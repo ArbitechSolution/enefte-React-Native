@@ -19,7 +19,7 @@ export default function UploadItemOne({ navigation }) {
         <View style={Styles.imgContainor}>
         <TouchableOpacity onPress={()=>navigation.navigate('BidFinished')}>
             <AntDesign name='left'
-              size={30} color={"white"} />
+              size={25} color={"white"} />
             </TouchableOpacity>
 
         </View>

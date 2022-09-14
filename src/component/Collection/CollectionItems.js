@@ -30,6 +30,8 @@ export default function CollectionItems({ navigation }) {
                     </View>
                 </View>
             </View>
+            <ScrollView>
+                <View style={{flexGrow: 1, height: 1000}}>
             <View>
                 <Text style={Styles.CollectionItemsText}>Karafuru</Text>
                 <Text style={Styles.CollectionItemsTextOne}>Karafuru is home to 5,555 generative arts where colors reign supreme. Leave the drab reality and enter the world of Karafuru by Museum of Toys.</Text>
@@ -63,6 +65,8 @@ export default function CollectionItems({ navigation }) {
             <View>
                 <CollectionItemsBar />
             </View>
+            </View>
+            </ScrollView>
         </View>
     )
 }

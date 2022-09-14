@@ -52,7 +52,7 @@ export default function HomePage() {
                   <View style={Styles.CardPageBox}>
                     <Text style={Styles.CardPageBoxText}>Art</Text>
                   </View>
-                  <AntDesign name='hearto' size={30} color={'black'} />
+                  <AntDesign name='hearto' size={25} color={'black'} />
                 </View>
               </View>
               <View style={Styles.CardText}>

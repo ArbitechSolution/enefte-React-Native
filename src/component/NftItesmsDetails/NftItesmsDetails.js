@@ -32,7 +32,7 @@ export default function NftItesmsDetails({ navigation }) {
                 <TouchableOpacity onPress={()=>navigation.navigate("NftItems")}>
                 <View>
                     <AntDesign name='left'
-                        size={30} color={"white"} />
+                        size={25} color={"white"} />
                 </View>
                 </TouchableOpacity>
                 

@@ -17,7 +17,7 @@ export default function EditProfile({navigation}) {
       <TouchableOpacity onPress={()=>navigation.navigate("SetupProfile")}>
       <View>
           <AntDesign name='left'
-          size={30} color={"white"}/>
+          size={25} color={"white"}/>
         {/* <Image source={require("../../Assets/forward.png")}/> */}
         </View>
       </TouchableOpacity>
