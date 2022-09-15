@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View , Image, TouchableOpacity, Button} from 'react-native';
-export default function Welcome() {
+export default function Welcome({navigation}) {
   return (
     <View style={Styles.mainBg}> 
     <View style ={Styles.imgContainer}>
@@ -18,6 +18,15 @@ export default function Welcome() {
 
     </Text>
  </View>
+  <TouchableOpacity
+                onPress={()=>navigation.navigate("AppBars")}
+                // onPress={()=>addProfileData()}
+            // onPress={() => navigation.navigate("EditProfile")} type="submit"
+            >
+                <View style={Styles.ButtonContinue}>
+                    <Text style={Styles.ButtonContinueText}>Get Started</Text>
+                </View>
+            </TouchableOpacity>
        </View>
   )
 }
@@ -55,6 +64,23 @@ const Styles = StyleSheet.create({
       lineHeight:19.2
   
     },
+    ButtonContinue: {
+      marginLeft: 20,
+      marginRight: 20,
+      backgroundColor: '#1D9BF0',
+      borderRadius: 10,
+      padding: 15,
+      marginTop: 50
+
+  },
+  ButtonContinueText: {
+      textAlign: 'center',
+      fontSize: 24,
+      color: '#F5F8FA',
+      fontWeight: '600',
+      fontFamily: 'Rationale-Regular',
+
+  },
     belowButton:{
       backgroundColor: "#1D9BF0",
       width:300,

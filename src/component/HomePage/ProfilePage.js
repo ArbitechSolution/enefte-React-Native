@@ -19,7 +19,7 @@ export default function ProfilePage({ navigation }) {
         <Image source={require('../../Assets/banner-photo1.png')} />
         <View style={Styles.iconsCont}>
           <View style={Styles.iconbox}>
-          <TouchableOpacity onPress={() => navigation.navigate('AppBars')}>
+          <TouchableOpacity onPress={() => navigation.navigate('welcome')}>
             <AntDesign name='left'
               size={25} color={"white"} />
               </TouchableOpacity>
@@ -34,7 +34,7 @@ export default function ProfilePage({ navigation }) {
         <View style={Styles.ProfilePageDownImage}>
           <Image source={require('../../Assets/Profile-Verified21.png')} />
           <View style={Styles.ProfilePageDownImageBox}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=>navigation.navigate("EditProfile")}>
               <Text style={Styles.ProfilePageDownImageBoxText}>Edit Profile</Text>
             </TouchableOpacity>
           </View>

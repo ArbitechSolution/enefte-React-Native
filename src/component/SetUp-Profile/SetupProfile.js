@@ -1,5 +1,5 @@
 
-import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, Form, Button } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, Form, Button,AsyncStorage } from 'react-native'
 import React, { useState } from 'react'
 import AntDesign from "react-native-vector-icons/AntDesign";
 import ImagePicker from "react-native-image-picker"
@@ -8,9 +8,13 @@ import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 import { useForm, Controller } from "react-hook-form";
 import axios from 'axios';
 import DocumentPicker from 'react-native-document-picker';
+import {getUserProfileData} from '../Redux/actions/actions';
+// import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from 'react';
+// import { AsyncStorageStatic } from '@react-native-async-storage/async-storage';
 export default function SetupProfile({ navigation }) {
 
-
+    // const dispatch = useDispatch();
     const [singleFile, setSingleFile] = useState("");
     const { control, handleSubmit, formState: { errors } } = useForm({
         defaultValues: {
@@ -20,31 +24,98 @@ export default function SetupProfile({ navigation }) {
             image: ''
         }
     });
+    const [userName, setUserName]= useState('Kevin');
+    const [userBio, setUsebio]= useState('Sell Anything');
+    const [userEmail, setUserEmail] = useState('Luke36erockedmai.com')
+    const [button, setButton]= useState(true)
+  const [locatStorageData, setLocalStorageData] = useState("")
+
     // const onSubmit = data => console.log(data);
     const onSubmit =async(data)=>{
         try{
-            console.log("Data Entered by User", singleFile.assets)
-            const myBio = data.Bio;
-            const myEmail = data.Email;
-            const myUserName = data.UserName;
-            console.log("Image Uploaded by User", singleFile[0].name)
-            console.log("myBio Uploaded by User", myBio)
-            console.log("myEmail Uploaded by User", myEmail)
-            console.log("myUserName Uploaded by User", myUserName)
-            const response = await axios.post(
-                "https://ef7f-2400-adc5-437-1000-d911-217e-db2c-e483.in.ngrok.io/api/user/createProfile",
-                {
-                  proFileImg: singleFile[0].name,
-                  fullName: myUserName,
-                  email:myEmail,
-                  bio:myBio
-                }
-              );
-              console.log("Data addded Successfully",response);
+            const Localdata= await AsyncStorage.getItem("EMAIL");
+            console.log("Data loaded from the async Storage",Localdata)
+            if (Localdata){
+                console.log("Profile Already set")
+            }else{
+                console.log("Data Entered by User", singleFile.assets)
+                const myBio = data.Bio;
+                const myEmail = data.Email;
+                const myUserName = data.UserName;
+                // console.log("Image Uploaded by User", singleFile[0].name)
+                console.log("myBio Uploaded by User", myBio)
+                console.log("myEmail Uploaded by User", myEmail)
+                console.log("myUserName Uploaded by User", myUserName)
+                const response = await axios.post(
+                    "https://6d97-2400-adc5-437-1000-89a1-215d-19f0-a13b.in.ngrok.io/api/user/createProfile",
+                    {
+                      proFileImg: "Dummy",
+                      fullName: myUserName,
+                      email:myEmail,
+                      bio:myBio
+                    }
+                  );
+                  
+
+                  console.log("Data addded Successfully",response);
+                  let resmessage = response.data.message;
+                  console.log("Message", resmessage)
+                  if (resmessage=="Email Already Exists"){
+                    alert("Email Already Exists! You will be directed to next screen")
+                    await AsyncStorage.setItem(
+                        'EMAIL',
+                        data.Email
+                      );
+                    navigation.navigate("welcome");
+                  }else{
+                    alert("Profile Setup successfully! You will be directed to next Screen")
+                    navigation.navigate("welcome")
+                  }
+            }
+           
         }catch(e){
             console.log("Error While Creating Profile", e);
         }
     }
+    // const _storeData =async()=>{
+
+    //     try {
+    //         await AsyncStorage.setItem(
+    //           'EMAIL',
+    //           'zahidriaz125@gmail.com'
+    //         );
+    //             console.log("Data Saved Successfullly")
+    //       } catch (error) {
+    //         console.log("Error while saving data", error)
+    //     }
+    // }
+    const _retrieveData =async ()=>{
+        try{
+
+            const localData= await AsyncStorage.getItem("EMAIL")
+            setLocalStorageData(localData)
+            if(localData?.length>2){
+                let current="zahidriaz125@gmail.com"
+                setButton(false)
+                let apiResponse = await 
+                axios.get(`https://6d97-2400-adc5-437-1000-89a1-215d-19f0-a13b.in.ngrok.io/api/user/getProfile?email=${localData}`)
+                 let apiData = apiResponse.data
+                 console.log("DataFromAPI", apiData[0]);
+                    setUserEmail(apiData[0].email);
+                    setUsebio(apiData[0].bio);
+                    setUserName(apiData[0].fullName)
+                //  let name= apiData
+
+            }else{
+                setButton(true)
+            }
+            
+        }catch(e){
+            console.log("error while retieving data",e)
+        }
+    }
+        
+    
     const [photos, setPhotos] = useState(null)
     const selectFile = async () => {
         try {
@@ -65,6 +136,11 @@ export default function SetupProfile({ navigation }) {
             throw err;
           }
         }
+    }
+    const profileSubitted =()=>{
+        alert("Profile Already Submitted! You will be directed to next screen")
+        navigation.navigate("welcome")
+
     }
     const hendleChooseImage = () => {
         const option = {
@@ -94,7 +170,7 @@ export default function SetupProfile({ navigation }) {
     const addProfileData =async()=>{
         try{
             const response = await axios.post(
-                "https://5433-2400-adc5-437-1000-d911-217e-db2c-e483.in.ngrok.io/api/user/createProfile",
+                "https://6d97-2400-adc5-437-1000-89a1-215d-19f0-a13b.in.ngrok.io/api/user/createProfile",
                 {
                   proFileImg: photos,
                   fullName: "UserName",
@@ -105,9 +181,14 @@ export default function SetupProfile({ navigation }) {
         }catch(e){
                 console.log("Error while Getting api response",e)
         }
-        
-
     }
+    setInterval(()=>{
+    // _retrieveData()
+    },2000)
+   useEffect(()=>{
+    _retrieveData()
+    // dispatch(getUserProfileData())
+   },[locatStorageData])
     return (
         <View style={Styles.mainBg}>
             <View style={Styles.headerContainor}>
@@ -168,7 +249,9 @@ export default function SetupProfile({ navigation }) {
                         )}
                         {errors.image && <Text style={{ color: 'red' }}>Image is mandatory</Text>}
                 </View> */}
-                <TouchableOpacity onPress={() => selectFile()}>
+                <TouchableOpacity
+                //  onPress={() => selectFile()}
+                 >
                     <View style={Styles.UploadProfile}>
                         <Text style={Styles.uploadBtnTxt}>Upload Profile</Text>
                     </View>
@@ -187,7 +270,7 @@ export default function SetupProfile({ navigation }) {
                     }}
                     render={({ field: { onChange, onBlur, UserName } }) => (
 
-                        <TextInput numberOfLines={1} placeholder='Kevin' style={[Styles.profileTextInput]} placeholderTextColor={"#F5F8FA"}
+                        <TextInput numberOfLines={1} placeholder={userName} style={[Styles.profileTextInput]} placeholderTextColor={"#F5F8FA"}
                             onBlur={onBlur}
                             onChangeText={onChange}
                             value={UserName}
@@ -208,7 +291,7 @@ export default function SetupProfile({ navigation }) {
                         match: '/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/'
                     }}
                     render={({ field: { onChange, onBlur, value } }) => (
-                        <TextInput numberOfLines={1} placeholder='Luke36erockedmai.com' style={[Styles.profileTextInput]} placeholderTextColor={"#F5F8FA"}
+                        <TextInput numberOfLines={1} placeholder={userEmail} style={[Styles.profileTextInput]} placeholderTextColor={"#F5F8FA"}
                             onBlur={onBlur}
                             onChangeText={onChange}
                             value={value}
@@ -230,7 +313,7 @@ export default function SetupProfile({ navigation }) {
                         required: true,
                     }}
                     render={({ field: { onChange, onBlur, value } }) => (
-                        <TextInput numberOfLines={4} placeholder='Sell AnyThing' style={[Styles.profileTextInput]} placeholderTextColor={"#F5F8FA"}
+                        <TextInput numberOfLines={4}  placeholder={userBio} style={[Styles.profileTextInput]} placeholderTextColor={"#F5F8FA"}
                             onBlur={onBlur}
                             onChangeText={onChange}
                             value={value}
@@ -241,15 +324,26 @@ export default function SetupProfile({ navigation }) {
                 />
                 {errors.Bio && <Text style={{ color: 'red' }}>Bio is mandatory</Text>}
             </View>
-            <TouchableOpacity
-                // title="Submit" onPress={handleSubmit(onSubmit)}
+            {
+                button? <TouchableOpacity
+                title="Submit" onPress={handleSubmit(onSubmit)}
                 // onPress={()=>addProfileData()}
-            onPress={() => navigation.navigate("EditProfile")} type="submit"
+            // onPress={() => navigation.navigate("EditProfile")} type="submit"
             >
                 <View style={Styles.ButtonContinue}>
                     <Text style={Styles.ButtonContinueText}>Submit</Text>
                 </View>
+            </TouchableOpacity>: <TouchableOpacity
+                onPress={()=>profileSubitted()}
+                // onPress={()=>addProfileData()}
+            // onPress={() => navigation.navigate("EditProfile")} type="submit"
+            >
+                <View style={Styles.ButtonContinue}>
+                    <Text style={Styles.ButtonContinueText}>Profile Submitted</Text>
+                </View>
             </TouchableOpacity>
+            }
+           
         </View>
     )
 }

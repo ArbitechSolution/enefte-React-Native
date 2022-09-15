@@ -8,6 +8,7 @@ import StatsPage from './StatsPage';
 import ProfilePage from './ProfilePage';
 import HomePage from './HomePage';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
 export default function AppBars() {
   const Tab = createBottomTabNavigator();
   
@@ -95,9 +96,7 @@ export default function AppBars() {
 
 const Styles = StyleSheet.create({
     mainBg: {
-        
         height: '100%',
-        
         backgroundColor: '#1C212B',
         alignContent: 'center',
       },
