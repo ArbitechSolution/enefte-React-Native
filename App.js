@@ -25,6 +25,7 @@ import SellNftDetails from './src/component/SellNftDetails/SellNftDetails'
 import UpdateItemsFour from './src/component/UpdateItem/UpdateItemsFour'
 import NftItesmsDetails from './src/component/NftItesmsDetails/NftItesmsDetails'
 import { Provider } from 'react-redux';
+import MySwipeCardsComponents from './src/component/Onboarding/swipe'
 // import store from './src/component/Redux/index'
 export default function App() {
   const [isSubmit, setIsSubmit] = useState(false)
@@ -39,6 +40,8 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Onboarding" options={{ headerShown: false }} component={Onboarding} />
+        {/* <Stack.Screen name="MySwipeCardsComponents" options={{ headerShown: false }} component={MySwipeCardsComponents} /> */}
+
         <Stack.Screen name="Startscreen" options={{ headerShown: false }} component={Startscreen} />
         <Stack.Screen name="ConnectWithWallet" options={{ headerShown: false }} component={ConnectWithWallet} />
         <Stack.Screen name="SetupProfile" options={{ headerShown: false }} component={SetupProfile} />

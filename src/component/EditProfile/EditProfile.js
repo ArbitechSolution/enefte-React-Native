@@ -55,7 +55,6 @@ const _saveChanges =async ()=>{
 
   const _retrieveData =async ()=>{
     try{
-
         const localData= await AsyncStorage.getItem("EMAIL");
         setLocalStorageData(localData)
         console.log("localData",localData)
@@ -68,7 +67,7 @@ const _saveChanges =async ()=>{
                 setUserEmail(apiData[0].email);
                 setUsebio(apiData[0].bio);
                 setUserName(apiData[0].fullName)
-                if(apiData[0].instagram){
+                if(apiDadta[0].instagram){
                   setUserInsta(apiData[0].instagram)
                 }
                 if(apiData[0].twiter){
@@ -83,9 +82,6 @@ const _saveChanges =async ()=>{
         console.log("error while retieving data",e)
     }
 }
-    
-
-
   setInterval(()=>{
     // _retrieveData()
     },2000)

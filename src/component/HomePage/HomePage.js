@@ -1,8 +1,8 @@
 
 import { StyleSheet, Text, View, Image, ScrollView } from 'react-native'
 import React from 'react'
-import AntDesign from 'react-native-vector-icons/AntDesign';
-
+import MySwipeCardsComponents from '../Onboarding/swipe';
+import InstagramEmbed from 'react-native-embed-instagram' 
 export default function HomePage() {
   return (
     <View style={Styles.mainBg}>
@@ -44,76 +44,7 @@ export default function HomePage() {
         </View>
 
         <View >
-          <ScrollView horizontal={true}>
-            <View style={Styles.CardPage}>
-              <View>
-                <Image source={require('../../Assets/Rectangle8.png')} style={Styles.CardPageImage} />
-                <View style={Styles.CardPageArt}>
-                  <View style={Styles.CardPageBox}>
-                    <Text style={Styles.CardPageBoxText}>Art</Text>
-                  </View>
-                  <AntDesign name='hearto' size={25} color={'black'} />
-                </View>
-              </View>
-              <View style={Styles.CardText}>
-                <Text style={Styles.CardTextOne}>Mosu #1930</Text>
-                <View style={Styles.CardPageOne}>
-                  <AntDesign style={Styles.CardTextOne} name={'clockcircleo'} size={18} />
-                  {/* <Image source={require('../../Assets/IconTime.png')} style={Styles.CardPageImageOne}/> */}
-                  <Text style={Styles.CardTextOne} >102d Left</Text>
-                </View>
-              </View>
-
-              <View style={Styles.CardText}>
-                <View style={Styles.CardPageProfileVerified}>
-                  <Image source={require("../../Assets/Profile-Verified.png")} style={{ width: 40, height: 40 }} />
-                  <Text style={Styles.CardTextProfileVerifiedOne}>Karafuru</Text>
-                </View>
-                <View style={Styles.CardPageOneETH}>
-                  {/* <AntDesign name={'clockcircleo'} size={18} /> */}
-                  <Image source={require('../../Assets/logos_ethereum.png')} />
-                  <Text style={Styles.CardTextOne}>2,75 ETH</Text>
-                </View>
-              </View>
-            </View>
-
-
-
-            <View style={Styles.CardPage}>
-              <View>
-                <Image source={require('../../Assets/Rectangle8.png')} style={Styles.CardPageImage} />
-                <View style={Styles.CardPageArt}>
-                  <View style={Styles.CardPageBox}>
-                    <Text style={Styles.CardPageBoxText}>Art</Text>
-                  </View>
-                  <AntDesign name='hearto' size={30} color={'black'} />
-                </View>
-              </View>
-              <View style={Styles.CardText}>
-                <Text style={Styles.CardTextOne}>Mosu #1930</Text>
-                <View style={Styles.CardPageOne}>
-                  <AntDesign name={'clockcircleo'} size={20} color={"#fff"} />
-                  {/* <Image source={require('../../Assets/IconTime.png')} style={Styles.CardPageImageOne}/> */}
-                  <Text style={Styles.CardTextOne}>102d Left</Text>
-                </View>
-              </View>
-
-              <View style={Styles.CardText}>
-                <View style={Styles.CardPageProfileVerified}>
-                  <Image source={require("../../Assets/Profile-Verified.png")} style={{ width: 40, height: 40 }} />
-                  <Text style={Styles.CardTextProfileVerifiedOne}>Karafuru</Text>
-                </View>
-                <View style={Styles.CardPageOneETH}>
-                  {/* <AntDesign name={'clockcircleo'} size={18} /> */}
-                  <Image source={require('../../Assets/logos_ethereum.png')} />
-                  <Text style={Styles.CardTextOne}>2,75 ETH</Text>
-                </View>
-              </View>
-            </View>
-            <View style={{ marginRight: 20 }}>
-
-            </View>
-          </ScrollView>
+        <MySwipeCardsComponents/>
         </View>
 
         <View style={Styles.TrendingCollections}>
