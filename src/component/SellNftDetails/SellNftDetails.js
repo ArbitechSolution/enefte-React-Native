@@ -42,7 +42,7 @@ export default function SellNftDetails({navigation}) {
           <View style={Styles.cardOne}>
             <Image
               style={Styles.cardOne}
-              source={require('../../Assets/cardFixedPrice.png')}
+              source={require('../../Assets/cardFixedPrice1.png')}
             />
           </View>
           <View style={Styles.cardOne}>
@@ -193,7 +193,7 @@ const Styles = StyleSheet.create({
   },
 
   belowButton: {
-    backgroundColor: '#1D9BF0',
+    backgroundColor: '#138E10',
     // width: wp('84%'),
     // height: hp('7%'),
     alignItems: 'center',
@@ -330,7 +330,7 @@ const Styles = StyleSheet.create({
   ButtonContinue: {
     marginLeft: 10,
     marginRight: 10,
-    backgroundColor: '#1D9BF0',
+    backgroundColor: '#138E10',
     borderRadius: 10,
     padding: 15,
     marginTop: 50

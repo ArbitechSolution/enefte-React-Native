@@ -238,7 +238,7 @@ const styles = StyleSheet.create({
 
   },
   CardPageOneETH: {
-    borderColor: '#1D9BF0',
+    borderColor: '#138E10',
     borderWidth: 2,
     flexDirection: "row",
     paddingTop: 10,

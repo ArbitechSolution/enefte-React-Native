@@ -12,7 +12,6 @@ export default function Onboardings({ navigation }) {
   // const viewAbleItemsChange = useRef(({viewAbleItems})=>{
   //   setCurrentIndex(viewAbleItems[0].index)
   // }).current;
-
   const viewConfig = useRef({ viewAreaCoveragePercentThreshold: 50 }).current;
   return (
     <View style={Styles.mainBg} >
@@ -60,7 +59,7 @@ const Styles = StyleSheet.create({
     borderTopRightRadius: 25
   },
   belowButton: {
-    backgroundColor: "#1D9BF0",
+    backgroundColor: "#138E10",
     width: 300,
     height: 50,
     justifyContent: 'center',

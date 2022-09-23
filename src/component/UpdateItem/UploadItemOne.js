@@ -204,7 +204,7 @@ const Styles = StyleSheet.create({
     borderRadius: 10,
   },
   belowButton: {
-    backgroundColor: '#1D9BF0',
+    backgroundColor: '#138E10',
     // width: wp('84%'),
     // height: hp('7%'),
     alignItems: 'center',
@@ -225,7 +225,7 @@ const Styles = StyleSheet.create({
   ButtonContinue: {
     marginLeft: 4,
     marginRight: 4,
-    backgroundColor: '#1D9BF0',
+    backgroundColor: '#138E10',
     borderRadius: 10,
     padding: 15,
     marginTop: 10

@@ -36,7 +36,7 @@ export default function OffersReceived() {
                     </View>
                     <View style={{ alignItems: 'center' }}>
                         <Text style={Styles.CardsOneText}>From</Text>
-                        <Text style={[Styles.CardsOneTextsecond, { color: '#1D9BF0' }]}>NFTmagicBEER</Text>
+                        <Text style={[Styles.CardsOneTextsecond, { color: '#138E10' }]}>NFTmagicBEER</Text>
                     </View>
                     <View style={{ alignItems: 'center' }}>
                         <Text style={Styles.CardsOneText}>Expiration</Text>

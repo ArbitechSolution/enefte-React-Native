@@ -2,7 +2,6 @@
 import { StyleSheet, Text, View, Image, ScrollView } from 'react-native'
 import React from 'react'
 import MySwipeCardsComponents from '../Onboarding/swipe';
-import InstagramEmbed from 'react-native-embed-instagram' 
 export default function HomePage() {
   return (
     <View style={Styles.mainBg}>
@@ -134,7 +133,7 @@ const Styles = StyleSheet.create({
   },
   HomePageButtonPending: {
     color: "#F9FBFC",
-    backgroundColor: "#1D9BF0",
+    backgroundColor: "#138E10",
     width: 105,
     height: 51,
     borderRadius: 10,
@@ -248,7 +247,7 @@ const Styles = StyleSheet.create({
 
   },
   CardPageOneETH: {
-    borderColor: '#1D9BF0',
+    borderColor: '#138E10',
     borderWidth: 2,
     flexDirection: "row",
     paddingTop: 10,

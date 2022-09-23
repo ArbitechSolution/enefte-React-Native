@@ -21,6 +21,9 @@ export default function CollectionItemsBar() {
             
             // borderBottomWidth: 1,
             // borderColor: "#253341"
+          },
+          tabBarIndicatorStyle:{
+            backgroundColor: "#138E10",
           }
       }}
     >

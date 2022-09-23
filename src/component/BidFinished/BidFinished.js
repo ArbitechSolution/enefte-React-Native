@@ -66,7 +66,7 @@ const Styles = StyleSheet.create({
 
   },
   belowButton: {
-    backgroundColor: '#1D9BF0',
+    backgroundColor: '#138E10',
     width: 300,
     height: 50,
     alignItems: 'center',

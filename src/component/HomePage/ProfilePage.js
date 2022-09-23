@@ -50,7 +50,7 @@ export default function ProfilePage({ navigation }) {
       </View>
       <View style={Styles.ProfilePageadressBox}>
         <View style={Styles.ProfilePageAddress}>
-          <Ionicons name='copy' size={28} color={'#1D9BF0'} />
+          <Ionicons name='copy' size={28} color={'#138E10'} />
           <Text style={Styles.ProfilePageAddressText}>0x841a...8a57</Text>
         </View>
         <View style={Styles.ProfilePageSocialIcons}>

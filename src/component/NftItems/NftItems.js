@@ -132,7 +132,7 @@ const Styles = StyleSheet.create({
 
   // belowButton: {
   //   flexDirection: 'row',
-  //   // backgroundColor: '#1D9BF0',
+  //   // backgroundColor: '#138E10',
   //   width: 120,
   //   height: 50,
   //   height: 40,
@@ -230,7 +230,7 @@ const Styles = StyleSheet.create({
   },
   buttonOne: {
     height: 50,
-    borderColor: '#1D9BF0',
+    borderColor: '#138E10',
     borderRadius: 10,
     // borderWidth: 1,
     width: 140,
@@ -240,12 +240,12 @@ const Styles = StyleSheet.create({
   },
   buttonTwo: {
     height: 50,
-    backgroundColor: '#1D9BF0',
+    backgroundColor: '#138E10',
     borderRadius: 10,
     flexDirection: 'row',
     // fontFamily: 'Rationale-Regular',
 
-    // border:"##1D9BF0",
+    // border:"##138E10",
     // borderWidth:1,
     width: 140,
     justifyContent: 'center',

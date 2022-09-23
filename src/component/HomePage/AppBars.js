@@ -22,7 +22,7 @@ export default function AppBars() {
         
         initialRouteName="HomePage"
         screenOptions={{
-          tabBarActiveTintColor: '#1D9BF0',
+          tabBarActiveTintColor: '#138E10',
           tabBarInactiveTintColor: "#AAB8C2",
           tabBarStyle: {
             backgroundColor: "#253341",
@@ -42,7 +42,7 @@ export default function AppBars() {
             tabBarIcon: ({ focused }) => {
               return (
                 <Image source={require('../../Assets/HomeVector.png')}
-                style={[Styles.ImageSize, {tintColor : focused ? "#1D9BF0" : "#AAB8C2"}]}
+                style={[Styles.ImageSize, {tintColor : focused ? "#138E10" : "#AAB8C2"}]}
                 />
               )
             }
@@ -56,7 +56,7 @@ export default function AppBars() {
             tabBarIcon: ({ focused }) => {
               return (
                 <Image source={require('../../Assets/SearchVector.png')}
-                style={[Styles.ImageSize, {tintColor : focused ? "#1D9BF0" : "#AAB8C2"}]}
+                style={[Styles.ImageSize, {tintColor : focused ? "#138E10" : "#AAB8C2"}]}
                 />
               )
             }
@@ -69,7 +69,7 @@ export default function AppBars() {
             tabBarIcon: ({ focused }) => {
               return (
                 <Image source={require('../../Assets/StatsVector.png')}
-                style={[Styles.ImageSize, {tintColor : focused ? "#1D9BF0" : "#AAB8C2"}]}
+                style={[Styles.ImageSize, {tintColor : focused ? "#138E10" : "#AAB8C2"}]}
                 />
               )
             }
@@ -82,7 +82,7 @@ export default function AppBars() {
             tabBarIcon: ({ focused }) => {
               return (
                 <Image source={require('../../Assets/ProfileGroup.png')}
-                style={[Styles.ImageSize, {tintColor : focused ? "#1D9BF0" : "#AAB8C2"}]}
+                style={[Styles.ImageSize, {tintColor : focused ? "#138E10" : "#AAB8C2"}]}
                 />
               )
             }

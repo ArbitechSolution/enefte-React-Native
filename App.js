@@ -25,23 +25,24 @@ import SellNftDetails from './src/component/SellNftDetails/SellNftDetails'
 import UpdateItemsFour from './src/component/UpdateItem/UpdateItemsFour'
 import NftItesmsDetails from './src/component/NftItesmsDetails/NftItesmsDetails'
 import { Provider } from 'react-redux';
-import MySwipeCardsComponents from './src/component/Onboarding/swipe'
-// import store from './src/component/Redux/index'
+import {
+  withWalletConnect,
+  useWalletConnect,
+} from "@walletconnect/react-native-dapp";
 export default function App() {
+  const connector= useWalletConnect();
   const [isSubmit, setIsSubmit] = useState(false)
   const Stack = createNativeStackNavigator()
   const Tab = createBottomTabNavigator();
   const onSubmit = () => {
     setIsSubmit(true)
   }
-  
   return (
     // <Provider store={store}>
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Onboarding" options={{ headerShown: false }} component={Onboarding} />
         {/* <Stack.Screen name="MySwipeCardsComponents" options={{ headerShown: false }} component={MySwipeCardsComponents} /> */}
-
         <Stack.Screen name="Startscreen" options={{ headerShown: false }} component={Startscreen} />
         <Stack.Screen name="ConnectWithWallet" options={{ headerShown: false }} component={ConnectWithWallet} />
         <Stack.Screen name="SetupProfile" options={{ headerShown: false }} component={SetupProfile} />
@@ -62,17 +63,13 @@ export default function App() {
         <Stack.Screen name="SellNft" options={{ headerShown: false }} component={SellNft} />
         <Stack.Screen name='SellNftDetails' options={{ headerShown: false }} component={SellNftDetails} />
         <Stack.Screen name='ItemReadyForSell' options={{ headerShown: false }} component={ItemReadyForSell} />
-        
         <Stack.Screen name='ArtPage' options={{ headerShown: false }} component={ArtPage} />
-      
         {/* 
         <
         <Stack.Screen name='SearchPage' options={{ headerShown: false }} component={SearchPage} />
         <Stack.Screen name='TabsBar' options={{ headerShown: false }} component={TabsBar} />
         <Stack.Screen name="ProfileAppBar" options={{ headerShown: false }} component={ProfileAppBar} />
-
       */}
-
       </Stack.Navigator>
     </NavigationContainer>
     // </Provider>

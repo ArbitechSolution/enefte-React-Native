@@ -110,7 +110,7 @@ belowText: {
   lineHeight: 19.2,
 },
 belowButton: {
-  backgroundColor: '#1D9BF0',
+  backgroundColor: '#138E10',
   width: 300,
   height: 50,
   justifyContent:'center',

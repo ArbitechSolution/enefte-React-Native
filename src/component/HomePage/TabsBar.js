@@ -21,6 +21,9 @@ export default function TabsBar() {
             
             borderBottomWidth: 1,
             borderColor: "#253341"
+          },
+           tabBarIndicatorStyle:{
+            backgroundColor: "#138E10",
           }
       }}
     >
@@ -123,7 +126,7 @@ const Styles = StyleSheet.create({
 //     },
 //     btnTabsActive: {
 //         borderBottomWidth: 3,
-//         borderColor: '#1D9BF0'
+//         borderColor: '#138E10'
 
 //     },
 //     TabsTextActive:{

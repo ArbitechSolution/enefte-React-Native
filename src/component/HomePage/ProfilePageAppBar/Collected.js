@@ -95,7 +95,7 @@ const Styles = StyleSheet.create({
     color:"#fff"
   },
   ActivityButton: {
-    backgroundColor: '#1D9BF0',
+    backgroundColor: '#138E10',
     borderRadius: 10,
     width: 100,
     height: 50,

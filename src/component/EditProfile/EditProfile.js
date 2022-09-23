@@ -108,7 +108,8 @@ const _saveChanges =async ()=>{
         style={Styles.belowButton}
           activeOpacity={0.5}
           // onPress={()=>_saveChanges()}
-          onPress={()=>_saveChanges()}
+          onPress={()=>navigation.navigate("NftItems")}
+
         >
      <Text style={Styles.buttonTextStyle}>Save Changes  </Text>
         </TouchableOpacity>
@@ -180,7 +181,7 @@ const Styles = StyleSheet.create({
         // borderWidth: 1
     },
     belowButton: {
-        backgroundColor: '#1D9BF0',
+        backgroundColor: '#138E10',
         width: 120,
         height: 50,
         height: 40,

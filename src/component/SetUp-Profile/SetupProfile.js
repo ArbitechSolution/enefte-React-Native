@@ -326,9 +326,8 @@ export default function SetupProfile({ navigation }) {
             </View>
             {
                 button? <TouchableOpacity
-                title="Submit" onPress={handleSubmit(onSubmit)}
-                // onPress={()=>addProfileData()}
-            // onPress={() => navigation.navigate("EditProfile")} type="submit"
+                // title="Submit" onPress={handleSubmit(onSubmit)}
+            onPress={() => navigation.navigate("welcome")} type="submit"
             >
                 <View style={Styles.ButtonContinue}>
                     <Text style={Styles.ButtonContinueText}>Submit</Text>
@@ -439,7 +438,7 @@ const Styles = StyleSheet.create({
     ButtonContinue: {
         marginLeft: 20,
         marginRight: 20,
-        backgroundColor: '#1D9BF0',
+        backgroundColor: '#138E10',
         borderRadius: 10,
         padding: 15,
         marginTop: 50

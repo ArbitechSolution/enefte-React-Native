@@ -10,14 +10,14 @@ import {
 import AntDesign from "react-native-vector-icons/AntDesign"
 // import url('https://fonts.googleapis.com/css2?family=Rationale&display=swap');
 export default function Startscreen({navigation}) {
-    
+   
   return (
     <View style={Styles.mainBg}>
       <View style={Styles.imgContainer}>
-        <Image source={require('../../Assets/Logo.png')} />
+        <Image style={{paddingBottom:60}} source={require('../../Assets/Logo1.png')} />
         <View >
         <Image style={Styles.imgContainerImage} source={require('../../Assets/Ellipse12.png')}/>
-        <Image style={Styles.imgContainerImage1} source={require('../../Assets/Ellipse13.png')}/>
+        {/* <Image style={Styles.imgContainerImage1} source={require('../../Assets/Ellipse13.png')}/> */}
         </View>
       </View>
       <View>
@@ -85,7 +85,7 @@ const Styles = StyleSheet.create({
     flexDirection:"row"
   },
   buttonOne:{
-    backgroundColor:"#1D9BF0",
+    backgroundColor:"#138E10",
     borderRadius:10,
     width:200,
     height: 50,
@@ -94,7 +94,7 @@ const Styles = StyleSheet.create({
     alignItems:"center"
   },
   buttonTwo:{
-    // backgroundColor:"#1D9BF0",
+    // backgroundColor:"#138E10",
     borderRadius:10,
     width:80,
     height: 50,
@@ -130,7 +130,7 @@ const Styles = StyleSheet.create({
   },
   imgContainerImage: {
     marginLeft: -150,
-    marginTop: -55
+    marginTop: -25
   },
   imgContainerImage1:{
     marginLeft: -150,

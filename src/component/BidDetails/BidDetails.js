@@ -127,11 +127,11 @@ export default function BidDetails({ navigation }) {
                                 </View> */}
                                 <View style={{ alignItems: 'center' }}>
                                     <Text style={Styles.CardsOneText}>Floor Diff.</Text>
-                                    <Text style={[Styles.CardsOneTextsecond, { color: '#1D9BF0' }]}>17% below</Text>
+                                    <Text style={[Styles.CardsOneTextsecond, { color: '#138E10' }]}>17% below</Text>
                                 </View>
                                 <View style={{ alignItems: 'center' }}>
                                     <Text style={Styles.CardsOneText}>Expiration</Text>
-                                    <Text style={[Styles.CardsOneTextsecond, { color: '#1D9BF0' }]}>6 Months</Text>
+                                    <Text style={[Styles.CardsOneTextsecond, { color: '#138E10' }]}>6 Months</Text>
                                 </View>
                             </View>
                         </View>
@@ -270,7 +270,7 @@ const Styles = StyleSheet.create({
         // justifyContent: ''
     },
     belowButton: {
-        backgroundColor: '#1D9BF0',
+        backgroundColor: '#138E10',
         width: 320,
         height: 50,
         alignItems: 'center',

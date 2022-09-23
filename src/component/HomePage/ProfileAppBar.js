@@ -16,18 +16,28 @@ export default function ProfileAppBar() {
       {/* <View> */}
          <Tab.Navigator
       initialRouteName="TabsRankings"
+      
       screenOptions={{
         tabBarScrollEnabled: true,
         tabBarActiveTintColor: '#fff',
           tabBarInactiveTintColor: "#AAB8C2",
-        tabBarLabelStyle: { fontSize: 13, fontWeight: '500', paddingTop: 20},
+          // backgroundColor:'red',
+        tabBarLabelStyle: { fontSize: 14, fontWeight: '500', paddingTop: 20,},
+
         tabBarStyle: {
             backgroundColor: '#1C212B',
             
+            // tabBarActiveTintColor:"white",
+            // tabBarInactiveTintColor:"red"
             // borderBottomWidth: 1,
             // borderColor: "#253341"
+          },
+          tabBarIndicatorStyle:{
+            backgroundColor: "#138E10",
           }
+        
       }}
+  
     >
       <Tab.Screen
         name="Collected"
@@ -51,6 +61,7 @@ export default function ProfileAppBar() {
         options={{ tabBarLabel: 'Favorited' }}
       />
       <Tab.Screen
+
         name="OfferMade"
         component={OfferMade}
         options={{ tabBarLabel: 'Offer Made' }}

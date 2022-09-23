@@ -67,7 +67,7 @@ const Styles = StyleSheet.create({
     ButtonContinue: {
       marginLeft: 20,
       marginRight: 20,
-      backgroundColor: '#1D9BF0',
+      backgroundColor: '#138E10',
       borderRadius: 10,
       padding: 15,
       marginTop: 50
@@ -82,7 +82,7 @@ const Styles = StyleSheet.create({
 
   },
     belowButton:{
-      backgroundColor: "#1D9BF0",
+      backgroundColor: "#138E10",
       width:300,
       height:50,
       height: 40,

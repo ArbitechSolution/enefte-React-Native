@@ -300,7 +300,7 @@ const Styles = StyleSheet.create({
     },
 
     // belowButton: {
-    //     backgroundColor: "#1D9BF0",
+    //     backgroundColor: "#138E10",
     //     // width:wp("85%"),
     //     // height:hp("7%"),
     //     alignItems: "center",
@@ -444,7 +444,7 @@ const Styles = StyleSheet.create({
 
       },
       belowButton: {
-        backgroundColor: '#1D9BF0',
+        backgroundColor: '#138E10',
         width: 330,
         height: 50,
         alignItems: 'center',

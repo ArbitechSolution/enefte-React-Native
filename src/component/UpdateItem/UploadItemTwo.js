@@ -63,11 +63,11 @@ export default function UploadItemTwo({ navigation }) {
                     </View>
                     <View style={{ alignItems: 'center' }}>
                         <Text style={Styles.CardsOneText}>From</Text>
-                        <Text style={[Styles.CardsOneTextsecond, {color: '#1D9BF0'}]}>aleben92</Text>
+                        <Text style={[Styles.CardsOneTextsecond, {color: '#138E10'}]}>aleben92</Text>
                     </View>
                     <View style={{ alignItems: 'center' }}>
                         <Text style={Styles.CardsOneText}>To</Text>
-                        <Text style={[Styles.CardsOneTextsecond, {color: '#1D9BF0'}]}>Wavez47</Text>
+                        <Text style={[Styles.CardsOneTextsecond, {color: '#138E10'}]}>Wavez47</Text>
                     </View>
                 </View> */}
             </View>
@@ -129,7 +129,7 @@ export default function UploadItemTwo({ navigation }) {
 
     },
     commonTxtViewOnTh:{
-        color:"#1D9BF0",
+        color:"#138E10",
         textAlign:"center",
         fontFamily: 'Rationale-Regular',
         fontSize: 18,
@@ -228,7 +228,7 @@ export default function UploadItemTwo({ navigation }) {
 
     },
     belowButton: {
-        backgroundColor: '#1D9BF0',
+        backgroundColor: '#138E10',
         width: 300,
         height: 50,
       justifyContent: 'center',

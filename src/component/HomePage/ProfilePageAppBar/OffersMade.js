@@ -36,7 +36,7 @@ export default function OffersMade() {
                     </View>
                     <View style={{ alignItems: 'center' }}>
                         <Text style={Styles.CardsOneText}>From</Text>
-                        <Text style={[Styles.CardsOneTextsecond, { color: '#1D9BF0' }]}>You</Text>
+                        <Text style={[Styles.CardsOneTextsecond, { color: '#138E10' }]}>You</Text>
                     </View>
                     <View style={{ alignItems: 'center' }}>
                         <Text style={Styles.CardsOneText}>Expiration</Text>
@@ -74,7 +74,7 @@ export default function OffersMade() {
                     </View>
                     <View style={{ alignItems: 'center' }}>
                         <Text style={Styles.CardsOneText}>From</Text>
-                        <Text style={[Styles.CardsOneTextsecond, { color: '#1D9BF0' }]}>You</Text>
+                        <Text style={[Styles.CardsOneTextsecond, { color: '#138E10' }]}>You</Text>
                     </View>
                     <View style={{ alignItems: 'center' }}>
                         <Text style={Styles.CardsOneText}>Expiration</Text>
